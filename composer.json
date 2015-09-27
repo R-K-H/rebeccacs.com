@@ -1,5 +1,6 @@
 {
     "require": {
-        "twbs/bootstrap": "^3.3"
+        "twbs/bootstrap": "^3.3",
+        "components/font-awesome": "4.4.0"
     }
 }
