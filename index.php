@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>rebecca cordalis-selvig | editorial stylist</title>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 </head>
 <body>
 <header>
