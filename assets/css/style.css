@@ -1,15 +1,55 @@
 @font-face {
-	font-family: 'Sackers Gothic W01';
-	src: url(../fonts/27587338-8a56-4b02-9294-f3c6cb9a1aa3.eot);
+    font-family: "Adobe Garamond W08_i4";
+    src: url("../fonts/4c83158e-1435-42b3-9577-b2b30ca41519.eot?#iefix") format("eot")
 }
+
 @font-face {
-	font-family: 'Adobe Garamond W08';
-	src: url(../fonts/9b59db8d-790b-448e-901a-83bee80695d7.eot);
+    font-family: "Adobe Garamond W08";
+    src: url("../fonts/4c83158e-1435-42b3-9577-b2b30ca41519.eot?#iefix");
+    src: url("../fonts/4c83158e-1435-42b3-9577-b2b30ca41519.eot?#iefix") format("eot"),url("../fonts/6d0c45bd-b627-4868-942a-91b2f83580f2.woff") format("woff"),url("../fonts/6334af5a-f301-4a6a-bbe1-2f3f58d3a799.ttf") format("truetype"),url("../fonts/f00e2b8d-55bd-4f31-b5ae-e6230f2c8481.svg#f00e2b8d-55bd-4f31-b5ae-e6230f2c8481") format("svg");
+    font-weight: 400;
+    font-style: italic
 }
+
 @font-face {
-	font-family: 'Linotype Didot W01';
-	src: url(../fonts/dd077a5a-5331-4833-8a24-e3afbe24d92e.eot);
+    font-family: "Adobe Garamond W08_n4";
+    src: url("../fonts/9b59db8d-790b-448e-901a-83bee80695d7.eot?#iefix") format("eot")
 }
+
+@font-face {
+    font-family: "Adobe Garamond W08";
+    src: url("../fonts/9b59db8d-790b-448e-901a-83bee80695d7.eot?#iefix");
+    src: url("../fonts/9b59db8d-790b-448e-901a-83bee80695d7.eot?#iefix") format("eot"),url("../fonts/b263ec73-3337-45b9-9e86-933d27164f2c.woff") format("woff"),url("../fonts/9675cf06-4f76-47fb-97df-9b255507e865.ttf") format("truetype"),url("../fonts/825d51b9-cc7d-4f4d-ba2c-47ffd291aebd.svg#825d51b9-cc7d-4f4d-ba2c-47ffd291aebd") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Linotype Didot W01_n4";
+    src: url("../fonts/dd077a5a-5331-4833-8a24-e3afbe24d92e.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "Linotype Didot W01";
+    src: url("../fonts/dd077a5a-5331-4833-8a24-e3afbe24d92e.eot?#iefix");
+    src: url("../fonts/dd077a5a-5331-4833-8a24-e3afbe24d92e.eot?#iefix") format("eot"),url("../fonts/8cf278e2-5b07-4c21-97da-4762c9ea76c1.woff") format("woff"),url("../fonts/488ffbea-dc53-43b4-a9e2-d5bff132a85d.ttf") format("truetype"),url("../fonts/972bb961-7f13-4e8d-8c1f-034e3f4e7517.svg#972bb961-7f13-4e8d-8c1f-034e3f4e7517") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Sackers Gothic W01_n5";
+    src: url("../fonts/27587338-8a56-4b02-9294-f3c6cb9a1aa3.eot?#iefix") format("eot")
+}
+
+@font-face {
+    font-family: "Sackers Gothic W01";
+    src: url("../fonts/27587338-8a56-4b02-9294-f3c6cb9a1aa3.eot?#iefix");
+    src: url("../fonts/27587338-8a56-4b02-9294-f3c6cb9a1aa3.eot?#iefix") format("eot"),url("../fonts/e166de1f-75a3-44b0-b88e-a037e19243d2.woff") format("woff"),url("../fonts/2d9efcdc-b053-4bc8-bef4-80630d67027e.ttf") format("truetype"),url("../fonts/a4ece7c2-be4a-4681-bb11-d02bfc53c66e.svg#a4ece7c2-be4a-4681-bb11-d02bfc53c66e") format("svg");
+    font-weight: 500;
+    font-style: normal
+}
+
 body {
 	height: 100%;
   background: #FFF;
@@ -27,8 +67,6 @@ h2 {
     font-weight: 400;
     font-style: normal;
     margin: 0.4em 0;
-    font-size: 62px;
-    font-size: 6.2rem;
     line-height: 0.9;
     text-transform: uppercase;
     font-weight: normal;
@@ -65,7 +103,7 @@ h2 {
 }
 #instagram .images .image {
     float: left;
-    width: 16.6666%;
+    /*width: 16.6666%;*/
 }
 #instagram {
     position: relative;
@@ -76,7 +114,7 @@ h2 {
     text-align: center;
     position: absolute;
     width: 100%;
-    padding: 1em 0 0;
+
     z-index: 100;
 }
 #instagram .header .title {

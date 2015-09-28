@@ -11,57 +11,57 @@
 				<div class="inner container">
 					<div class="info">
 						<ul class="social-links">
-							<li><a class="fa fa-facebook facebook-btn" href="https://www.facebook.com/rcselvig" target="_blank"></a></li>
-							<li><a class="fa fa-twitter twitter-btn" href="https://twitter.com/rcselvig" target="_blank"></a></li>
-							<li><a class="fa fa-instagram instagram-btn" href="https://instagram.com/rcselvig" target="_blank"></a></li>
-							<li><a class="fa fa-tumblr tumblr-btn" href="http://rcselvig.tumblr.com/" target="_blank"></a></li>
-							<li><a class="fa fa-pinterest pinterest-btn" href="https://www.pinterest.com/rcselvig/" target="_blank"></a></li>
-							<li><a class="fa fa-youtube youtube-btn" href="" target="_blank"></a></li>
-							<li><a class="fa fa-linkedin linkedin-btn" href="https://www.linkedin.com/in/rpcsel" target="_blank"></a></li>
+							<li><a class="fa fa-twitter twitter-btn" href="https://twitter.com/rcselvig" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'twitter');"></a></li>
+							<li><a class="fa fa-instagram instagram-btn" href="https://instagram.com/rcselvig" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'instagram');"></a></li>
+							<li><a class="fa fa-pinterest pinterest-btn" href="https://www.pinterest.com/rcselvig/" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'pinterest');"></a></li>
+							<li><a class="fa fa-linkedin linkedin-btn" href="https://www.linkedin.com/in/rpcsel" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'linkedin');"></a></li>
+							<li><a class="fa fa-envelope mail-btn" href="mailto:hello@rebeccacs.com" onclick="ga('send', 'event', 'external click', 'click', 'email');"></a></li>
 						</ul>
 					</div>
 					<nav class="main-navigation navigation">
 						<ul id="menu-main" class="clearfix menu">
-							<li class="menu-item"><a href="#">About</a></li>
-							<li class="menu-item"><a href="#">Work</a></li>
-							<li class="menu-item"><a href="#">Contact</a></li>
+							<li class="menu-item"><a href="#" onclick="ga('send', 'event', 'internal click', 'click', 'about');">About</a></li>
+							<li class="menu-item"><a href="#" onclick="ga('send', 'event', 'internal click', 'click', 'work');">Work</a></li>
+							<li class="menu-item"><a href="#" onclick="ga('send', 'event', 'internal click', 'click', 'contact');">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
 			</header>
-			<div id="main" class="site-main" role="main">
+			<div id="main" class="site-main col-md-12" role="main">
 				<div id="single">
 					<div class="content">
-						<div class="row">
 							<div class="container">
 								<div class="inner">
 									<h2 class="title">Rebecca Cordalis-Selvig</h2>
 									<img src="assets/images/home-image.jpg" alt="rebecca cordalis-selvig" />
-									<div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p></div>
-									<div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p></div>
-									<div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p></div>
+									<div class="col-md-4">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
+									</div>
+									<div class="col-md-4">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
+									</div>
+									<div class="col-md-4">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
+									</div>
 								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 			<div id="instagram">
 				<header class="header">
 					<h2 class="title">Instagram</h2>
-					<a class="white-btn" href="http://instagram.com/rcselvig"><i class="fa fa-instagram icon-instagram"></i> @rcselvig</a>
+					<a class="white-btn" href="http://instagram.com/rcselvig" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'instagram');"><i class="fa fa-instagram icon-instagram"></i> @rcselvig</a>
 				</header>
 				<div id="instafeed" class="images clearfix"></div>
 			</div>
 			<footer>
 			</footer>
 		</div>
+		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
 		<script type="text/javascript">
@@ -74,7 +74,7 @@ Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin fac
 	        limit: 6,
 	        resolution: 'standard_resolution',
 	        clientId: 'e4fca26f6ec747c185a98e84db533f49',
-	        template: '<a class="image overlay-btn" href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+	        template: '<a class="image overlay-btn col-md-4 col-sm-12" href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
 	    });
 	    feed.run();
 		</script>
