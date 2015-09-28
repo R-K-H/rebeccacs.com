@@ -74,7 +74,7 @@
 	        limit: 6,
 	        resolution: 'standard_resolution',
 	        clientId: 'e4fca26f6ec747c185a98e84db533f49',
-	        template: '<a class="image overlay-btn col-md-4 col-sm-12" href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+	        template: '<a class="image overlay-btn col-md-2 col-sm-12 no-gutter" href="{{link}}" target="_blank" onclick="ga(\'send\', \'event\', \'external click\', \'click\', \'instagram\');"><img src="{{image}}" /></a>'
 	    });
 	    feed.run();
 		</script>
