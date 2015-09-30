@@ -19,10 +19,10 @@
 					<nav class="main-navigation navigation">
 						<ul id="menu-main" class="clearfix menu">
 						<?php 
-								echo '<li class="menu-item"><a href="index.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'about\');">About</a></li>';
-								echo '<li class="menu-item"><a href="work.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'work\');">Work</a></li>';
-								echo '<li class="menu-item"><a href="contact.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'contact\');">Contact</a></li>';
-							 ?>
+                echo '<li class="menu-item"><a href="index.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'work\');">Work</a></li>';
+                echo '<li class="menu-item"><a href="about.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'about\');">About</a></li>';
+                echo '<li class="menu-item"><a href="contact.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'contact\');">Contact</a></li>';
+               ?>
 						</ul>
 					</nav>
 				</div>
@@ -32,70 +32,21 @@
 					<div class="content">
 							<div class="container">
 								<div class="inner">
-									<h2 class="title">Rebecca Cordalis-Selvig</h2>
-									<img src="assets/images/home-image.jpg" alt="rebecca cordalis-selvig" />
 									<div class="col-md-4">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
-									</div>
-									<div class="col-md-4">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
-									</div>
-									<div class="col-md-4">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
-									</div>
-									<div class="col-md-3">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus.</p>
-									</div>
-									<div class="col-md-9">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
-									</div>
-									<div class="col-md-12">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
+										<img src="assets/images/work-hair.jpg" />
 									</div>
 									<div class="col-md-8">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
-									</div>
-									<div class="col-md-4">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-									</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lectus mi, elementum sit amet lacus et, maximus sollicitudin lectus. Morbi ultricies quis libero quis lobortis. Curabitur euismod urna nisl, vitae scelerisque nunc egestas sed. Suspendisse sagittis metus vitae arcu lacinia, at facilisis tortor placerat. Nam faucibus tristique lectus, vitae consectetur velit sagittis dapibus. Donec ut nulla auctor, mattis tortor vel, rutrum tellus. Suspendisse quis odio urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pulvinar diam. Sed id ornare nunc, at euismod justo. Donec consectetur consectetur est non tincidunt. Nulla molestie ultrices nisl, eu semper nisi tempor nec. Cras accumsan sapien libero. Suspendisse neque urna, mollis et vulputate non, tristique eleifend leo. Duis ullamcorper ac arcu ac molestie.</p>
 								</div>
 							</div>
 					</div>
 				</div>
-			</div>
-			<div id="instagram">
-				<header class="header">
-					<h2 class="title">Instagram</h2>
-					<a class="white-btn" href="http://instagram.com/rcselvig" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'instagram');"><i class="fa fa-instagram icon-instagram"></i> @rcselvig</a>
-				</header>
-				<div id="instafeed" class="images clearfix"></div>
 			</div>
 			<footer>
 			</footer>
 		</div>
 		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
-		<script type="text/javascript">
-	    var feed = new Instafeed({
-	        get: 'user',
-	        accessToken: '674909336.e4fca26.7906b0e36f3e41f58a6b17ee12e179b6',
-	        userId: 674909336,
-	        sortBy: 'most-recent',
-	        links: true,
-	        limit: 6,
-	        resolution: 'standard_resolution',
-	        clientId: 'e4fca26f6ec747c185a98e84db533f49',
-	        template: '<a class="image overlay-btn col-md-2 col-sm-12 no-gutter" href="{{link}}" target="_blank" onclick="ga(\'send\', \'event\', \'external click\', \'click\', \'instagram\');"><img src="{{image}}" /></a>'
-	    });
-	    feed.run();
-		</script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -19,10 +19,10 @@
 					<nav class="main-navigation navigation">
 						<ul id="menu-main" class="clearfix menu">
 						<?php 
-								echo '<li class="menu-item"><a href="index.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'about\');">About</a></li>';
-								echo '<li class="menu-item"><a href="work.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'work\');">Work</a></li>';
-								echo '<li class="menu-item"><a href="contact.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'contact\');">Contact</a></li>';
-							 ?>
+                echo '<li class="menu-item"><a href="index.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'work\');">Work</a></li>';
+                echo '<li class="menu-item"><a href="about.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'about\');">About</a></li>';
+                echo '<li class="menu-item"><a href="contact.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'contact\');">Contact</a></li>';
+               ?>
 						</ul>
 					</nav>
 				</div>

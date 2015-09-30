@@ -18,42 +18,39 @@
 					</div>
 					<nav class="main-navigation navigation">
 						<ul id="menu-main" class="clearfix menu">
-						<?php $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-							if (strpos($url,'index') == false && $_SERVER['REQUEST_URI'] !== '/') {
-							    echo '<li class="menu-item"><a href="index.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'index\');">Home</a></li>';
-							} 
-							if (strpos($url,'about') == false) {
-								echo '<li class="menu-item"><a href="about.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'about\');">About</a></li>';
-							}
-							if (strpos($url,'work') == false) {
-								echo '<li class="menu-item"><a href="work.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'about\');">Work</a></li>';
-							}
-							if (strpos($url,'contact') == false) {
-								echo '<li class="menu-item"><a href="contact.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'contact\');">Contact</a></li>';
-							} ?>
+						<?php 
+                echo '<li class="menu-item"><a href="index.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'work\');">Work</a></li>';
+                echo '<li class="menu-item"><a href="about.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'about\');">About</a></li>';
+                echo '<li class="menu-item"><a href="contact.php" onclick="ga(\'send\', \'event\', \'internal click\', \'click\', \'contact\');">Contact</a></li>';
+               ?>
 						</ul>
 					</nav>
 				</div>
 			</header>
-			<div id="main" class="site-main col-md-12" role="main">
+			<div id="main" class="site-main col-md-12" role="main" style="padding-bottom:50px;">
 				<div id="single">
 					<div class="content">
 							<div class="container">
 								<div class="inner">
-									<h2 class="title">Rebecca Cordalis-Selvig</h2>
-									<img src="assets/images/home-image.jpg" alt="rebecca cordalis-selvig" />
-									<div class="col-md-4">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
+									<img src="assets/images/contact-image.jpg" alt="rebecca cordalis-selvig" />
+									<div class="col-md-4" style="background:#fff; margin-top:-550px;">
+										<p><strong>YOU:</strong> So what do you do?
+                    <br><strong>RC-S:</strong> I work for Michelle Addison as a personal stylist assistant and I style various fashion-related shoots in my spare time, usually on the weekends.</p>
+                    <p><strong>YOU:</strong> Where are you located?<br>
+                    <strong>RC-S:</strong> Vancouver, B.C., Canada.</p>
+                    <p><strong>YOU:</strong> What did you study in school?<br>
+                    <strong>RC-S:</strong> Media and communications.</p>
+								
+										<p><strong>YOU:</strong> Who would you consider to be your style icon?
+                    <br>
+                    <strong>RC-S:</strong> I really admire Emmanuelle Alt. Her style is very understated and simple, sort of the opposite of fashion-peacocking, which I'm not into. I gravitate to what is classic and timeless. That's just to do with my personal style though. When you are a stylist, you are expected to be stylish, but when it comes down to it, I'm more concerned with what I can create than what I look like.</p>
+									
+                    <p><strong>YOU:</strong> What about style in editorials then?
+										<br><strong>RC-S:</strong> Editorial campaigns are about fun and fantasy, they are a reflection of society, and usually emmitt something both inspirational and aspirational. Fashion is continuously morphing, progressing into what is new, unconventional, and it is also a commentary on what is going on in the world-the images that are created to show consumers designers' new work should be a reflection of that.</p>
 									</div>
-									<div class="col-md-4">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
-									</div>
-									<div class="col-md-4">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu libero, euismod in eros sed, interdum tempor neque. Phasellus rutrum, purus sit amet viverra rutrum, purus est auctor magna, non porttitor urna metus at ex. Ut elementum auctor porta. Etiam consectetur mauris nisi, a rhoncus dui mollis non. Vestibulum venenatis sagittis sollicitudin. Suspendisse ut tellus metus. Proin tempor mauris libero. Fusce quis convallis nisl. Proin pharetra risus sed vulputate egestas. Morbi tortor eros, blandit ut ullamcorper vitae, commodo at velit. Nulla orci mi, imperdiet nec venenatis vitae, dapibus ac leo. Aenean a augue enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p>Nullam eu gravida dui, et feugiat urna. Pellentesque vel lobortis dui. Proin facilisis tempor nisi, vel semper urna bibendum et. Donec nec lectus rhoncus, pulvinar tortor nec, rutrum turpis. Curabitur rhoncus malesuada ullamcorper. Ut ut nulla a est finibus sodales. Etiam eget sodales lorem, eu lobortis ligula. Sed porta ex vitae ornare laoreet. Aliquam accumsan eu erat sit amet venenatis. Vestibulum sed erat ac lorem suscipit congue. Suspendisse fringilla convallis erat, quis convallis nulla consequat a. Maecenas viverra ante magna, eu viverra magna ultricies in. Duis et facilisis tortor.</p>
-									</div>
+                  <div class="col-md-7 col-md-offset-1">
+                  <h1 style="padding-top:75px;">"<em>I really admire Emmanuelle Alt. Her style is very understated and simple, sort of the opposite of fashion-peacocking, which I'm not into. I gravitate to what is classic and timeless.</em>"</h1>
+                  </div>
 								</div>
 							</div>
 					</div>
