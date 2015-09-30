@@ -1,6 +1,27 @@
 {
-    "require": {
-        "twbs/bootstrap": "^3.3",
-        "components/font-awesome": "4.4.0"
-    }
+	"name": "anchorcms/anchor-cms",
+	"description": "Anchor is a free, lightweight, faster-than-a-bullet, simple blogging system, made for art–directed posts.",
+	"type": "CMS",
+	"keywords": ["CMS", "anchor", "anchorcms"],
+	"license": "GPL-3.0",
+	"authors": [
+		{
+			"name": "Idiot",
+			"email": "iam@visualidiot.com"
+		},
+		{
+			"name": "Kieron",
+			"email": "rwarasaurus@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.6",
+		"twbs/bootstrap": "^3.3",
+    "components/font-awesome": "4.4.0"
+	},
+	"extra": {
+		"installer-paths": {
+			"anchor/vendor/{$name}": ["vendor/package"]
+		}
+	}
 }
