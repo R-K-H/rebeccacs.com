@@ -106,7 +106,7 @@ h2 {
     /*width: 16.6666%;*/
 }
 #instagram {
-    position: relative;
+    /*position: relative;*/
     margin-top: 6em;
 }
 #instagram .header {
@@ -173,7 +173,7 @@ a:hover {
     letter-spacing: 2px;
     padding: 1em 2em;
 }
-#header .info {
+#header .info, #footer .info {
     float: right;
     position: relative;
     z-index: 200;
@@ -185,6 +185,9 @@ a:hover {
   position: absolute;
   right: 10px;
   top: 15px;
+}
+#footer .info .social-links {
+    padding: 36px 0;
 }
 #header .social-links {
   float: left;
@@ -242,4 +245,73 @@ a {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+.items > li, .items > li:first-child {
+  background: #fff;
+}
+.post-header, .post-header .read-more {
+    text-align: right;
+  }
+  #footer {
+    background: #000;
+    color: #666;
+    z-index: 100;
+}
+#footer>.top, #header>.top {
+    background: #000;
+}
+#footer .logo-container {
+    font-size: 25px;
+    font-size: 2.5rem;
+    padding: 40px 0;
+}
+#footer .logo-container .logo, #header .logo-container .logo {
+    z-index: 100;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#footer a {
+    color: #FFF;
+}
+.post-header-1 {
+    text-align: center;
+}
+.post .meta {
+    font-family: 'Adobe Garamond W08';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 13px;
+    font-size: 1.3rem;
+}
+.post .meta .comments, .post .meta .shares {
+    font-family: 'Sackers Gothic W01';
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0.5em;
+    display: inline-block !important;
+}
+.post .category {
+    font-family: 'Sackers Gothic W01';
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 8px;
+    font-size: 0.8rem;
+    margin: 0 0 4em 0;
+}
+.post .category a {
+    padding: 1em 0;
+    border-bottom: 2px solid #000;
+}
+.excerpt {
+    padding: 0;
+}
+article .wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

@@ -1,5 +1,5 @@
 <?php theme_include('header'); ?>
-<div id="main" class="site-main col-md-12" role="main">
+<!--<div id="main" class="site-main col-md-12" role="main">
 				<div id="single">
 					<div class="content">
 							<div class="container">
@@ -13,39 +13,92 @@
 							</div>
 					</div>
 				</div>
-			</div>
-<section class="content">
-
+			</div>-->
+<section class="content post">
 	<?php if(has_posts()): ?>
-		<ul class="items">
 			<?php posts(); ?>
-			<li>
 				<article class="wrap">
-					<h1>
-						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					</h1>
-
-					<div class="content">
-						<?php echo article_markdown(); ?>
-					</div>
-
-					<footer>
-						Posted by <?php echo article_author('real_name'); ?>.
-					</footer>
+          <div class="col-md-6">
+            <header class="header post-header">
+              <div class="category">
+                <a href="#"><?php echo article_category();?></a>
+              </div>
+              <h2 class="title">
+                <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+              </h2>
+              <div class="meta">
+                <span class="date"><?php echo article_date(); ?></span>
+                <a class="comments" href="#"><i class="fa fa-comment"></i></a>
+              </div>
+              <div class="excerpt">
+                <p><?php echo article_description(); ?></p>
+              </div>
+              <div class="read-more">
+                <a class="read-more-btn white-btn" href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">continue reading</a>
+              </div>
+            </header>
+          </div>
+  				<div class="col-md-6">
+  					<div class="content">
+  						<?php preg_match_all('/<img[^>]+>/i',article_markdown(), $result); ?>
+              <?php print_r($result[0][0]);?>
+  					</div>
+          </div>
 				</article>
-			</li>
 			<?php $i = 0; while(posts()): ?>
-			<?php $bg = sprintf('background: hsl(215, 28%%, %d%%);', round(((++$i / posts_per_page()) * 20) + 20)); ?>
-			<li style="<?php echo $bg; ?>">
+      <?php if($i == 0):?>
 				<article class="wrap">
-					<h2>
-						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					</h2>
+        <div class="col-md-6 col-md-offset-3">
+          <?php preg_match_all('/<img[^>]+>/i',article_markdown(), $result); ?>
+            <?php //if(isset($result[0][0])) print_r($result[0][0]);?>
+            <header class="header post-header-1">
+              <div class="category">
+                <a href="#"><?php echo article_category();?></a>
+              </div>
+              <h2 class="title">
+                <?php echo article_title(); ?>
+              </h2>
+              <div class="meta">
+                <span class="date"><?php echo article_date(); ?></span>
+                <a class="comments" href="#"><i class="fa fa-comment"></i></a>
+              </div>
+              <div class="excerpt">
+                <p><?php echo article_description(); ?></p>
+              </div>
+              <div class="read-more">
+                <a class="read-more-btn white-btn" href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">continue reading</a>
+              </div>
+            </header>
+            </div>
 				</article>
-			</li>
+      <?php else:?>
+        <article class="wrap">
+        <div class="col-md-6 col-md-offset-3">
+          <?php preg_match_all('/<img[^>]+>/i',article_markdown(), $result); ?>
+            <?php if(isset($result[0][0])) print_r($result[0][0]);?>
+            <header class="header post-header-1">
+              <div class="category">
+                <a href="#"><?php echo article_category();?></a>
+              </div>
+              <h2 class="title">
+                <?php echo article_title(); ?>
+              </h2>
+              <div class="meta">
+                <span class="date"><?php echo article_date(); ?></span>
+                <a class="comments" href="#"><i class="fa fa-comment"></i></a>
+              </div>
+              <div class="excerpt">
+                <p><?php echo article_description(); ?></p>
+              </div>
+              <div class="read-more">
+                <a class="read-more-btn white-btn" href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">continue reading</a>
+              </div>
+            </header>
+            </div>
+        </article>
+      <?php endif;?>
+      <?php $i++;?>
 			<?php endwhile; ?>
-		</ul>
-
 		<?php if(has_pagination()): ?>
 		<nav class="pagination">
 			<div class="wrap">
