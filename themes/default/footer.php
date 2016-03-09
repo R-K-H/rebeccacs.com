@@ -40,9 +40,9 @@
 		</div>
 	</footer>
 		</div>
-		<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+		<script type="text/javascript" src="http://<?php echo $base_url;?>/assets/js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="http://<?php echo $base_url;?>/assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://<?php echo $base_url;?>/assets/js/instafeed.min.js"></script>
 		<script type="text/javascript">
 	    var feed = new Instafeed({
 	        get: 'user',
@@ -53,7 +53,7 @@
 	        limit: 6,
 	        resolution: 'standard_resolution',
 	        clientId: 'e4fca26f6ec747c185a98e84db533f49',
-	        template: '<a class="image overlay-btn col-md-2 col-sm-12 no-gutter" href="{{link}}" target="_blank" onclick="ga(\'send\', \'event\', \'external click\', \'click\', \'instagram\');"><img src="{{image}}" /></a>'
+	        template: '<a class="image overlay-btn col-md-2 col-sm-4 col-xs-4 no-gutter" href="{{link}}" target="_blank" onclick="ga(\'send\', \'event\', \'external click\', \'click\', \'instagram\');"><img src="{{image}}" /></a>'
 	    });
 	    feed.run();
 		</script>

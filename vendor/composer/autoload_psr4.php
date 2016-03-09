@@ -6,4 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
+    'Phroute\\Phroute\\' => array($vendorDir . '/phroute/phroute/src/Phroute'),
+    'League\\Event\\' => array($vendorDir . '/league/event/src'),
+    'EasyCSRF\\' => array($vendorDir . '/gilbitron/easycsrf/src'),
+    'Baun\\' => array($vendorDir . '/bauncms/framework/src'),
+    'BaunPlugin\\BlogRss\\' => array($vendorDir . '/bauncms/baun-blog-rss/src'),
+    'BaunPlugin\\Admin\\' => array($vendorDir . '/bauncms/baun-admin/src'),
 );
