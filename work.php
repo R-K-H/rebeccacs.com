@@ -149,6 +149,9 @@
         max-height:100%;
         width:auto;
     }
+    .lazy {
+    display: none;
+}
 	    </style>
 
 	</head>
@@ -190,7 +193,12 @@
 							
 						</header>
 						<div class="col-md-4 col-md-offset-2">
-							<a href="assets/images/mona-sultan-3.jpg" data-featherlight="image"><img src="assets/images/mona-sultan-3.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+							<a href="assets/images/mona-sultan-3.jpg" data-featherlight="image">
+								<img data-original="assets/images/mona-sultan-3.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+							</a>
+							<noscript>
+							    <img src="assets/images/mona-sultan-3.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+							</noscript>
 						</div>
 						<div class="col-md-4">
 							<p>&nbsp;</p><p>&nbsp;</p>
@@ -207,20 +215,40 @@
 			<div class="container" style="padding-bottom:20px;">
 				<div class="row">
 					<div class="col-md-4 col-md-offset-2">
-						<a href="assets/images/MS-FW15-Campaign-4.jpg" data-featherlight="image"><img src="assets/images/MS-FW15-Campaign-4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/MS-FW15-Campaign-4.jpg" data-featherlight="image">
+							<img data-original="assets/images/MS-FW15-Campaign-4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/MS-FW15-Campaign-4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 					<div class="col-md-4">
-						<a href="assets/images/MS-FW15-Campaign-55.jpg" data-featherlight="image"><img src="assets/images/MS-FW15-Campaign-55.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/MS-FW15-Campaign-55.jpg" data-featherlight="image">
+							<img data-original="assets/images/MS-FW15-Campaign-55.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/MS-FW15-Campaign-55.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-md-offset-2">
-						<a href="assets/images/MS-FW15-Campaign-11.jpg" data-featherlight="image"><img src="assets/images/MS-FW15-Campaign-11.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/MS-FW15-Campaign-11.jpg" data-featherlight="image">
+							<img data-original="assets/images/MS-FW15-Campaign-11.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/MS-FW15-Campaign-11.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 					<div class="col-md-4">
-						<a href="assets/images/MS-FW15-Campaign-1.jpg" data-featherlight="image"><img src="assets/images/MS-FW15-Campaign-1.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/MS-FW15-Campaign-1.jpg" data-featherlight="image">
+							<img data-original="assets/images/MS-FW15-Campaign-1.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/MS-FW15-Campaign-1.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 				</div>
 			</div>
@@ -238,21 +266,30 @@
 							
 						</header>
 						<div class="col-md-4 col-md-offset-2">
-							<a href="assets/images/CTV-mothers-day.png" data-featherlight="image"><img src="assets/images/CTV-mothers-day.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
-              <br><br>
-              <a href="assets/images/CTV-fathers-day-style.png" data-featherlight="image"><img src="assets/images/CTV-fathers-day-style.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+							<a href="assets/images/CTV-mothers-day.png" data-featherlight="image">
+								<img data-original="assets/images/CTV-mothers-day.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+							</a>
+							<noscript>
+							    <img src="assets/images/CTV-mothers-day.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+							</noscript>
+				            <p>&nbsp;</p>
+				            <a href="assets/images/CTV-fathers-day-style.png" data-featherlight="image">
+				            	<img data-original="assets/images/CTV-fathers-day-style.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+				            </a>
+				            <noscript>
+							    <img src="assets/images/CTV-fathers-day-style.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+							</noscript>
 						</div>
 						<div class="col-md-4">
 							<p>&nbsp;</p>
-              <p><a href="http://bc.ctvnews.ca/video?clipId=609063" target="_BLANK" rel="nofollow">Mother's Day Style</a></p>
+				            <p><a href="http://bc.ctvnews.ca/video?clipId=609063" target="_BLANK" rel="nofollow">Mother's Day Style</a></p>
 							<p><a href="http://bc.ctvnews.ca/video?clipId=639387" target="_BLANK" rel="nofollow">Father's Day Style</a></p>
-							
 							<p><a href="http://bc.ctvnews.ca/video?clipId=770601" target="_BLANK" rel="nofollow">Women's Holiday Outfit Ideas</a></p>
-              <p><a href="http://bc.ctvnews.ca/video?clipId=769621" target="_BLANK" rel="nofollow">Men's Holiday Style</a></p>
-              <p><a href="http://bc.ctvnews.ca/video?clipId=733779" target="_BLANK" rel="nofollow">Fall Layering</a></p>
+				            <p><a href="http://bc.ctvnews.ca/video?clipId=769621" target="_BLANK" rel="nofollow">Men's Holiday Style</a></p>
+				            <p><a href="http://bc.ctvnews.ca/video?clipId=733779" target="_BLANK" rel="nofollow">Fall Layering</a></p>
 							<p><a href="http://bc.ctvnews.ca/video?clipId=805667" target="_BLANK" rel="nofollow">Valentine's Day Style</a></p>
-              <p><a href="http://bc.ctvnews.ca/video?clipId=824294" target="_BLANK" rel="nofollow">How to Make Black Not Boring</a></p>
-              <!-- <p><a href="http://bc.ctvnews.ca/video?clipId=777705" target="_BLANK" rel="nofollow">New Year's Eve Style</a></p> -->
+				            <p><a href="http://bc.ctvnews.ca/video?clipId=824294" target="_BLANK" rel="nofollow">How to Make Black Not Boring</a></p>
+				            <!-- <p><a href="http://bc.ctvnews.ca/video?clipId=777705" target="_BLANK" rel="nofollow">New Year's Eve Style</a></p> -->
 							<p></p>
 						</div>
 						<div class="clearfix"></div>
@@ -260,40 +297,64 @@
 				</section>
 			</div>
 			<div class="no-gutter row" style="height:40px;">
-				
 			</div>
-      <div class="container" >
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2" style="padding-bottom:10px;">
-            <a href="assets/images/CTV-holiday-style.png" data-featherlight="image"><img src="assets/images/CTV-holiday-style.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
-          </div>
-        </div>
-      </div>
+		      <div class="container" >
+		        <div class="row">
+		          <div class="col-md-8 col-md-offset-2" style="padding-bottom:10px;">
+		            <a href="assets/images/CTV-holiday-style.png" data-featherlight="image">
+		            	<img data-original="assets/images/CTV-holiday-style.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+		            </a>
+		            <noscript>
+					    <img src="assets/images/CTV-holiday-style.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+					</noscript>
+		          </div>
+		        </div>
+		      </div>
 			<div class="container" style="padding-bottom:10px;">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<a href="assets/images/CTV-mens-fall-layering.png" data-featherlight="image"><img src="assets/images/CTV-mens-fall-layering.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/CTV-mens-fall-layering.png" data-featherlight="image">
+							<img data-original="assets/images/CTV-mens-fall-layering.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/CTV-mens-fall-layering.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 				</div>
 			</div>
-      <div class="container" style="padding-bottom:10px;">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <a href="assets/images/CTV-womens-fall-layering.png" data-featherlight="image"><img src="assets/images/CTV-womens-fall-layering.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
-          </div>
-        </div>
-      </div>
-			<div class="container" style="padding-bottom:10px;">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<a href="assets/images/CTV-valentines-style.png" data-featherlight="image"><img src="assets/images/CTV-valentines-style.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
-					</div>
+	      <div class="container" style="padding-bottom:10px;">
+	        <div class="row">
+	          <div class="col-md-8 col-md-offset-2">
+	            <a href="assets/images/CTV-womens-fall-layering.png" data-featherlight="image">
+	            	<img data-original="assets/images/CTV-womens-fall-layering.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+	            </a>
+	            <noscript>
+				    <img src="assets/images/CTV-womens-fall-layering.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+				</noscript>
+	          </div>
+	        </div>
+	      </div>
+		<div class="container" style="padding-bottom:10px;">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<a href="assets/images/CTV-valentines-style.png" data-featherlight="image">
+						<img data-original="assets/images/CTV-valentines-style.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+					</a>
+					<noscript>
+					    <img src="assets/images/CTV-valentines-style.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+					</noscript>
 				</div>
 			</div>
-			<div class="container" >
+		</div>
+		<div class="container" >
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <a href="assets/images/CTV-how-to-make.png" data-featherlight="image"><img src="assets/images/CTV-how-to-make.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+            <a href="assets/images/CTV-how-to-make.png" data-featherlight="image">
+            <img data-original="assets/images/CTV-how-to-make.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+            </a>
+            <noscript>
+			    <img src="assets/images/CTV-how-to-make.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+			</noscript>
           </div>
         </div>
       </div>
@@ -311,7 +372,12 @@
 							
 						</header>
 						<div class="col-md-4 col-md-offset-2">
-							<a href="assets/images/SG-C3.jpg" data-featherlight="image"><img src="assets/images/SG-C3.jpg" style="width:100%;"></a>
+							<a href="assets/images/SG-C3.jpg" data-featherlight="image">
+							<img data-original="assets/images/SG-C3.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+							</a>
+							<noscript>
+							    <img src="assets/images/SG-C3.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+							</noscript>
 						</div>
 						<div class="col-md-4">
 							<p>&nbsp;</p><p>&nbsp;</p>
@@ -329,14 +395,24 @@
 			<div class="container" style="padding-bottom: 20px;">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<a href="assets/images/SG-C2.jpg" data-featherlight="image"><img src="assets/images/SG-C2.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/SG-C2.jpg" data-featherlight="image">
+							<img data-original="assets/images/SG-C2.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/SG-C2.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<a href="assets/images/SG-C4.jpg" data-featherlight="image"><img src="assets/images/SG-C4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/SG-C4.jpg" data-featherlight="image">
+							<img data-original="assets/images/SG-C4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/SG-C4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 				</div>
 			</div>
@@ -355,11 +431,16 @@
 							
 						</header>
 						<div class="col-md-4 col-md-offset-2">
-							<a href="assets/images/OT-Frankie.jpg" data-featherlight="image"><img src="assets/images/OT-Frankie.jpg" style="width:100%;"></a>
+							<a href="assets/images/OT-Frankie.jpg" data-featherlight="image">
+								<img data-original="assets/images/OT-Frankie.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+							</a>
+							<noscript>
+							    <img src="assets/images/OT-Frankie.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+							</noscript>
 						</div>
 						<div class="col-md-4">
 							<p>&nbsp;</p><p>&nbsp;</p>
-              <p>Photographer _ Brendan Meadows</p>
+              				<p>Photographer _ Brendan Meadows</p>
 							<p></p>
 							<p>Styling _ Rebecca Cordalis-Selvig</p>
 						</div>
@@ -370,42 +451,47 @@
 			<div class="no-gutter row" style="height:40px;">
 				
 			</div>
-      <div class="container">
-        <section id="index">
-          <article class="post">
-            <header class="header post-header">
-              <div class="category">
-                <a href="#">Model</a>
-              </div>
-              <h2 style="title"><a href="#" title>Jenna Burman</a></h2>
-              
-            </header>
-            <div class="col-md-4 col-md-offset-2">
-             
-            </div>
-            <div class="col-md-4">
-              <p>Photographer _ Brendan Meadows</p>
-              <p></p>
-              <p>Styling _ Rebecca Cordalis-Selvig</p>
-            </div>
-            <div class="clearfix"></div>
-          </article>
-        </section>
-      </div>
-      <div class="no-gutter row" style="height:40px;">
-        
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <a href="assets/images/OT-Jenna.jpg" data-featherlight="image"><img src="assets/images/OT-Jenna.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
-          </div>
-        </div>
-      </div>
-      <div class="no-gutter row" style="height:40px;">
-        
-      </div>
-      <div class="container">
+	      <div class="container">
+	        <section id="index">
+	          <article class="post">
+	            <header class="header post-header">
+	              <div class="category">
+	                <a href="#">Model</a>
+	              </div>
+	              <h2 style="title"><a href="#" title>Jenna Burman</a></h2>
+	              
+	            </header>
+	            <div class="col-md-4 col-md-offset-2">
+	             
+	            </div>
+	            <div class="col-md-4">
+	              <p>Photographer _ Brendan Meadows</p>
+	              <p></p>
+	              <p>Styling _ Rebecca Cordalis-Selvig</p>
+	            </div>
+	            <div class="clearfix"></div>
+	          </article>
+	        </section>
+	      </div>
+	      <div class="no-gutter row" style="height:40px;">
+	        
+	      </div>
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-md-8 col-md-offset-2">
+	            <a href="assets/images/OT-Jenna.jpg" data-featherlight="image">
+	            <img data-original="assets/images/OT-Jenna.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+	            </a>
+	            <noscript>
+				    <img src="assets/images/OT-Jenna.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+				</noscript>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="no-gutter row" style="height:40px;">
+	        
+	      </div>
+	      <div class="container">
         <section id="index">
           <article class="post">
             <header class="header post-header">
@@ -434,17 +520,158 @@
 			<div class="container" style="padding-bottom: 20px;">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<a href="assets/images/OT-Coven.jpg" data-featherlight="image"><img src="assets/images/OT-Coven.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/OT-Coven.jpg" data-featherlight="image">
+						<img src="assets/images/OT-Coven.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/OT-Coven.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<a href="assets/images/OT-Treehouse.jpg" data-featherlight="image"><img src="assets/images/OT-Treehouse.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;"></a>
+						<a href="assets/images/OT-Treehouse.jpg" data-featherlight="image">
+						<img src="assets/images/OT-Treehouse.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/OT-Treehouse.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
 					</div>
 				</div>
 			</div>
+			<div class="no-gutter row" style="height:40px;">
+	        
+	      </div>
+	      <!-- -->
+	      <div class="container">
+	        <section id="index">
+	          <article class="post">
+	            <header class="header post-header">
+	              <div class="category">
+	                <a href="#">Editorial</a>
+	              </div>
+	              <h2 style="title"><a href="#" title>Publications</a></h2>
+	              
+	            </header>
+	            <div class="col-md-4 col-md-offset-2">
+	             	<a href="assets/images/EW-13.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-13.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-13.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+	            </div>
+	            <div class="col-md-4">
+	             	<a href="assets/images/EW-14.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-14.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-14.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+	            </div>
+	            <div class="clearfix"></div>
+	          </article>
+	        </section>
+	      </div>
+	      <div class="no-gutter row" style="height:40px;">
+	      </div>
+			<div class="container" style="padding-bottom: 20px;">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<a href="assets/images/EW-16.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-16.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-16.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+					</div>
+					<div class="col-md-4">
+						<a href="assets/images/EW-17.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-17.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-17.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container" style="padding-bottom: 20px;">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<a href="assets/images/EW-18.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-18.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-18.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+					</div>
+					<div class="col-md-4">
+						<a href="assets/images/EW-21.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-21.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-21.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="padding-bottom: 20px;">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<a href="assets/images/EW-19.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-19.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-19.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+					</div>
+					<div class="col-md-4">
+						<a href="assets/images/EW-20.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-20.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-20.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="padding-bottom: 20px;">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<a href="assets/images/EW-2.jpg" data-featherlight="image">
+	             	<img data-original="assets/images/EW-2.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+	             	</a>
+	             	<noscript>
+					    <img src="assets/images/EW-2.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+					</noscript>
+					</div>
+					<div class="col-md-4">
+						<a href="assets/images/EW-12.jpg" data-featherlight="image">
+						<img data-original="assets/images/EW-12.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+						</a>
+						<noscript>
+						    <img src="assets/images/EW-12.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+						</noscript>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="padding-bottom: 20px;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<a href="assets/images/EW-4.jpg" data-featherlight="image">
+	             	<img data-original="assets/images/EW-4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+	             	</a>
+	             	<noscript>
+					    <img src="assets/images/EW-4.jpg" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+					</noscript>
+					</div>
+				</div>
+			</div>
+			
+
 			<footer style="min-height: 50px;">
 			</footer>
 			<a href="#" class="scrollup">Top</a>
@@ -453,6 +680,7 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 		<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/assets/js/jquery.lazyload.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
 
@@ -480,12 +708,16 @@
           var $flc = $(".featherlight-content");
           $flc.css('height',$flc.height()+'px');
       };
-			
+      $("img.lazy").show().lazyload();
+			$("img.lazy").lazyload({
+			    threshold : 200,
+			    effect : "fadeIn"
+			});
 		  // Google Script
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 		  ga('create', 'UA-68144791-1', 'auto');
 		  ga('send', 'pageview');
