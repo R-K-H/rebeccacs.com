@@ -597,7 +597,18 @@
 					</div>
 				</div>
 			</div>
-			
+			<div class="container" style="padding-bottom: 20px;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<a href="assets/images/EW-5.png" data-featherlight="image">
+	             	<img data-original="assets/images/EW-5.png" class="attachment-post_portrait size-post_portrait wp-post-image lazy" style="width:100%;">
+	             	</a>
+	             	<noscript>
+					    <img src="assets/images/EW-5.png" class="attachment-post_portrait size-post_portrait wp-post-image" style="width:100%;">
+					</noscript>
+					</div>
+				</div>
+			</div>
 			<div class="container" style="padding-bottom: 20px;">
 				<div class="row">
 					<div class="col-md-4 col-md-offset-2">
