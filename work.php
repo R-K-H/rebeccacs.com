@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/font.css">
 		<link rel="icon" href="/assets/img/favicon.png" type="image/png">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -25,6 +26,10 @@
 		<meta name="p:domain_verify" content="ffee7fb519a29b809227451780ce6bab"/>
 
 		<link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="/assets/js/slick/slick-theme.css">
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		
 
 	    <style type="text/css">
 		    #collage-img {
@@ -152,6 +157,42 @@
     .lazy {
     display: none;
 }
+.image {
+	height:700px;
+}
+.image img {
+	height:700px;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: #000;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.next {
+	right: -25px;
+}
+.prev {
+	left: -25px;
+}
+.slick-slide {
+	display: none !important;
+}
+.slick-active {
+	display: block !important;
+}
+.arrows {
+	font-size: 25pt;
+	font-family: 'ArrrowsRegular';
+}
 	    </style>
 
 	</head>
@@ -180,9 +221,27 @@
 				</div>
 			</header>
 			<div class="no-gutter row">
-				
-			</div>	
+			</div>
 			<div class="container">
+				<div class="your-class">
+					<div class="image">
+						<img src="assets/images/MS-FW15-Campaign-1.jpg">
+					</div>
+					<div class="image">
+						<img src="assets/images/MS-FW15-Campaign-4.jpg">
+						</div>
+					<div class="image">
+						<img src="assets/images/MS-FW15-Campaign-55.jpg">
+					</div>
+					<div class="image">
+						<img src="assets/images/MS-FW15-Campaign-11.jpg">
+					</div>
+					<div class="image">
+						<img src="assets/images/mona-sultan-3.jpg">
+					</div>
+				</div>
+			</div>
+			<!--<div class="container">
 				<section id="index">
 					<article class="post">
 						<header class="header post-header">
@@ -253,7 +312,7 @@
 				</div>
 			</div>
 			<div class="no-gutter row" style="height:60px;">
-				
+				<!--
 			</div>
 			<div class="container">
 				<section id="index">
@@ -290,7 +349,7 @@
 							<p><a href="http://bc.ctvnews.ca/video?clipId=805667" target="_BLANK" rel="nofollow">Valentine's Day Style</a></p>
 				            <p><a href="http://bc.ctvnews.ca/video?clipId=824294" target="_BLANK" rel="nofollow">How to Make Black Not Boring</a></p>
 				            <!-- <p><a href="http://bc.ctvnews.ca/video?clipId=777705" target="_BLANK" rel="nofollow">New Year's Eve Style</a></p> -->
-							<p></p>
+							<!--<p></p>
 						</div>
 						<div class="clearfix"></div>
 					</article>
@@ -417,7 +476,7 @@
 				</div>
 			</div>
 			<!-- -->
-			<div class="no-gutter row" style="height:60px;">
+			<!--<div class="no-gutter row" style="height:60px;">
 				
 			</div>
 			<div class="container">
@@ -545,6 +604,7 @@
 	        
 	      </div>
 	      <!-- -->
+	      <!--
 	      <div class="container">
 	        <section id="index">
 	          <article class="post">
@@ -680,12 +740,12 @@
 					</noscript>
 					</div>
 				</div>
-			</div>
+			</div>-->
 			
 
 			<footer style="min-height: 50px;">
 			</footer>
-			<a href="#" class="scrollup">Top</a>
+			<!--<a href="#" class="scrollup">Top</a>-->
 		</div>
 		
 		<!-- Latest compiled and minified JavaScript -->
@@ -693,37 +753,51 @@
 		<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="/assets/js/jquery.lazyload.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function () {
+			// $(document).ready(function () {
 
-			    $(window).scroll(function () {
-			        if ($(this).scrollTop() > 100) {
-			            $('.scrollup').fadeIn();
-			        } else {
-			            $('.scrollup').fadeOut();
-			        }
-			    });
+			//     $(window).scroll(function () {
+			//         if ($(this).scrollTop() > 100) {
+			//             $('.scrollup').fadeIn();
+			//         } else {
+			//             $('.scrollup').fadeOut();
+			//         }
+			//     });
 
-			    $('.scrollup').click(function () {
-			        $("html, body").animate({
-			            scrollTop: 0
-			        }, 600);
-			        return false;
-			    });
+			//     $('.scrollup').click(function () {
+			//         $("html, body").animate({
+			//             scrollTop: 0
+			//         }, 600);
+			//         return false;
+			//     });
 
+			// });
+			// $.featherlight.defaults.afterClose = function(){
+   //        $(".featherlight-content").css('height','');
+   //    };
+
+   //    $.featherlight.defaults.afterOpen = function resizeFeatherlight(){
+   //        var $flc = $(".featherlight-content");
+   //        $flc.css('height',$flc.height()+'px');
+   //    };
+      $(document).ready(function(){
+		  $('.your-class').slick({
+		  	centerMode: true,
+  			centerPadding: '60px',
+  			variableWidth: true,
+  			slidesToShow: 1,
+  			cssEase: 'none',
+  			easing: 'none',
+  			speed: 1,
+  			adaptiveHeight: true,
+  			nextArrow: '<div class="slick-arrow next"><span class="arrows">r</span></div>',
+  			prevArrow: '<div class="slick-arrow prev"><span class="arrows">R</span></div>'
 			});
-			$.featherlight.defaults.afterClose = function(){
-          $(".featherlight-content").css('height','');
-      };
-
-      $.featherlight.defaults.afterOpen = function resizeFeatherlight(){
-          var $flc = $(".featherlight-content");
-          $flc.css('height',$flc.height()+'px');
-      };
-      $("img.lazy").show().lazyload();
-			$("img.lazy").lazyload({
-			    threshold : 200,
-			    effect : "fadeIn"
-			});
+		});
+   //    $("img.lazy").show().lazyload();
+			// $("img.lazy").lazyload({
+			//     threshold : 200,
+			//     effect : "fadeIn"
+			// });
 		  // Google Script
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
