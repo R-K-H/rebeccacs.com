@@ -2,12 +2,12 @@
 	<head>
 		<title>Rebecca Cordalis-Selvig | Fashion Editorial Stylist</title>
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 		<link rel="icon" href="/assets/img/favicon.png" type="image/png">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="generator" content="RCSELVIG">
@@ -15,7 +15,7 @@
 		<meta property="og:title" content="Rebecca Cordalis-Selvig | Fashion Editorial Stylist">
 	    <meta property="og:type" content="website">
 	    <meta property="og:url" content="rebeccacs.com">
-	    <meta property="og:image" content="http://rebeccacs.com/assets/img/rebeccacs-main-pic-xl.jpg">
+	    <meta property="og:image" content="//rebeccacs.com/assets/img/rebeccacs-main-pic-xl.jpg">
 	    <meta property="og:site_name" content="Rebecca Cordalis-Selvig | Fashion Editorial Stylist">
 
 	    <meta name="description" content="Disrupting fashion." />
@@ -110,7 +110,7 @@
 			<div class="no-gutter row">
 				<img id="main-img" style="max-width:4066px; margin:auto; width:100%;" alt="rebecca cordalis-selvig"  class="img-responsive"/>
 				<noscript>
-					<img src="assets/img/rebeccacs-main-pic.jpg" style="max-width:2400px; margin:auto; width:100%;" alt="rebecca cordalis-selvig"  class="img-responsive"/>
+					<img src="assets/images/rebeccacs-main-pic.jpg" style="max-width:2400px; margin:auto; width:100%;" alt="rebecca cordalis-selvig"  class="img-responsive"/>
 				</noscript>
 			</div>
 			<div class="container">
@@ -137,7 +137,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 contact-form">
-						<img id="contact-img" src="assets/img/contact-me.jpg" alt="contact me" class="img-responsive" />
+						<img id="contact-img" src="assets/images/contact-me.jpg" alt="contact me" class="img-responsive" />
 					</div>
 					<div class="col-sm-8 contact-form">
 						<div id="alert-area">
@@ -171,56 +171,53 @@
 		</div>
 		
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
-<!-- 		<script type="text/javascript" src="assets/js/smooth.js"></script> -->
 		<script type="text/javascript">
-			 // $(document).ready(function(){
-    //         $("body").smoothWheel()
-    //     });
+
 
 			$(document).ready(function() {
 				if ($(window).width() <= 640) {
-						$('#contact-img').attr("src", "assets/img/contact-me-down.jpg");
-						$('#main-img').attr("src", "assets/img/rebeccacs-main-pic.jpg");
+						$('#contact-img').attr("src", "assets/images/contact-me-down.jpg");
+						$('#main-img').attr("src", "assets/images/rebeccacs-main-pic.jpg");
 				} else {
 					if ($(window).width() <= 1200) {
 					    if(isMobile) {
-							$('#contact-img').attr("src", "assets/img/contact-me-down.jpg");
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic.jpg");
+							$('#contact-img').attr("src", "assets/images/contact-me-down.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic.jpg");
 						} else {
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic-lg.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic-lg.jpg");
 						}
 					} else {
 					    if(isMobile) {
-							$('#contact-img').attr("src", "assets/img/contact-me-down.jpg");
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic.jpg");
+							$('#contact-img').attr("src", "assets/images/contact-me-down.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic.jpg");
 						} else {
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic-xl.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic-xl.jpg");
 						}
 					}
 				}
 			});
 		 	$(window).resize(function() {
 		 		if ($(window).width() <= 640) {
-						$('#contact-img').attr("src", "assets/img/contact-me-down.jpg");
-						$('#main-img').attr("src", "assets/img/rebeccacs-main-pic.jpg");
+						$('#contact-img').attr("src", "assets/images/contact-me-down.jpg");
+						$('#main-img').attr("src", "assets/images/rebeccacs-main-pic.jpg");
 				} else {
 					if ($(window).width() <= 1200) {
 					    if(isMobile) {
-							$('#contact-img').attr("src", "assets/img/contact-me-down.jpg");
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic.jpg");
+							$('#contact-img').attr("src", "assets/images/contact-me-down.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic.jpg");
 						} else {
-							$('#contact-img').attr("src", "assets/img/contact-me.jpg");
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic-lg.jpg");
+							$('#contact-img').attr("src", "assets/images/contact-me.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic-lg.jpg");
 						}
 					} else {
 					    if(isMobile) {
-							$('#contact-img').attr("src", "assets/img/contact-me-down.jpg");
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic.jpg");
+							$('#contact-img').attr("src", "assets/images/contact-me-down.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic.jpg");
 						} else {
-							$('#contact-img').attr("src", "assets/img/contact-me.jpg");
-							$('#main-img').attr("src", "assets/img/rebeccacs-main-pic-xl.jpg");
+							$('#contact-img').attr("src", "assets/images/contact-me.jpg");
+							$('#main-img').attr("src", "assets/images/rebeccacs-main-pic-xl.jpg");
 						}
 					}
 				}
@@ -266,7 +263,7 @@
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		  ga('create', 'UA-68144791-1', 'auto');
 		  ga('send', 'pageview');
