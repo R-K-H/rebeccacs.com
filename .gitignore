@@ -6,12 +6,8 @@ Thumbs.db
 *.gz
 
 # env
-/anchor/config/dev
 
 # generated config
-/anchor/config/app.php
-/anchor/config/db.php
-/anchor/config/session.php
 
 # user mod_rewrite
 /.htaccess
@@ -40,3 +36,5 @@ robots.txt
 humans.txt
 
 logs.txt
+composer.phar
+vendor/*
