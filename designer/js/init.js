@@ -1016,7 +1016,7 @@ function Variant() {
         $this.attr("data-title", $this.find("img").attr("alt"));
       }
       if ("img/" == src.substring(0, 4)) {
-        src = src.replace("img/", "../img/");
+        src = src.replace("../img/", "img/");
       }
     }
     $this.removeClass("inner-link").attr("href", src).attr("target", _tmp);
@@ -1033,7 +1033,7 @@ function Variant() {
     var $this = $("." + $(".vck").val());
     refreshTarget = $(".vck").val();
     if ("img/" == src.substring(0, 4)) {
-      src = src.replace("img/", "../img/");
+      src = src.replace("../img/", "img/");
     }
     $this.attr("src", src);
     $this.attr("alt", $(".vcf").val());
@@ -1312,7 +1312,7 @@ function Variant() {
     for (;file = files[_k];_k++) {
       if (!$('#vdp [vis="' + file.name + '"]').length) {
         $('#vdp [vis="' + file.name + '"]').remove();
-        $(elem).append('<div class="vdy"><img class="vcj" src="../img/' + file.name + '" vis="' + file.name + '" onerror="window.mr_variant.chooserImageError(this)"/><span class="vjn"></span><span class="vec"></span></div>');
+        $(elem).append('<div class="vdy"><img class="vcj" src="img/' + file.name + '" vis="' + file.name + '" onerror="window.mr_variant.chooserImageError(this)"/><span class="vjn"></span><span class="vec"></span></div>');
       }
       elem = $(elem).is(".vdx .vmh:last") ? $(".vdx .vmh:first") : $(elem).next(".vdx .vmh");
     }
@@ -1341,7 +1341,7 @@ function Variant() {
       var asserterNames = $(".vdz").attr("vbv").split(",");
       asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
         /** @type {string} */
-        li = '<div class="vdy"><img class="vcj" delay-src="../img/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
+        li = '<div class="vdy"><img class="vcj" delay-src="img/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
         if (deepDataAndEvents % 3 === 0) {
           ul.append(li);
         } else {
@@ -1369,7 +1369,7 @@ function Variant() {
   function display(context) {
     var icon = $(context).find("img");
     icon.attr("src", "");
-    icon.attr("src", "../img/" + icon.attr("vis"));
+    icon.attr("src", "img/" + icon.attr("vis"));
     icon.css("display", "inline");
     $(context).removeClass("no-image");
     $(context).find(".vjn, .vec").html("");
