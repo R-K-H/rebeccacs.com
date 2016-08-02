@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-		<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+		<link rel="icon" href="/assets/images/favicon.png" type="image/png">
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -15,7 +15,7 @@
 		<meta property="og:title" content="Rebecca Cordalis-Selvig | Fashion Editorial Stylist">
 	    <meta property="og:type" content="website">
 	    <meta property="og:url" content="rebeccacs.com">
-	    <meta property="og:image" content="//rebeccacs.com/assets/img/rebeccacs-main-pic-xl.jpg">
+	    <meta property="og:image" content="//rebeccacs.com/assets/images/rebeccacs-main-pic-xl.jpg">
 	    <meta property="og:site_name" content="Rebecca Cordalis-Selvig | Fashion Editorial Stylist">
 
 	    <meta name="description" content="Disrupting fashion." />
