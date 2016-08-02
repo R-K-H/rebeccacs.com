@@ -1,3 +1,5 @@
+<?php require_once __DIR__.'/vendor/autoload.php'; ?>
+
 <html>
 	<head>
 		<title>Rebecca Cordalis-Selvig | Fashion Editorial Stylist</title>
@@ -102,7 +104,7 @@
 						<nav class="main-navigation navigation">
 							<ul id="menu-main" class="clearfix menu">
 								<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com">Home</a></li>
-								<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com/work">work</a></li>
+								<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com/work">Work</a></li>
 							</ul>
 						</nav>
 				</div>
