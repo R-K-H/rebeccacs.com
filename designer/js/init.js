@@ -3701,7 +3701,7 @@ function Variant() {
       $.ajax({
         url: 'blog/create.php',
         type: 'post',
-        data: {'content': output},
+        data: {'content': page},
         success: function(data, status) {
           console.log(data);
         },

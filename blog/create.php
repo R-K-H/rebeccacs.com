@@ -1,6 +1,8 @@
 <?php
-ini_set('display_errors',1);
-error_reporting(E_ALL);
+
+
+// ini_set('display_errors',1);
+// error_reporting(E_ALL);
 $basedir = dirname(__FILE__); 
 
 $content = $_POST['page'];
@@ -8,6 +10,7 @@ $title = $_POST['title'];
 $redirect = true;
 
 if(isset($_POST['content']) && $_POST['content'] != null) {
+	header('Content-type: application/json');
 	$payload = $_POST['content'];
 	$content = $payload[0];
 	$title = $payload[1];
@@ -16,7 +19,10 @@ if(isset($_POST['content']) && $_POST['content'] != null) {
 
 $cleanTitle = urlencode ($title);
 $myfile = fopen($basedir . DIRECTORY_SEPARATOR . $title.'.html', 'w+') or die("Unable to open file!");
-fwrite($myfile, $content);
+if(fwrite($myfile, $content)) {
+	$response_array['status'] = 'success'; 
+}
+
 fclose($myfile);
 
 if($redirect) {
@@ -24,4 +30,4 @@ if($redirect) {
 	header('Location: http://rebeccacs.com/blog/'.$title.'.html'); /* Redirect browser to new page */
 }
 
-echo "Page Created";
+echo json_encode($response_array);
