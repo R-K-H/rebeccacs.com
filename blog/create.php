@@ -11,7 +11,7 @@ header('Content-type: application/json');
 $response_array['status'] = 'error'; 
 $response_array['data'] = $_POST['content'];
 
-if(isset($_POST['content'])) {
+if(!isset($_POST['content'])) {
 	header('Content-type: application/json');
 	$payload = $_POST['content'];
 
