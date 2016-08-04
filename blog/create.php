@@ -6,13 +6,16 @@ $basedir = dirname(__FILE__);
 $content = $_POST['page'];
 $title = $_POST['title'];
 $redirect = true;
-$response_array['status'] = 'failure'; 
+$response_array['status'] = 'error'; 
 
 if(isset($_POST['content']) && $_POST['content'] != null) {
 	header('Content-type: application/json');
 	$payload = $_POST['content'];
+
 	$content = $payload[0];
 	$title = $payload[1];
+
+	$response_array['data'] = $title;
 	$redirect = false;
 }
 
