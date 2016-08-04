@@ -1,6 +1,4 @@
 <?php
-
-
 // ini_set('display_errors',1);
 // error_reporting(E_ALL);
 $basedir = dirname(__FILE__); 
@@ -8,6 +6,7 @@ $basedir = dirname(__FILE__);
 $content = $_POST['page'];
 $title = $_POST['title'];
 $redirect = true;
+$response_array['status'] = 'failure'; 
 
 if(isset($_POST['content']) && $_POST['content'] != null) {
 	header('Content-type: application/json');
