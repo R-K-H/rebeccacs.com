@@ -3699,7 +3699,7 @@ function Variant() {
       // xhttp.send("content="+output);
 
       $.ajax({
-        url: 'http://rebeccacs.com/blog/create.php',
+        url: 'blog/create.php',
         type: 'post',
         data: {'content': output},
         success: function(data, status) {
