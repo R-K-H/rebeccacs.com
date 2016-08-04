@@ -200,7 +200,7 @@
 						<div class="vls">
 						
 							<div class="vdq">
-								<span class="vhq">Get HTML</span>
+								<span class="vhq">Create Blog Post</span>
 							</div>		
 							
 						</div>
