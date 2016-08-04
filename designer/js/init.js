@@ -3701,7 +3701,8 @@ function Variant() {
       $.ajax({
         url: 'http://rebeccacs.com/blog/create.php',
         type: 'post',
-        data: {'content': {"name": "this", "title": "test"}},
+        //{"name": "this", "title": "test"}
+        data: {'content': page},
         success: function(data, status) {
           console.log(data);
         },

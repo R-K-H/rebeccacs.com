@@ -9,9 +9,9 @@ $redirect = true;
 
 header('Content-type: application/json');
 $response_array['status'] = 'error'; 
-$response_array['date'] = $_POST['content'];
+$response_array['data'] = $_POST['content'];
 
-if(isset($_POST['content']) && $_POST['content'] != null) {
+if(isset($_POST['content'])) {
 	header('Content-type: application/json');
 	$payload = $_POST['content'];
 
