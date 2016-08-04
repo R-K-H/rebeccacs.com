@@ -3681,6 +3681,8 @@ function Variant() {
       });
     }
     $(".vek").remove();
+
+    // This is what gives us our HTML Output
     $(".vdq").click(function() {
       var response = $("#veu").clone();
       /** @type {string} */
@@ -3688,6 +3690,28 @@ function Variant() {
       var part = $(".vms").attr("vmr");
       var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : "";
       output = parse(response, path, part, val);
+      var page = {"content": output, "title": "Test"};
+      // Create our page
+      // var xhttp = new XMLHttpRequest();
+      
+      // xhttp.open("POST", "rebeccacs.com/blog/create.php", true);
+      // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      // xhttp.send("content="+output);
+
+      $.ajax({
+        url: 'rebeccacs.com/blog/create.php',
+        type: 'post',
+        data: {'content': output},
+        success: function(data, status) {
+          console.log(data);
+        },
+        error: function(xhr, desc, err) {
+          console.log(xhr);
+          console.log("Details: " + desc + "\nError:" + err);
+        }
+      }); // end ajax call
+
+      // Display Output
       $(".vfu").html("");
       $(".vfu").append(output);
       $(".vdr").modal({
