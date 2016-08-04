@@ -3702,7 +3702,7 @@ function Variant() {
         url: 'http://rebeccacs.com/blog/create.php',
         type: 'post',
         //{"name": "this", "title": "test"}
-        data: {'content': page},
+        data: {'content': output},
         success: function(data, status) {
           console.log(data);
         },
