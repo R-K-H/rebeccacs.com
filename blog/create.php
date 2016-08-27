@@ -19,8 +19,9 @@
 	$cleanTitle = urlencode ($title);
 	
 	if( ($myfile = fopen($basedir . DIRECTORY_SEPARATOR . $title.'.html', 'w+')) ) {
-		$response_array['status'] = 'create file'; 
-		if(fwrite($myfile, $content)) {
+		$response_array['status'] = 'create file';
+		$decodedContent = html_entity_decode($content);
+		if(fwrite($myfile, $decodedContent)) {
 			$response_array['status'] = 'success';
 		}
 		fclose($myfile);
