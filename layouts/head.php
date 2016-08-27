@@ -29,7 +29,6 @@
 
 		<link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="/assets/js/slick/slick-theme.css">
 		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 		<script type="text/javascript" src="/assets/js/mobile.js"></script>
 
