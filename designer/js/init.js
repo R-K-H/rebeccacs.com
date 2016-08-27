@@ -1301,8 +1301,8 @@ function Variant() {
     var _k;
     var file;
     var elem;
-    var files = evt.target.files;
-    files = "";
+    //var files = evt.target.files;
+    var files = 0;
     elem = $(".vdx .vmh").first();
     if (elem.children().length > elem.next(".vdx .vmh").children().length) {
       elem = elem.next(".vdx .vmh");
