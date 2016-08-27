@@ -1344,7 +1344,7 @@ function Variant() {
       var asserterNames = $(".vdz").attr("vbv").split(",");
       asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
         /** @type {string} */
-        li = '<div class="vdy"><img class="vcj" delay-src="img/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
+        li = '<div class="vdy"><img class="vcj" delay-src="/assets/images/uploads/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
         if (deepDataAndEvents % 3 === 0) {
           ul.append(li);
         } else {
