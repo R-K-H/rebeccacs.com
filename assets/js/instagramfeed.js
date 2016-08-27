@@ -8,6 +8,6 @@ var feed = new Instafeed({
     limit: 6,
     resolution: 'standard_resolution',
     clientId: 'e4fca26f6ec747c185a98e84db533f49',
-    template: '<a class="image overlay-btn col-md-2 col-sm-4 no-gutter" href="{{link}}" target="_blank" onclick="ga(\'send\', \'event\', \'external click\', \'click\', \'instagram\');"><img src="{{image}}" /></a>'
+    template: '<a class="image-1 overlay-btn col-md-2 col-sm-4 no-gutter" href="{{link}}" target="_blank" onclick="ga(\'send\', \'event\', \'external click\', \'click\', \'instagram\');"><img src="{{image}}" /></a>'
 });
 feed.run();
