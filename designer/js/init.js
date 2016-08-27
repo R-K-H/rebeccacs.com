@@ -3684,21 +3684,17 @@ function Variant() {
 
     // This is what gives us our HTML Output
     $(".vdq").click(function() {
-      console.log('clicked')
       var response = $("#veu").clone();
-      console.log(response);
+      console.log(response); // This works
       /** @type {string} */
       var path = document.title;
       console.log(path);
-      
-      var part = $(".vms").attr("vmr");
+      var part = $(".vms").attr("vmr"); // Getting font undefined.
       console.log(part);
-      var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : "";
+      var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
       console.log(val);
       output = parse(response, path, part, val);
-      console.log(output);
-      var page = {"content": output, "title": "Test"};
-      console.log(page);
+      console.log(output); // This is the content
       // Create our page
       // var xhttp = new XMLHttpRequest();
       
@@ -3710,7 +3706,7 @@ function Variant() {
         url: 'http://rebeccacs.com/blog/create.php',
         type: 'post',
         //{"name": "this", "title": "test"}
-        data: {'content': 'one'},
+        data: {'content': output, 'title': path},
         success: function(data, status) {
           console.log(data);
         },

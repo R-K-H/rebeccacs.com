@@ -13,10 +13,8 @@ $response_array['data'] = $_POST['content'];
 
 if(!isset($_POST['content'])) {
 	header('Content-type: application/json');
-	$payload = $_POST['content'];
-
-	$content = $payload[0];
-	$title = $payload[1];
+	$content = $_POST['content'];
+	$title = $_POST['title'];
 
 	$response_array['data'] = $title;
 	$redirect = false;
