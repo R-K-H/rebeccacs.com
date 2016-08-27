@@ -2,7 +2,8 @@
 $ds          = DIRECTORY_SEPARATOR;  //1
 $path = $_SERVER['DOCUMENT_ROOT'];
 $storeFolder = 'uploads';   //2
- 
+$response_array['status'] = 'error'; 
+$response_array['data'] = '404';
 if (!empty($_FILES)) {
      
     $tempFile = $_FILES['file']['tmp_name'];          //3             
@@ -11,6 +12,8 @@ if (!empty($_FILES)) {
      
     $targetFile =  $targetPath. $_FILES['file']['name'];  //5
  
-    move_uploaded_file($tempFile,$targetFile); //6
+    if(move_uploaded_file($tempFile,$targetFile)) {
+    	echo json_encode($response_array); //6
+	}
      
 }
