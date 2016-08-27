@@ -2771,7 +2771,7 @@ function Variant() {
     /** @type {string} */
     var mh = "10px";
     /** @type {boolean} */
-    var l = el && "img" === if(el.prop("tagName").length) {el.prop("tagName").toLowerCase() ? true : false} else {false};
+    var l = el && "img" === (el.prop("tagName").length === 0 ? (el.prop("tagName").toLowerCase() ? true : false) : false);
     /** @type {boolean} */
     var m = el && "absolute" === el.css("position") ? true : false;
     node = add("image", "Edit Image", suiteView, value);
