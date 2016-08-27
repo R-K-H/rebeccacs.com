@@ -3685,23 +3685,12 @@ function Variant() {
     // This is what gives us our HTML Output
     $(".vdq").click(function() {
       var response = $("#veu").clone();
-      console.log(response); // This works
       /** @type {string} */
       var path = document.title;
-      console.log(path);
       var part = $(".vms").attr("vmr"); // Getting font undefined.
-      console.log(part);
       var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
-      console.log(val);
       output = parse(response, path, part, val);
-      console.log(output); // This is the content
       // Create our page
-      // var xhttp = new XMLHttpRequest();
-      
-      // xhttp.open("POST", "rebeccacs.com/blog/create.php", true);
-      // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-      // xhttp.send("content="+output);
-
       $.ajax({
         url: 'http://rebeccacs.com/blog/create.php',
         type: 'post',
@@ -3715,56 +3704,6 @@ function Variant() {
           console.log("Details: " + desc + "\nError:" + err);
         }
       }); // end ajax call
-
-      // Display Output
-      // $(".vfu").html("");
-      // $(".vfu").append(output);
-      // $(".vdr").modal({
-      //   autoResize : true,
-      //   overlayClose : true,
-      //   opacity : 0,
-      //   overlayCss : {
-      //     "background-color" : "#3e3e3e"
-      //   },
-      //   closeClass : "vex",
-      //   /**
-      //    * @return {undefined}
-      //    */
-      //   onShow : function() {
-      //     switch(window.location.protocol) {
-      //       case "http:":
-      //       ;
-      //       case "https:":
-      //       ;
-      //       case "file:":
-      //         $(".vgn").click(function() {
-      //           $(".vfu").select();
-      //         });
-      //         $(".vgn").show();
-      //         $(".code-copy-simple").show();
-      //         $(".vfu").select();
-      //     }
-      //     setTimeout(function() {
-      //       $(".simplemodal-container").addClass("vko");
-      //       $(".simplemodal-overlay").addClass("vko");
-      //     }, 100);
-      //     resize();
-      //   },
-      //   /**
-      //    * @return {undefined}
-      //    */
-      //   onClose : function() {
-      //     setTimeout(function() {
-      //       $.modal.close();
-      //       resize();
-      //     }, 300);
-      //     $(".simplemodal-container").removeClass("vko");
-      //     $(".simplemodal-overlay").removeClass("vko");
-      //   }
-      // });
-      // if ("" != $.localStorage(name + ".vbu")) {
-      //   $.localStorage(name + ".vbu", $("#image-edit-chooser").attr("vbv"));
-      // }
     });
     $(".vgy").click(function() {
       var blob;
