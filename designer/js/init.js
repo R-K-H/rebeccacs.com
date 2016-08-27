@@ -511,6 +511,7 @@ function Variant() {
         $(".vck").val(result);
         $(".vcf").val($("." + result).attr("alt"));
         $(".vdx .vdy").each(function(el) {
+          // Dealing with the upload images.
           el = $(this).find("img").get(0);
           var script = $(this).find(".vec");
           script.text(el.naturalWidth + "x" + el.naturalHeight);
@@ -1294,6 +1295,7 @@ function Variant() {
   /**
    * @param {Event} evt
    * @return {undefined}
+   * This is our file viewer.
    */
   function nav(evt) {
     var _k;
@@ -3666,6 +3668,7 @@ function Variant() {
     $(".vcp").click(function() {
       $(".vhp").trigger("click");
     });
+    // Matches to nav(etv) to get files.
     $(".vch").change(function(err) {
       nav(err);
     });
