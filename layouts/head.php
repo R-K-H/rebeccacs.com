@@ -148,52 +148,52 @@
 			    bottom: 10%;
 			    right: 15%;
 			    display: none;
-          background-color: #fff;
+          		background-color: #fff;
 			}
-      .featherlight .featherlight-image{
-        max-width:100%;
-        max-height:100%;
-        width:auto;
-	    }
-	    .lazy {
-	    display: none;
-		}
-		.image {
-			height:700px;
-		}
-		.image img {
-			height:700px;
-		}
-		.slick-arrow {
-		    position: absolute;
-		    top: 50%;
-		    display: block;
-		    width: 20px;
-		    height: 20px;
-		    margin-top: -10px;
-		    padding: 0;
-		    cursor: pointer;
-		    color: #000;
-		    border: none;
-		    outline: none;
-		    background: transparent;
-		}
-		.next {
-			right: -25px;
-		}
-		.prev {
-			left: -25px;
-		}
-		.slick-slide {
-			display: none !important;
-		}
-		.slick-active {
-			display: block !important;
-		}
-		.arrows {
-			font-size: 25pt;
-			font-family: 'ArrrowsRegular';
-		}
+	      .featherlight .featherlight-image{
+	        max-width:100%;
+	        max-height:100%;
+	        width:auto;
+		    }
+		    .lazy {
+		    display: none;
+			}
+			.image-1 {
+				height:700px;
+			}
+			.image-1 img {
+				height:700px;
+			}
+			.slick-arrow {
+			    position: absolute;
+			    top: 50%;
+			    display: block;
+			    width: 20px;
+			    height: 20px;
+			    margin-top: -10px;
+			    padding: 0;
+			    cursor: pointer;
+			    color: #000;
+			    border: none;
+			    outline: none;
+			    background: transparent;
+			}
+			.next {
+				right: -25px;
+			}
+			.prev {
+				left: -25px;
+			}
+			.slick-slide {
+				display: none !important;
+			}
+			.slick-active {
+				display: block !important;
+			}
+			.arrows {
+				font-size: 25pt;
+				font-family: 'ArrrowsRegular';
+			}
 	    </style>
 
 	</head>
