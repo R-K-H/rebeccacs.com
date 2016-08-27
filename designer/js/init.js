@@ -3686,12 +3686,19 @@ function Variant() {
     $(".vdq").click(function() {
       console.log('clicked')
       var response = $("#veu").clone();
+      console.log(response);
       /** @type {string} */
       var path = document.title;
+      console.log(path);
+      
       var part = $(".vms").attr("vmr");
+      console.log(part);
       var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : "";
+      console.log(val);
       output = parse(response, path, part, val);
+      console.log(output);
       var page = {"content": output, "title": "Test"};
+      console.log(page);
       // Create our page
       // var xhttp = new XMLHttpRequest();
       
@@ -3703,7 +3710,7 @@ function Variant() {
         url: 'http://rebeccacs.com/blog/create.php',
         type: 'post',
         //{"name": "this", "title": "test"}
-        data: {'content': output},
+        data: {'content': 'one'},
         success: function(data, status) {
           console.log(data);
         },

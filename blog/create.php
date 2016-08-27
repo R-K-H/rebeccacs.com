@@ -3,9 +3,9 @@
 // error_reporting(E_ALL);
 $basedir = dirname(__FILE__); 
 
-$content = $_POST['page'];
-$title = $_POST['title'];
-$redirect = true;
+//$content = $_POST['page'];
+//$title = $_POST['title'];
+$redirect = false;
 
 header('Content-type: application/json');
 $response_array['status'] = 'error'; 
