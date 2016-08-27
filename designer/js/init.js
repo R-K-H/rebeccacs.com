@@ -1301,8 +1301,7 @@ function Variant() {
     var _k;
     var file;
     var elem;
-    //var files = evt.target.files;
-    var files = 0;
+    var files = evt.target.files;
     elem = $(".vdx .vmh").first();
     if (elem.children().length > elem.next(".vdx .vmh").children().length) {
       elem = elem.next(".vdx .vmh");
@@ -1330,17 +1329,17 @@ function Variant() {
     var ul = $("<div />").addClass("vmh");
     /** @type {string} */
     var li = "";
-    if ($.localStorage(name + ".gallery.images")) {
-      $("#vdp").html($.localStorage(name + ".gallery.images"));
-      $("#vdp div").each(function() {
-        if (!$(this).find("img").length) {
-          $(this).remove();
-        }
-        if ($(this).hasClass("no-image")) {
-          $(this).remove();
-        }
-      });
-    } else {
+    // if ($.localStorage(name + ".gallery.images")) {
+    //   $("#vdp").html($.localStorage(name + ".gallery.images"));
+    //   $("#vdp div").each(function() {
+    //     if (!$(this).find("img").length) {
+    //       $(this).remove();
+    //     }
+    //     if ($(this).hasClass("no-image")) {
+    //       $(this).remove();
+    //     }
+    //   });
+    // } else {
       var asserterNames = $(".vdz").attr("vbv").split(",");
       asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
         /** @type {string} */
@@ -1356,7 +1355,7 @@ function Variant() {
         }
         $("#vdp").append(navTabs).append($rootElement).append(ul);
       });
-    }
+    // }
   }
   /**
    * @return {undefined}
