@@ -440,11 +440,8 @@
 				
 			</div>
 			<!-- This needs to be called when the element gets refreshed break out into it's own javascript function. -->
-			<?php 
-				$directory = $_SERVER['DOCUMENT_ROOT'] . '/assets/images/uploads';
-				$scanned_directory = array_diff(scandir($directory), array('..', '.'));
-			?>
-			<div class="vdz" vbv="<?php foreach($scanned_directory as $file) { echo $file . ','; }?>">
+			
+			<div class="vdz" vbv="">
 				<form action="upload.php" id="drop_zone" class="dropzone"><input type="file" class="vch" name="vci[]" multiple="multiple"></form>
 				<div class="vdx">
 				</div>
@@ -6698,16 +6695,20 @@
         	    	}
         	    });
         	    $(function() {
-			        Dropzone.options.uiDZResume = {
-			            success: function(file, response){
-			                alert(response);
-			            }
-			        };
+			        Dropzone.on("complete", function(file) {
+		                alert(file);
+		                $.ajax({
+					        url: 'http://rebeccacs.com/designer/listfiles.php',
+					        type: 'get',
+					        success: function(data) {
+					          console.log(data);
+					          $('div.vdz').setAttribute('vbv',data);
+					        }
+					 	});
+			        });
 			    });
         </script>
 
-		
-		
 		
 		<script src="js/alterClass.js"></script>
 		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
