@@ -429,7 +429,7 @@
 			<div class="vdz" vbv="">
 				<form action="upload.php" class="dropzone"></form>
 			
-				<input type="file" class="vch" name="vci[]" multiple="multiple">
+				<!-- <input type="file" class="vch" name="vci[]" multiple="multiple"> -->
 				<div class="vdx">
 				</div>
 			</div>
