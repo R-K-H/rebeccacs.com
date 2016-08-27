@@ -31,7 +31,7 @@
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="/assets/js/slick/slick-theme.css">
 		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="/assets/js/mobile.js">
+		<script type="text/javascript" src="/assets/js/mobile.js"></script>
 
 	    <style type="text/css">
 		    #collage-img {
