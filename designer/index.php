@@ -18,7 +18,7 @@
         <link href="theme/css/ytplayer.css" rel="stylesheet" type="text/css" media="all">
         <link href="theme/css/theme.css" rel="stylesheet" type="text/css" media="all">
         <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="all">
-        <link href="http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
 
         <style>
         	.instafeed:before{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; content: ''; z-index: 4; }
@@ -5816,7 +5816,7 @@
 		
 			<div class="row fade-half">
 				<div class="col-sm-12 text-center">
-					<span>&copy; Copyright 2015 Medium Rare - All Rights Reserved</span>
+					<span>&copy; Copyright <?php echo date('Y');?> Rebecca Cordalis-Selvig - All Rights Reserved</span>
 				</div>
 			</div>
 		</div>
@@ -5837,14 +5837,14 @@
 					<p class="lead">
 						Questions, bookings or feedback? Contact me by any<br class="hidden-sm"> of the channels below. I'll respond ASAP!
 					</p>
-					<h4 class="mb8">P: 0417 374 992</h4>
-					<h4 class="mb8">E: train@bendobson.net</h4>
-					<h4 class="mb0"><i class="ti-twitter-alt"></i> @bendobson</h4>
+					<h4 class="mb8">P: </h4>
+					<h4 class="mb8">E: </h4>
+					<h4 class="mb0"><i class="ti-twitter-alt"></i> @</h4>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-					<p class="fade-1-4">Handcrafted by Medium Rare &copy; 2015<br> Built with Variant Page Builder
+					<p class="fade-1-4">Handcrafted by Rebecca Selvig &copy; <?php echo date('Y');?><br> Built with Variant Page Builder
 					<ul class="list-inline social-list mb0">
 						<li><a vht="li" href="#"><i vht="li" class="icon icon-xs ti-twitter-alt"></i></a></li>
 						<li><a vht="li" href="#"><i vht="li" class="icon icon-xs ti-facebook"></i></a></li>
@@ -6604,8 +6604,6 @@
 </div>
 
 		</div>
-
-		<a class="vml vih" href="#" target="_blank">Buy Now</a>
 
 		<script src="js/jquery.js"></script>
 

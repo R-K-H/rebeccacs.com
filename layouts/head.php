@@ -1,5 +1,5 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php'; ?>
-<html>
+<!doctype html>
 	<head>
 		<title>Rebecca Cordalis-Selvig</title>
 		<!-- Latest compiled and minified CSS -->
