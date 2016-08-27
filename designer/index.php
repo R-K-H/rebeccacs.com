@@ -6697,6 +6697,13 @@
         		    	$('nav').removeClass('reveal-nav');
         	    	}
         	    });
+        	    $(function() {
+			        Dropzone.options.uiDZResume = {
+			            success: function(file, response){
+			                alert(response);
+			            }
+			        };
+			    });
         </script>
 
 		
