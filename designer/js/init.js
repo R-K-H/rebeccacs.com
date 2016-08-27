@@ -1329,6 +1329,7 @@ function Variant() {
     var ul = $("<div />").addClass("vmh");
     /** @type {string} */
     var li = "";
+    // Need to fetch from a url so we can load images from the page
     // if ($.localStorage(name + ".gallery.images")) {
     //   $("#vdp").html($.localStorage(name + ".gallery.images"));
     //   $("#vdp div").each(function() {

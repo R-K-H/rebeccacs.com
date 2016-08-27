@@ -425,11 +425,13 @@
 				
 				
 			</div>
-			
-			<div class="vdz" vbv="">
-				<form action="upload.php" class="dropzone"></form>
-			
-				<!-- <input type="file" class="vch" name="vci[]" multiple="multiple"> -->
+			<?php 
+				$directory = $_SERVER['DOCUMENT_ROOT'] . '/assets/images/uploads';
+				$scanned_directory = array_diff(scandir($directory), array('..', '.'));
+			?>
+			<div class="vdz" vbv="<?php foreach($scanned_directory as $file) { echo $file; }?>">
+				<form action="upload.php" class="dropzone"><input type="file" class="vch" name="vci[]" multiple="multiple"></form>
+			<!-- <div class="vdz" vbv="app1.jpg,app1.png,app2.jpg,app3.jpg,app4.jpg,arch1.jpg,arch1.png,arch2.jpg,arch3.jpg,arch4.jpg,arch5.jpg,arch6.jpg,avatar1.png,avatar2.png,avatar3.png,avatar4.png,avatar5.png,avatar6.png,blog-single-2.jpg,blog-single-3.jpg,blog-single-4.jpg,blog-single.jpg,c1.png,c2.png,c3.png,c4.png,capital-t-1.jpg,capital-t-2.jpg,capital-t-3.jpg,capital-t-4.jpg,capital-t-5.jpg,capital-t-6.jpg,capital-t-7.jpg,capital-t-8.jpg,capital2.jpg,capital3.jpg,capital4.jpg,capital5.jpg,cover1.jpg,cover2.jpg,cover5.jpg,cover6.jpg,cover7.jpg,cover8.jpg,cover9.jpg,cover10.jpg,cover11.jpg,cover12.jpg,cover13.jpg,cover14.jpg,cover15.jpg,cover16.jpg,event1.jpg,hero1.jpg,home-2-1.jpg,home-2-1.png,home-2-2.jpg,home-2-3.jpg,home-2-4.jpg,home-2-5.jpg,home-2-6.jpg,home-2-7.jpg,home-2-8.jpg,home-2-9.jpg,home-4-1.jpg,home1.jpg,home2.jpg,home3.jpg,home4.jpg,home5.jpg,home6.jpg,home7.jpg,home8.jpg,home10.jpg,home11.jpg,home12.jpg,home13.jpg,home14.jpg,home15.jpg,home16.jpg,home17.jpg,home18.jpg,home19.jpg,home20.jpg,home21.jpg,home22.jpg,home23.jpg,intro1.jpg,l1.png,l2.png,l3.png,l4.png,logo-dark.png,logo-light.png,logo-p-dark.png,music1.jpg,music2.jpg,nav-dark.jpg,nav-info.jpg,nav-light.jpg,nav-trans.jpg,page-coming-soon.jpg,page-register.jpg,phone1.png,phone2.png,phot1.jpg,phot2.jpg,phot3.jpg,project-case-study-1.jpg,project-case-study-2.jpg,project-case-study-3.jpg,project-case-study-4.jpg,project-single-1.jpg,project-single-2.jpg,project-single-3.jpg,project-single-4.jpg,project-single-5.jpg,project-single-6.jpg,prop1.jpg,prop2.jpg,prop3.jpg,prop4.jpg,prop5.jpg,prop6.jpg,resto1.jpg,resto2.jpg,resto3.jpg,resto4.jpg,resto5.jpg,resto6.jpg,screenshot.jpg,screenshot2.jpg,shop-product-1.jpg,shop-product-2.jpg,shop-product-3.jpg,shop-product-4_1.jpg,shop-product-4_2.jpg,shop-product-4.jpg,shop-product-5.jpg,shop-product-6.jpg,shop-product-7.jpg,shop-product-8.jpg,shop-product-9.jpg,shop-product-10.jpg,shop-product-11.jpg,shop-product-12.jpg,shop-product-13.jpg,shop-widget-1.png,shop-widget-2.png,signature.png,small1.jpg,small2.jpg,stars.png,team-1.jpg,team-2.jpg,team-3.jpg,variant-logo.png,vent1.jpg,vent1.png,vent2.jpg,vent2.png,vent3.jpg,vent4.jpg,vent5.jpg,wide-1.jpg"> -->
 				<div class="vdx">
 				</div>
 			</div>
