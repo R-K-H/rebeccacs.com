@@ -20,7 +20,7 @@ function Variant() {
     // var path = document.title;
     // var part = $(".vms").attr("vmr"); // Getting font undefined.
     // var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
-    compile();
+    done(data);
   });
   /**
    * @return {undefined}
