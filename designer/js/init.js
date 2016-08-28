@@ -20,7 +20,8 @@ function Variant() {
     // var path = document.title;
     // var part = $(".vms").attr("vmr"); // Getting font undefined.
     // var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
-    parse();
+    handle();
+    process();
   });
   /**
    * @return {undefined}
@@ -1029,6 +1030,7 @@ function Variant() {
    * @return {undefined}
    */
   function handle() {
+    console.log('handle called');
     var $this = $("." + $(".vcv").val());
     var src = $(".vcu").val();
     var _tmp = $(".vcy").val();
@@ -1050,6 +1052,7 @@ function Variant() {
    * @return {undefined}
    */
   function process() {
+    console.log('process called');
     var src = $(".vco").val();
     var $this = $("." + $(".vck").val());
     refreshTarget = $(".vck").val();
@@ -1074,6 +1077,7 @@ function Variant() {
    * @return {undefined}
    */
   function finished() {
+    console.log('finished called');
     var p = $(".vda").val();
     var content = $(".vdg").val();
     var label = $(".vdb").val();
@@ -1871,6 +1875,7 @@ function Variant() {
       $.localStorage(name + "vmp", $(".vms").attr("vmr"));
       $.localStorage(name + ".vkp", "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : " ");
     }
+    console.log('parse called');
   }
   /**
    * @return {undefined}
@@ -2161,6 +2166,7 @@ function Variant() {
    * @return {undefined}
    */
   function compile() {
+    console.log('compile called');
     $(".viu section, .viu header, .viu footer").each(function() {
       var name = "." + $(this).attr("vic");
       $(this).find("div.row, .vjd").not(".masonry, .voz").sortable({
@@ -2209,6 +2215,7 @@ function Variant() {
           } else {
             $("#veu ." + errorClass).detach().insertBefore("#veu ." + gid);
           }
+          console.log('compile update called');
           parse();
         },
         /**
@@ -3666,6 +3673,7 @@ function Variant() {
       resize();
       onSuccess();
       parse();
+      console.log('vfo clicked called');
       done();
     });
     $(".vfl").click(function() {
@@ -3676,6 +3684,7 @@ function Variant() {
       $(this).closest(".vho").find(".vly").text(pauseText);
       resize();
       onSuccess();
+      console.log('vfl called');
       parse();
       done();
     });
@@ -3919,6 +3928,7 @@ function Variant() {
         });
       });
       $this.addClass($(this).attr("nav-class"));
+      console.log('vfg called');
       parse();
       done();
     });
@@ -4312,6 +4322,7 @@ function Variant() {
         $("#veu ." + also).removeClass("vjb vib").addClass("vjm");
       }
       each();
+      console.log('vjb called');
       Init();
       parse();
     });
@@ -4428,6 +4439,7 @@ function Variant() {
         self.removeClass("keep--sm-icon").addClass("icon--sm");
       }
       filter();
+      console.log('vam called');
       parse();
     });
     $(document).on("click", ".vbz", function() {
@@ -4466,6 +4478,7 @@ function Variant() {
       if ($(this).hasClass("refresh")) {
         done(e);
       }
+      console.log('vks called');
       parse();
     });
     $(document).on("click", ".vkt", function(event) {
@@ -4504,6 +4517,7 @@ function Variant() {
           window.mr_parallax.mr_scrollAssist = optsData;
         }
       }
+      console.log('vkt called');
       parse();
     });
     $(document).on("click", ".vkv", function() {
