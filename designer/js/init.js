@@ -2623,6 +2623,7 @@ function Variant() {
    * @return {undefined}
    */
   function init(selector) {
+    console.log('init selector called with '+selector);
     var body;
     var $rootElement;
     var parent;
@@ -4180,9 +4181,11 @@ function Variant() {
       $e.append(div);
     });
     $(document).on("click", ".vni", function() {
+      console.log('vni clicked');
       $(this).toggleClass("vhr");
     });
     $(document).on("contextmenu", ".vni", function(event) {
+      console.log('vni 2 clicked');
       event.stopPropagation();
       $(this).trigger("click");
     });
