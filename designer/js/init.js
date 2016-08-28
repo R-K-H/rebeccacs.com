@@ -516,6 +516,7 @@ function Variant() {
    * @return {undefined}
    */
   function close(result) {
+    console.log('close called');
     $(".vcl").modal({
       autoResize : true,
       overlayClose : true,
@@ -528,6 +529,7 @@ function Variant() {
        * @return {undefined}
        */
       onShow : function() {
+        console.log('close on show called');
         $(".vdx").html($("#vdp").html());
         $(".vcp").attr("src", $("." + result).attr("src"));
         $(".vcm .veb").text($("." + result).get(0).naturalWidth + "x" + $("." + result).get(0).naturalHeight + " pixels");
@@ -1391,6 +1393,7 @@ function Variant() {
    * @return {undefined}
    */
   function html() {
+    console.log('html called');
     $.localStorage(name + ".gallery.images", $(".vdx").html());
     $("#vdp").html($(".vdx").html());
   }
@@ -3700,6 +3703,7 @@ function Variant() {
       $(this).toggleClass("vgr vdv vhr");
     });
     $(".vhp").click(function() {
+      console.log('vhp clicked');
       $(".vdz,.vcl").toggleClass("vhr");
     });
     $(".vcp").click(function() {
@@ -4334,6 +4338,7 @@ function Variant() {
       $(".vco").val($(this).attr("src").replace("../img/", "img/"));
       $(".vcp").attr("src", $(this).attr("src"));
       $(".veb").text(el.naturalWidth + "x" + el.naturalHeight + " pixels");
+      console.log('vcj clicked');
       $(".vdz,.vcl").toggleClass("vhr");
     });
     $(document).on("click", ".vgl", function() {
