@@ -10,9 +10,8 @@
 						$scanned_directory = array_diff(scandir($directory), array('..', '.', 'index.php'));
 						$files = array();
 						foreach($scanned_directory as $file) { 
-							$files[] = $file; 
-						} 
-						echo json_encode($files);
+							echo '<a href="'.$file.'">'.$file.'</a>'; 
+						}
 					?>
 			</div>
 <?php 
