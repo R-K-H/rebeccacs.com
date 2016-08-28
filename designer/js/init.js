@@ -1307,6 +1307,7 @@ function Variant() {
    * This is our file viewer.
    */
   function nav(evt) {
+    console.log('nav called');
     var _k;
     var file;
     var elem;
