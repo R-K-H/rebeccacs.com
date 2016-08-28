@@ -12,7 +12,6 @@ function Variant() {
         var myDropzone = this;
         
         this.on("complete", function(file) {
-          parse();
           console.log('upload complete');
         });
         //and this to handle any error
@@ -1343,6 +1342,7 @@ function Variant() {
    * @return {undefined}
    */
   function finish() {
+    console.log('finish called');
     var navTabs = $("<div />").addClass("vmh");
     var $rootElement = $("<div />").addClass("vmh");
     var ul = $("<div />").addClass("vmh");
