@@ -1,6 +1,6 @@
 <?php
 	// Gets our files.
-	$directory = $_SERVER['DOCUMENT_ROOT'] . '/assets/images/uploads';
+	$directory = $_SERVER['DOCUMENT_ROOT'] . '/blog';
 	$scanned_directory = array_diff(scandir($directory), array('..', '.'));
 	$files = array();
 	foreach($scanned_directory as $file) { 
