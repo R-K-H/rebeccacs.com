@@ -6,7 +6,7 @@
 			<div class="container">
 				<div class="your-class">
 					<?php // Gets our files.
-						$directory = $_SERVER['DOCUMENT_ROOT'] . '/assets/images/uploads';
+						$directory = $_SERVER['DOCUMENT_ROOT'] . '/blog';
 						$scanned_directory = array_diff(scandir($directory), array('..', '.', 'index.php'));
 						$files = array();
 						foreach($scanned_directory as $file) { 
