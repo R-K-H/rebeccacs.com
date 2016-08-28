@@ -1381,12 +1381,13 @@ function Variant() {
               var li = "";
               console.log('listed files.');
               data = JSON.parse(data);
-              console.log('updated ' + data);
+              //console.log('updated ' + data);
               data = data.toString();
-              $('div.vdz').attr('vbv', data);
-              console.log('string ' + data);
-              var asserterNames = $(".vdz").attr("vbv").split(",");
-              console.log('our names ' +asserterNames);
+              //$('div.vdz').attr('vbv', data);
+              //console.log('string ' + data);
+              //var asserterNames = $(".vdz").attr("vbv").split(",");
+              var asserterNames = data.split(",");
+              console.log('our names ' + asserterNames);
               asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
                 /** @type {string} */
                 li = '<div class="vdy"><img class="vcj" delay-src="/assets/images/uploads/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
