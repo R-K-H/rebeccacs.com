@@ -517,15 +517,15 @@ function Variant() {
        */
       onShow : function() {
         console.log('close on show called');
-        $(".vdx").html($("#vdp").html());
+        $("#img-store .vdx").html($("#vdp").html());
         $(".vcp").attr("src", $("." + result).attr("src"));
         $(".vcm .veb").text($("." + result).get(0).naturalWidth + "x" + $("." + result).get(0).naturalHeight + " pixels");
         $(".vco").val($("." + result).attr("src").replace("../img/", "img/"));
         $(".vck").val(result);
         $(".vcf").val($("." + result).attr("alt"));
         var countThis = 1;
-        $(".vdx .vdy").each(function(el) {
-          // Dealing with the upload images.
+        $("#img-store .vdx .vdy").each(function(el) {
+          // Dealing with the upload images. This is actually getting the # but not updating the display.
           console.log(countThis);
           el = $(this).find("img").get(0);
           var script = $(this).find(".vec");

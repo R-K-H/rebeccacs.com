@@ -444,7 +444,7 @@
 			</div>
 			<!-- This needs to be called when the element gets refreshed break out into it's own javascript function. -->
 			
-			<div class="vdz" vbv="">
+			<div id="img-store" class="vdz" vbv="">
 				<form action="upload.php" id="drop_zone" class="dropzone"><input type="file" class="vch" name="vci[]" multiple="multiple"></form>
 				<div class="vdx">
 				</div>
