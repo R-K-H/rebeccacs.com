@@ -1400,6 +1400,7 @@ function Variant() {
                     navTabs.append(li);
                   }
                 }
+                console.log('appended ' + li + 'to table');
                 $("#vdp").append(navTabs).append($rootElement).append(ul);
               });
           }
