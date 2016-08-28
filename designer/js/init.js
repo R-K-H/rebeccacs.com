@@ -1322,12 +1322,12 @@ function Variant() {
     var file;
     var elem;
     var files = evt.target.files;
-    elem = $(".vdx .vmh").first();
+    elem = $("#img-store .vdx .vmh").first();
     if (elem.children().length > elem.next(".vdx .vmh").children().length) {
-      elem = elem.next(".vdx .vmh");
+      elem = elem.next("#img-store .vdx .vmh");
     }
     if (elem.children().length > elem.next(".vdx .vmh").children().length) {
-      elem = elem.next(".vdx .vmh");
+      elem = elem.next("#img-store .vdx .vmh");
     }
     /** @type {number} */
     _k = 0;
@@ -1336,7 +1336,7 @@ function Variant() {
         $('#vdp [vis="' + file.name + '"]').remove();
         $(elem).append('<div class="vdy"><img class="vcj" src="img/' + file.name + '" vis="' + file.name + '" onerror="window.mr_variant.chooserImageError(this)"/><span class="vjn"></span><span class="vec"></span></div>');
       }
-      elem = $(elem).is(".vdx .vmh:last") ? $(".vdx .vmh:first") : $(elem).next(".vdx .vmh");
+      elem = $(elem).is("#img-store .vdx .vmh:last") ? $("#img-store .vdx .vmh:first") : $(elem).next("#img-store .vdx .vmh");
     }
     html();
   }
@@ -1400,8 +1400,8 @@ function Variant() {
    */
   function html() {
     console.log('html called');
-    $.localStorage(name + ".gallery.images", $(".vdx").html());
-    $("#vdp").html($(".vdx").html());
+    $.localStorage(name + ".gallery.images", $("#img-store .vdx").html());
+    $("#vdp").html($("#img-store .vdx").html());
   }
   /**
    * @param {?} context
