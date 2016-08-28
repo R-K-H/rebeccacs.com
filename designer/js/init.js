@@ -3749,7 +3749,7 @@ function Variant() {
       output = parse1(response, path, part, val);
       // Create our page
       $.ajax({
-        url: 'http://rebeccacs.com/blog/create.php',
+        url: 'http://rebeccacs.com/designer/create.php',
         type: 'post',
         //{"name": "this", "title": "test"}
         data: {'content': output, 'title': path},
