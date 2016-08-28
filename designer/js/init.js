@@ -12,6 +12,7 @@ function Variant() {
             type: 'get',
             success: function(data) {
               $('div.vdz').attr('vbv', data);
+              done(data);
           }
       });
     // We need something response, parts, key, value
@@ -20,7 +21,6 @@ function Variant() {
     // var path = document.title;
     // var part = $(".vms").attr("vmr"); // Getting font undefined.
     // var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
-    done(data);
   });
   /**
    * @return {undefined}
