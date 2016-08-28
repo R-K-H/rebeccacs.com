@@ -1378,7 +1378,7 @@ function Variant() {
             type: 'get',
             success: function(data) {
               console.log(data);
-              data = data.toString();
+              data = JSON.parse(data);
               $('div.vdz').attr('vbv', data);
               console.log(data);
           }
