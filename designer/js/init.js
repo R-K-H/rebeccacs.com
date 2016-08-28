@@ -8,6 +8,7 @@ function Variant() {
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
     finish();
+    nav();
     parse();
   });
   /**
