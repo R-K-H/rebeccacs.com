@@ -12,7 +12,7 @@ function Variant() {
             type: 'get',
             success: function(data) {
               $('div.vdz').attr('vbv', data);
-              close();
+              console.log('added other images');
           }
       });
     // We need something response, parts, key, value
@@ -21,6 +21,7 @@ function Variant() {
     // var path = document.title;
     // var part = $(".vms").attr("vmr"); // Getting font undefined.
     // var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
+    finish();
   });
   /**
    * @return {undefined}
@@ -1372,7 +1373,15 @@ function Variant() {
     //     }
     //   });
     // } else {
-      var asserterNames = $(".vdz").attr("vbv").split(",");
+      $.ajax({
+            url: 'http://rebeccacs.com/designer/listfiles.php',
+            type: 'get',
+            success: function(data) {
+              $('div.vdz').attr('vbv', data);
+              var asserterNames = data.split(",");
+          }
+      });
+      //var asserterNames = $(".vdz").attr("vbv").split(",");
       asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
         /** @type {string} */
         li = '<div class="vdy"><img class="vcj" delay-src="/assets/images/uploads/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
