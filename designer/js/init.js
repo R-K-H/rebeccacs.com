@@ -1390,7 +1390,7 @@ function Variant() {
                 }
                 console.log('appended ' + li + 'to table');
                 $("#vdp").append(navTabs).append($rootElement).append(ul);
-                $("#img-store").append(navTabs).append($rootElement).append(ul);
+                
               });
           }
       });
