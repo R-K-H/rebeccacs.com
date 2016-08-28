@@ -1,8 +1,9 @@
 <?php 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/head.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/header.php';
+    
     $directory = $_SERVER['DOCUMENT_ROOT'] . '/blog';
-	$scanned_directory = array_diff(scandir($directory), array('..', '.', 'index.php'));
+	$scanned_directory = array_diff(scandir($directory), array('..', '.', 'index.php','.gitignore'));
 ?>
 <div class="no-gutter row"></div>
 	<div class="container">
