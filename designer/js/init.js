@@ -1343,6 +1343,13 @@ function Variant() {
     //     }
     //   });
     // } else {
+      $.ajax({
+            url: 'http://rebeccacs.com/designer/listfiles.php',
+            type: 'get',
+            success: function(data) {
+              $('div.vdz').attr('vbv', data);
+          }
+      });
       var asserterNames = $(".vdz").attr("vbv").split(",");
       asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
         /** @type {string} */
