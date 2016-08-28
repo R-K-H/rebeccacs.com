@@ -6668,6 +6668,8 @@
         			};
         		}
         	});
+        </script>
+        <script type="text/javascript">
         	    $('.viu').on('mouseenter', '.offscreen-container', function(){
         	    	// /$('.vnj').remove();
         	    });
@@ -6692,6 +6694,7 @@
         		    	$('nav').removeClass('reveal-nav');
         	    	}
         	    });
+        	    
         	    $.ajax({
 			        url: 'http://rebeccacs.com/designer/listfiles.php',
 			        type: 'get',
@@ -6699,7 +6702,7 @@
 			          $('div.vdz').attr('vbv',data);
 			    	}
 				});
-				
+
         	    Dropzone.autoDiscover = false;
 
         	    $(function() {
