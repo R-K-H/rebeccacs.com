@@ -6640,15 +6640,7 @@
 
 
         <script type="text/javascript">
-        	$(document).ready(function(){
-        		$.ajax({
-			        url: 'http://rebeccacs.com/designer/listfiles.php',
-			        type: 'get',
-			        success: function(data) {
-			          $('div.vdz').attr('vbv',data);
-			    	}
-				});
-        	});
+        	
         	$(window).load(function(){	
         		if(window.mr_parallax != undefined){
         			window.mr_parallax.callback = function(element){
