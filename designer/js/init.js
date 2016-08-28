@@ -16,6 +16,8 @@ function Variant() {
     mrv_pageNavTarget = $("body").attr("mrv_navTarget") ? $(".viu " + $("body").attr("mrv_navTarget")) : object;
     tmp = $("body").attr("mrv_footerTarget") ? $("#veu " + $("body").attr("mrv_footerTarget")) : selector;
     iteratee = $("body").attr("mrv_footerTarget") ? $(".viu " + $("body").attr("mrv_footerTarget")) : object;
+    Dropzone.autoDiscover = false;
+    var myDropzone = new Dropzone("#drop_zone");
   }
   /**
    * @return {undefined}
@@ -2518,14 +2520,7 @@ function Variant() {
       return;
     }
   }
-  Dropzone.autoDiscover = false;
 
-  $(function() {
-      var myDropzone = new Dropzone("#drop_zone");
-      myDropzone.on("complete", function(file) {
-        finish();
-      });
-  });
   /**
    * @return {?}
    */
@@ -4085,6 +4080,10 @@ function Variant() {
       if (window.mr_variant.removeIconButtons === true) {
         $(this).find(".vnw").remove();
       }
+    });
+    
+    myDropzone.on("complete", function(file) {
+      parse();
     });
     $(document).on("mouseenter", ".viu .voh:not(.vib, .vjb)", function(dataAndEvents) {
       var div;
