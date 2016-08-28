@@ -7,6 +7,7 @@ function Variant() {
   var myDropzone = new Dropzone("#drop_zone");
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
+    $('.dz-message').html('upload worked');
     finish(); // This updates the DOM to add to the actual div.
   });
   /**
