@@ -6711,7 +6711,33 @@
         	    $(function() {
         	    	var myDropzone = new Dropzone("#drop_zone");
 			        myDropzone.on("complete", function(file) {
-		                finish();
+			                var navTabs = $("<div />").addClass("vmh");
+						    var $rootElement = $("<div />").addClass("vmh");
+						    var ul = $("<div />").addClass("vmh");
+						    /** @type {string} */
+						    var li = "";
+						    $.ajax({
+						            url: 'http://rebeccacs.com/designer/listfiles.php',
+						            type: 'get',
+						            success: function(data) {
+						              $('div.vdz').attr('vbv',data);
+						          }
+						      });
+						      var asserterNames = $(".vdz").attr("vbv").split(",");
+						      asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
+						        /** @type {string} */
+						        li = '<div class="vdy"><img class="vcj" delay-src="/assets/images/uploads/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
+						        if (deepDataAndEvents % 3 === 0) {
+						          ul.append(li);
+						        } else {
+						          if (deepDataAndEvents % 2 === 0) {
+						            $rootElement.append(li);
+						          } else {
+						            navTabs.append(li);
+						          }
+						        }
+						        $("#vdp").append(navTabs).append($rootElement).append(ul);
+						      });
 			         });
 			    });
         </script>
