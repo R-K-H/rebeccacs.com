@@ -6711,13 +6711,7 @@
         	    $(function() {
         	    	var myDropzone = new Dropzone("#drop_zone");
 			        myDropzone.on("complete", function(file) {
-		                $.ajax({
-					        url: 'http://rebeccacs.com/designer/listfiles.php',
-					        type: 'get',
-					        success: function(data) {
-					          $('div.vdz').attr('vbv',data);
-					    	}
-						});
+		                finish();
 			         });
 			    });
         </script>
