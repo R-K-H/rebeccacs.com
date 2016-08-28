@@ -1383,25 +1383,26 @@ function Variant() {
               data = data.toString();
               $('div.vdz').attr('vbv', data);
               console.log('string ' + data);
+              var asserterNames = $(".vdz").attr("vbv").split(",");
+              console.log('our names ' +asserterNames);
+              asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
+                /** @type {string} */
+                li = '<div class="vdy"><img class="vcj" delay-src="/assets/images/uploads/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
+                if (deepDataAndEvents % 3 === 0) {
+                  ul.append(li);
+                } else {
+                  if (deepDataAndEvents % 2 === 0) {
+                    $rootElement.append(li);
+                  } else {
+                    navTabs.append(li);
+                  }
+                }
+                $("#vdp").append(navTabs).append($rootElement).append(ul);
+              });
           }
       });
       
-      var asserterNames = $(".vdz").attr("vbv").split(",");
-      console.log('our names ' +asserterNames);
-      asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
-        /** @type {string} */
-        li = '<div class="vdy"><img class="vcj" delay-src="/assets/images/uploads/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
-        if (deepDataAndEvents % 3 === 0) {
-          ul.append(li);
-        } else {
-          if (deepDataAndEvents % 2 === 0) {
-            $rootElement.append(li);
-          } else {
-            navTabs.append(li);
-          }
-        }
-        $("#vdp").append(navTabs).append($rootElement).append(ul);
-      });
+      
     // }
   }
   /**
