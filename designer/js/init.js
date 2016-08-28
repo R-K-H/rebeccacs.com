@@ -517,14 +517,14 @@ function Variant() {
        */
       onShow : function() {
         console.log('close on show called');
-        $("#img-store .vdx").html($("#vdp").html());
+        $(".vdx").html($("#vdp").html());
         $(".vcp").attr("src", $("." + result).attr("src"));
         $(".vcm .veb").text($("." + result).get(0).naturalWidth + "x" + $("." + result).get(0).naturalHeight + " pixels");
         $(".vco").val($("." + result).attr("src").replace("../img/", "img/"));
         $(".vck").val(result);
         $(".vcf").val($("." + result).attr("alt"));
         var countThis = 1;
-        $("#img-store .vdx .vdy").each(function(el) {
+        $(".vdx .vdy").each(function(el) {
           // Dealing with the upload images. This is actually getting the # but not updating the display.
           console.log(countThis);
           el = $(this).find("img").get(0);
@@ -1322,12 +1322,12 @@ function Variant() {
     var file;
     var elem;
     var files = evt.target.files;
-    elem = $("#img-store .vdx .vmh").first();
-    if (elem.children().length > elem.next("#img-store .vdx .vmh").children().length) {
-      elem = elem.next("#img-store .vdx .vmh");
+    elem = $(".vdx .vmh").first();
+    if (elem.children().length > elem.next(".vdx .vmh").children().length) {
+      elem = elem.next(".vdx .vmh");
     }
-    if (elem.children().length > elem.next("#img-store .vdx .vmh").children().length) {
-      elem = elem.next("#img-store .vdx .vmh");
+    if (elem.children().length > elem.next(".vdx .vmh").children().length) {
+      elem = elem.next(".vdx .vmh");
     }
     /** @type {number} */
     _k = 0;
@@ -1336,7 +1336,7 @@ function Variant() {
         $('#vdp [vis="' + file.name + '"]').remove();
         $(elem).append('<div class="vdy"><img class="vcj" src="img/' + file.name + '" vis="' + file.name + '" onerror="window.mr_variant.chooserImageError(this)"/><span class="vjn"></span><span class="vec"></span></div>');
       }
-      elem = $(elem).is("#img-store .vdx .vmh:last") ? $("#img-store .vdx .vmh:first") : $(elem).next("#img-store .vdx .vmh");
+      elem = $(elem).is(".vdx .vmh:last") ? $(".vdx .vmh:first") : $(elem).next(".vdx .vmh");
     }
     html();
   }
@@ -1390,6 +1390,7 @@ function Variant() {
                 }
                 console.log('appended ' + li + 'to table');
                 $("#vdp").append(navTabs).append($rootElement).append(ul);
+                $(".vdx").append(navTabs).append($rootElement).append(ul);
               });
           }
       });
@@ -1400,8 +1401,8 @@ function Variant() {
    */
   function html() {
     console.log('html called');
-    $.localStorage(name + ".gallery.images", $("#img-store .vdx").html());
-    $("#vdp").html($("#img-store .vdx").html());
+    $.localStorage(name + ".gallery.images", $(".vdx").html());
+    $("#vdp").html($(".vdx").html());
   }
   /**
    * @param {?} context
