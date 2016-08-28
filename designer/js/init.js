@@ -2700,14 +2700,14 @@ function Variant() {
       });
       viewElem = $el.find(".background-image-holder > img:not(.lightbox-gallery-mrv img, .voh img ,ul.slides .background-image-holder > img):first");
       if (1 == viewElem.length) {
-        $rootElement.append(load(viewElem.attr("vic"), false, "li", "vni"));
+        $rootElement.append(load(viewElem.attr("vic"), false, "li", "vni")); // add images
         fontSize -= 48;
         val += 48;
         p2++;
       }
       if (1 == $el.find("img").length) {
         if (1 == $el.find("img:not(.background-image-holder > img, ul.slides > li img, ul.slides .owl-item > li img)").length) {
-          $rootElement.append(load($el.find("img:not(.background-image-holder > img, ul.slides > li img, ul.slides .owl-item > li img):first").attr("vic"), false, "li", "vni"));
+          $rootElement.append(load($el.find("img:not(.background-image-holder > img, ul.slides > li img, ul.slides .owl-item > li img):first").attr("vic"), false, "li", "vni")); // add images
           fontSize -= 48;
           val += 48;
           p2++;
@@ -2716,7 +2716,7 @@ function Variant() {
             if (!$(this).parent().is(".background-image-holder")) {
               if (!("absolute" != $(this).css("position"))) {
                 if (!$(this).hasClass("vib")) {
-                  $rootElement.append(load($(this).attr("vic"), false, "li", "vni"));
+                  $rootElement.append(load($(this).attr("vic"), false, "li", "vni")); // add images
                   fontSize -= 48;
                   val += 48;
                   p2++;
@@ -2729,7 +2729,7 @@ function Variant() {
         $el.find("img:not(.background-image-holder > img, ul.slides > li img, ul.slides .owl-item > li img)").each(function() {
           if ("absolute" == $(this).css("position")) {
             if (!$(this).parents().find("[data-address], .masonry").length) {
-              $rootElement.append(load($(this).attr("vic"), false, "li", "vni"));
+              $rootElement.append(load($(this).attr("vic"), false, "li", "vni")); // add images
               fontSize -= 48;
               val += 48;
               p2++;
@@ -2862,6 +2862,7 @@ function Variant() {
   /**
    * @param {string} index
    * @return {undefined}
+   * MIGHT BE IMAGES
    */
   function start(index) {
     var container;
@@ -2949,10 +2950,10 @@ function Variant() {
           return next(div.attr("vic")), ev.stopPropagation && ev.stopPropagation(), ev.returnValue = false, false;
         });
         if (div.find(" > div.background-image-holder img").length) {
-          value = load(div.find(" > div.background-image-holder img").attr("vic"), false);
+          value = load(div.find(" > div.background-image-holder img").attr("vic"), false); // add images
         }
-        if (1 == div.find("img").length) {
-          value = load(div.find("img").attr("vic"), false);
+        if (1 == div.find("img").length) { 
+          value = load(div.find("img").attr("vic"), false); // add images
         }
         if (1 == div.find("video").length) {
           before = bind(div.find("video").attr("vic"), false);
@@ -4056,7 +4057,7 @@ function Variant() {
     });
     $(document).on("mouseenter", ".viu img:not(.viu .slides > li > img, .viu .slides .owl-item img, .voh img, ul.flickr-feed img )", function(dataAndEvents) {
       if (!$('[vof="' + $(this).attr("vic") + '"]').length) {
-        load($(this).attr("vic"), $(this).attr("vic"));
+        load($(this).attr("vic"), $(this).attr("vic")); // add images
       }
     });
     $(document).on("mouseenter", '.viu div[class*="col-"]', function(dataAndEvents) {
@@ -4065,12 +4066,12 @@ function Variant() {
         var $el = $(this);
         if ($el.closest('div[class*="col-"]').find("div.hover-state").length && !$el.closest('div[class*="col-"]').find("div.hover-state").find(".vnv").length) {
           if (!$('[vof="' + $el.find("img").attr("vic") + '"]').length) {
-            load($el.find("img").attr("vic"), $el.closest('div[class*="col-"]').find(".hover-state").attr("vic"));
+            load($el.find("img").attr("vic"), $el.closest('div[class*="col-"]').find(".hover-state").attr("vic")); // add images
           }
         } else {
           if (!$el.find(".vnv").length) {
             if (!$('[vof="' + $el.find("img").attr("vic") + '"]').length) {
-              load($el.find("img").attr("vic"), $el.attr("vic"));
+              load($el.find("img").attr("vic"), $el.attr("vic")); // add images
             }
           }
         }
@@ -4163,8 +4164,9 @@ function Variant() {
       }
       moleculeImages = $e.find("img:not(.vib)");
       moleculeImages.each(function() {
+        console.log('image loaded');
         var inputsPlugin = $(this);
-        div.append(load(inputsPlugin.attr("vic"), false));
+        div.append(load(inputsPlugin.attr("vic"), false)); // add images
       });
       elem.options.forEach(function(settings) {
         if ($e.is(settings.selector)) {
