@@ -5,6 +5,9 @@ function Variant() {
   console.log('init');
   Dropzone.autoDiscover = false;
   var myDropzone = new Dropzone("#drop_zone");
+  Dropzone.options.myDropzone = {
+    maxFilesize: 2 // MB
+  };
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
     $('.dz-message').html('upload worked');
@@ -12,6 +15,7 @@ function Variant() {
   });
   myDropzone.on("error", function(file, errorMessage) {
     alert('Error' + errorMessage);
+    this.removeFile(file); 
   });
   /**
    * @return {undefined}
