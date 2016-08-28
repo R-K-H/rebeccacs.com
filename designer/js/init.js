@@ -4088,10 +4088,21 @@ function Variant() {
         $(this).find(".vnw").remove();
       }
     });
-    
-    myDropzone.on("complete", function(file) {
-      finish();
-    });
+    Dropzone.options.myDropzone = {
+      //your configuration goes here
+
+      init: function() {
+        var myDropzone = this;
+        
+        this.on("complete", function(file) {
+          finish();
+        });
+        //and this to handle any error
+        this.on("error", function(file, response) {
+          console.log('error uploading');
+        });
+      }
+    }
     $(document).on("mouseenter", ".viu .voh:not(.vib, .vjb)", function(dataAndEvents) {
       var div;
       var input;

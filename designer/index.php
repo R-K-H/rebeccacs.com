@@ -55,6 +55,9 @@
 			    padding: 10px;
 			    border: 1px solid #ccc;
 			}
+			.dz-success-mark, .dz-error-message, .dz-error-mark, .dz-progress, .dz-details {
+				display: none !important;
+			}
         </style>
 		
 		
