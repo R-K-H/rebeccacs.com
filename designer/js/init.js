@@ -2822,7 +2822,8 @@ function Variant() {
     var current = $('<div class="vnu"></div>');
     var markup = $('<div class="vnw"></div>');
     if ($(node).unbind("click").bind("click", function(ev) {
-      return close($("." + name).attr("vic")), ev.stopPropagation && ev.stopPropagation(), ev.returnValue = false, false;
+      console.log('close event');
+      return close($("." + name).attr("vic")), ev.stopPropagation && ev.stopPropagation(), ev.returnValue = false, false; // Added this for close(result);
     }).attr("vof", $("." + name).attr("vic")), 100 >= item && (mh = "2px"), mayParseLabeledStatementInstead !== false) {
       if (l) {
         return m ? true : (child = el.parent(), el.parent().is(".vnu") || (child = current, "" !== el.css("float") && child.css("float", el.css("float")), "" !== el.css("padding") ? child.css("padding", el.css("padding")) : ("" !== el.css("padding-left") && (child.css("padding-left", el.css("padding-left")), el.css("padding-left", "0px")), "" !== el.css("padding-right") && (child.css("padding-right", el.css("padding-right")), el.css("padding-right", "0px"))), "" !== el.css("margin-right") && (child.css("margin-right", 
@@ -4259,15 +4260,15 @@ function Variant() {
       })), a.closest("section, header").find(".video-wrapper").children("video").length && (a.is(".overlay") && ($(".vau").text("Video Background"), $(".var").addClass("vih"), $(".vbw").addClass("vih")), video = a.closest("section, header").find(".video-wrapper").children("video"), $(".vdc").removeClass("vih"), $(".vdc").unbind("click").bind("click", function() {
         setAttribute($(video).attr("vic"));
       }), a.closest("section, header").find(".background-image-holder").children(".background-image").length && ($(".vcg").text("Edit Poster Image"), $(".vcg").removeClass("vih"), $(".vcg").unbind("click").bind("click", function() {
-        close(a.closest("section, header").find(".background-image-holder").children(".background-image").attr("vic"));
+        close(a.closest("section, header").find(".background-image-holder").children(".background-image").attr("vic")); // Close(result)
       })), a.closest(".divider-background").find(".background-image").length && ($(".vcg").text("Edit Poster Image"), $(".vcg").removeClass("vih"), $(".vcg").unbind("click").bind("click", function() {
-        close(a.closest(".divider-background").find(".background-image").attr("vic"));
+        close(a.closest(".divider-background").find(".background-image").attr("vic")); // Close(result)
       }))), a.closest(".slides li").find(".video-wrapper").children("video").length && (a.is(".overlay") && ($(".vau").text("Video Slide Background"), $(".var").addClass("vih"), $(".vbw").addClass("vih")), video = a.closest(".slides li").find(".video-wrapper").children("video"), $(".vcg").text("Edit Poster Image"), $(".vdc").removeClass("vih"), $(".vdc").unbind("click").bind("click", function() {
         setAttribute($(video).attr("vic"));
       })), a.closest("video").length && ($(".vau").text("Video"), $(".var").addClass("vih"), $(".vbw").addClass("vih"), video = a.closest("video"), $(".vdc").removeClass("vih"), $(".vdc").unbind("click").bind("click", function() {
         setAttribute($(video).attr("vic"));
       })), a.closest(".slides li").find(".video-wrapper").children("video").length && (a.closest(".slides li").find(".background-image-holder").children(".background-image").length && ($(".vcg").text("Edit Poster Image"), $(".vcg").removeClass("vih"), $(".vcg").unbind("click").bind("click", function() {
-        close(a.closest(".slides li").find(".background-image-holder").children(".background-image").attr("vic"));
+        close(a.closest(".slides li").find(".background-image-holder").children(".background-image").attr("vic")); // Close(result)
       }))), a.is("p , div, span, figure, article, img") && (a.closest('[class*="medium-"]').length && (closestElement = a.closest('[class*="medium-"]'), closestElement.hasClass("medium-12") || ($(".veg").removeClass("vih"), $(".veg").unbind("click").bind("click", function() {
         initialize(closestElement.attr("vic"));
       })), closestElement.hasClass("medium-1") || ($(".vbt").removeClass("vih"), $(".vbt").unbind("click").bind("click", function() {
@@ -4289,7 +4290,7 @@ function Variant() {
       })), closestElement.hasClass("col-xs-1") || ($(".vbt").removeClass("vih"), $(".vbt").unbind("click").bind("click", function() {
         addClass(closestElement.attr("vic"));
       })))), a.is(".cover-wrapper, .hover-state") && (i = a.closest("figure").find("img").get(0), j = a.closest("a").first(), $(i).is("img") && ($(".vcg").removeClass("vih"), $(".vcg").unbind("click").bind("click", function() {
-        close($(i).attr("vic"));
+        close($(i).attr("vic")); // Close(result)
       })), a.closest("figure").length && (name = a.closest("figure").attr("vic"), name.length && ($(".var").unbind("click").bind("click", function() {
         next(name);
       }), $(".vbw").unbind("click").bind("click", function() {
@@ -4299,7 +4300,7 @@ function Variant() {
           $(this).removeClass("vih");
         }
       }), $(".vhw .vaw").not(".vih").length || $(".vfe .vfm").removeClass("vih")), a.closest(".hover-background").length && (i = a.closest("section").find(".hover-background .background-image").get(0), $(i).is("img") && ($(".vcg").text("Edit Background Image").removeClass("vih"), $(".vcg").unbind("click").bind("click", function() {
-        close($(i).attr("vic"));
+        close($(i).attr("vic")); // Close(result)
       })), $(a).closest(".hover-background").find(".foreground-image-holder .background-image").each(function(arg) {
         var s = arg + 1;
         var inputsPlugin = $(this);
@@ -4308,7 +4309,7 @@ function Variant() {
         newButton.text("Edit Layer " + s + " Image");
         $(this).attr("src");
         newButton.unbind("click").bind("click", function() {
-          close(inputsPlugin.attr("vic"));
+          close(inputsPlugin.attr("vic")); // Close(result)
         });
         newButton.insertBefore($(".vcg"));
       })), a.is("i") && ($(".vau").text("Icon"), $(".vcc").removeClass("vih"), $(".vcc").unbind("click").bind("click", function() {
@@ -4318,13 +4319,13 @@ function Variant() {
       }), $(".vbw").unbind("click").bind("click", function() {
         remove(a.attr("vic"));
       })), a.is("img") && ($(".vcg").removeClass("vih"), $(".vcg").unbind("click").bind("click", function() {
-        close(a.attr("vic"));
+        close(a.attr("vic")); // Close(result)
       }), $(".var").unbind("click").bind("click", function() {
         next(a.attr("vic"));
       }), $(".vbw").unbind("click").bind("click", function() {
         remove(a.attr("vic"));
       })), a.is("section") && ($(".vau").text("Section"), $(".var").unbind("click").addClass("vih"), $(".vbw").unbind("click").addClass("vih")), a.is("header") && ($(".vau").text("Section"), $(".var").unbind("click").addClass("vih"), $(".vbw").unbind("click").addClass("vih")), a.closest(".veo").length && (last = $(a).closest(".veo"), i = $(a).closest(".veo").find("img"), $(".vcg").removeClass("vih"), $(".vcg").unbind("click").bind("click", function() {
-        close(i.attr("vic"));
+        close(i.attr("vic")); // Close(result)
       }), $(".var").removeClass("vih").unbind("click").bind("click", function() {
         next(last.attr("vic"));
       }), $(".vbw").removeClass("vih").unbind("click").bind("click", function() {
@@ -4414,7 +4415,7 @@ function Variant() {
     $(document).on("click", ".viu img", function() {
       var $field = $(this);
       if ($field.hasClass("catch-double-click")) {
-        close($field.attr("vic"));
+        close($field.attr("vic")); // Close(result)
       } else {
         $field.addClass("catch-double-click");
         setTimeout(function() {
