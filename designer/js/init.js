@@ -20,8 +20,7 @@ function Variant() {
     // var path = document.title;
     // var part = $(".vms").attr("vmr"); // Getting font undefined.
     // var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
-    handle();
-    process();
+    compile();
   });
   /**
    * @return {undefined}
@@ -76,6 +75,7 @@ function Variant() {
     }
     $(".vem").append('<div class="vaa data-vfs="' + name + '" vbq="' + name + "-" + val + '"><div class="vab"><span class="vir" contenteditable="true">' + $("#" + name).attr("vbr") + '</span></div><i class="vca variant-icon variant-close-circle" vbq="' + name + "-" + val + '"></i></div>');
     editableChanged();
+    console.log('chceck called');
     parse();
     done(name + "-" + val);
     resize();
@@ -104,6 +104,7 @@ function Variant() {
       self.prepend(parent);
       run($("#vbn [via=" + next + "]").attr("nav-id"));
     }
+    console.log('fn called');
     parse();
     done();
   }
@@ -204,11 +205,13 @@ function Variant() {
    * @return {undefined}
    */
   function done(data) {
+    console.log('done called');
     /**
      * @param {string} name
      * @return {undefined}
      */
     function test(name) {
+      console.log('test called');
       /** @type {string} */
       var v = ".viu";
       if ("undefined" != typeof name) {
@@ -4534,6 +4537,7 @@ function Variant() {
           $(this).removeAttr("class");
         }
       });
+      console.log('vkv called');
       parse();
       if ($(this).hasClass("refresh")) {
         done(errors);
