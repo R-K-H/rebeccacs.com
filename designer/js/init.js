@@ -7,18 +7,8 @@ function Variant() {
   var myDropzone = new Dropzone("#drop_zone");
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
+    finish();
   });
-  Dropzone.options.myDropzone = {
-      //your configuration goes here
-
-      init: function() {
-        var myDropzone = $(this);
-        //and this to handle any error
-        $(this).on("error", function(file, response) {
-          console.log('error uploading');
-        });
-      }
-    }
   /**
    * @return {undefined}
    */
