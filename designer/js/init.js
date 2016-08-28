@@ -4095,7 +4095,7 @@ function Variant() {
         var myDropzone = this;
         
         this.on("complete", function(file) {
-          finish();
+          parse();
         });
         //and this to handle any error
         this.on("error", function(file, response) {
