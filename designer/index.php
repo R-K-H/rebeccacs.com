@@ -6694,18 +6694,21 @@
         		    	$('nav').removeClass('reveal-nav');
         	    	}
         	    });
+        	    Dropzone.autoDiscover = false;
+        	    
         	    $(function() {
-			        Dropzone.on("complete", function(file) {
-		                alert(file);
+        	    	var myDropzone = new Dropzone("#drop_zone");
+			        myDropzone.on("complete", function(file) {
+			            alert(file);
 		                $.ajax({
 					        url: 'http://rebeccacs.com/designer/listfiles.php',
 					        type: 'get',
 					        success: function(data) {
 					          console.log(data);
 					          $('div.vdz').setAttribute('vbv',data);
-					        }
-					 	});
-			        });
+					    	}
+						});
+			         });
 			    });
         </script>
 
