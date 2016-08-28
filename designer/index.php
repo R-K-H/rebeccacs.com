@@ -20,6 +20,15 @@
         <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="all">
         <link href="//fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
         <script src="/assets/js/dropzone.js"></script>
+        <script type="text/javascript">
+        	$.ajax({
+	            url: 'http://rebeccacs.com/designer/listfiles.php',
+	            type: 'get',
+	            success: function(data) {
+	              $('div.vdz').attr('vbv',data);
+	          }
+	      });
+        </script>
 
         <style>
         	.instafeed:before{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; content: ''; z-index: 4; }

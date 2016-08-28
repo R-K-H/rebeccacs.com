@@ -16,13 +16,7 @@ function Variant() {
     mrv_pageNavTarget = $("body").attr("mrv_navTarget") ? $(".viu " + $("body").attr("mrv_navTarget")) : object;
     tmp = $("body").attr("mrv_footerTarget") ? $("#veu " + $("body").attr("mrv_footerTarget")) : selector;
     iteratee = $("body").attr("mrv_footerTarget") ? $(".viu " + $("body").attr("mrv_footerTarget")) : object;
-    $.ajax({
-            url: 'http://rebeccacs.com/designer/listfiles.php',
-            type: 'get',
-            success: function(data) {
-              $('div.vdz').attr('vbv',data);
-          }
-      });
+    
   }
   /**
    * @return {undefined}
