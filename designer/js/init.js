@@ -7,14 +7,7 @@ function Variant() {
   var myDropzone = new Dropzone("#drop_zone");
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
-    finish();
-    // We need something response, parts, key, value
-    //var response = $("#veu").clone();
-    /** @type {string} */
-    // var path = document.title;
-    // var part = $(".vms").attr("vmr"); // Getting font undefined.
-    // var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
-    
+    finish(); // This updates the DOM to add to the actual div.
   });
   /**
    * @return {undefined}
@@ -530,11 +523,14 @@ function Variant() {
         $(".vco").val($("." + result).attr("src").replace("../img/", "img/"));
         $(".vck").val(result);
         $(".vcf").val($("." + result).attr("alt"));
+        var countThis = 1;
         $(".vdx .vdy").each(function(el) {
           // Dealing with the upload images.
+          console.log(countThis);
           el = $(this).find("img").get(0);
           var script = $(this).find(".vec");
           script.text(el.naturalWidth + "x" + el.naturalHeight);
+          countThis ++;
         });
         setTimeout(function() {
           $(".simplemodal-container").addClass("vko");
