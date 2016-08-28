@@ -2666,6 +2666,7 @@ function Variant() {
       body.css("top", Math.round(otherElementRect.top + 10 + width));
       body.attr("vnt", locked);
       $rootElement = $("<ul></ul>");
+      console.log('oi');
       $rootElement.append('<li class="vni"><span class="vnm oi" data-glyph="cog"></span><ul class="vnc utility"></ul></li>');
       a.options.forEach(function(handler) {
         if ($el.is(handler.selector)) {
@@ -3537,12 +3538,14 @@ function Variant() {
     $(".vgk").click(label);
     $(".vdh").click(label);
     $(".vga").on("click", function() {
+      console.log('vga clicked');
       evaluate();
       $.modal.close();
     });
     $(".vgb").keyup(function(event) {
       if (13 === event.keyCode) {
         if ("" != $(".vgb").val()) {
+          console.log('vgb clicked');
           evaluate();
           $.modal.close();
         }
@@ -3550,6 +3553,7 @@ function Variant() {
     });
     $(".vfy").on("click", function() {
       if ("" != $(".vfz").val()) {
+        console.log('vfy clicked');
         find();
         $.modal.close();
       }
@@ -3924,6 +3928,7 @@ function Variant() {
         $(".vem").addClass("empty-vem");
       }
       $(".viu .vnj").remove();
+      console.log('vca clicked');
       resize();
       onSuccess();
     });
