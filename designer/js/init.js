@@ -1356,11 +1356,7 @@ function Variant() {
    */
   function finish() {
     console.log('finish called');
-    var navTabs = $("<div />").addClass("vmh");
-    var $rootElement = $("<div />").addClass("vmh");
-    var ul = $("<div />").addClass("vmh");
-    /** @type {string} */
-    var li = "";
+    
     // Need to fetch from a url so we can load images from the page
     // if ($.localStorage(name + ".gallery.images")) {
     //   $("#vdp").html($.localStorage(name + ".gallery.images"));
@@ -1377,6 +1373,11 @@ function Variant() {
             url: 'http://rebeccacs.com/designer/listfiles.php',
             type: 'get',
             success: function(data) {
+              var navTabs = $("<div />").addClass("vmh");
+              var $rootElement = $("<div />").addClass("vmh");
+              var ul = $("<div />").addClass("vmh");
+              /** @type {string} */
+              var li = "";
               console.log('listed files.');
               data = JSON.parse(data);
               console.log('updated ' + data);
@@ -1401,8 +1402,6 @@ function Variant() {
               });
           }
       });
-      
-      
     // }
   }
   /**
