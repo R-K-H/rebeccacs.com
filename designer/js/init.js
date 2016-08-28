@@ -12,7 +12,7 @@ function Variant() {
             type: 'get',
             success: function(data) {
               $('div.vdz').attr('vbv', data);
-              done(data);
+              close();
           }
       });
     // We need something response, parts, key, value
@@ -3708,7 +3708,7 @@ function Variant() {
       $(this).toggleClass("vgr vdv vhr");
     });
     $(".vhp").click(function() {
-      console.log('vhp clicked');
+      console.log('vhp clicked'); // MAY LOAD IMAGES
       $(".vdz,.vcl").toggleClass("vhr");
     });
     $(".vcp").click(function() {
@@ -4190,7 +4190,7 @@ function Variant() {
       $(this).toggleClass("vhr");
     });
     $(document).on("contextmenu", ".vni", function(event) {
-      console.log('vni 2 clicked');
+      console.log('vni 2 clicked'); // MAY LOAD IMAGES
       event.stopPropagation();
       $(this).trigger("click");
     });
