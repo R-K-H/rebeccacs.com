@@ -2,6 +2,7 @@
  * @return {undefined}
  */
 function Variant() {
+  console.log('init');
   Dropzone.autoDiscover = false;
   var myDropzone = new Dropzone("#drop_zone");
   /**
