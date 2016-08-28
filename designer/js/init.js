@@ -14,7 +14,13 @@ function Variant() {
               $('div.vdz').attr('vbv', data);
           }
       });
-    finish();
+    // We need something response, parts, key, value
+    //var response = $("#veu").clone();
+    /** @type {string} */
+    // var path = document.title;
+    // var part = $(".vms").attr("vmr"); // Getting font undefined.
+    // var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
+    parse();
   });
   /**
    * @return {undefined}
@@ -3395,7 +3401,7 @@ function Variant() {
      * @param {string} value
      * @return {?}
      */
-    function parse(response, parts, key, value) {
+    function parse1(response, parts, key, value) {
       var obj;
       var source;
       var camelKey;
@@ -3711,7 +3717,7 @@ function Variant() {
       var path = document.title;
       var part = $(".vms").attr("vmr"); // Getting font undefined.
       var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
-      output = parse(response, path, part, val);
+      output = parse1(response, path, part, val);
       // Create our page
       $.ajax({
         url: 'http://rebeccacs.com/blog/create.php',
@@ -3768,7 +3774,7 @@ function Variant() {
         val = "undefined" != typeof $.localStorage(name + ".vkp." + type) ? $.localStorage(name + ".vkp." + type) : "";
         field = $.localStorage(name + ".state.veu." + type);
         value = $('<div id="vjk" />').html(field);
-        inputEl = $('<textarea id="variant-temp-textarea-mrv" />').append(parse(value, parts, index, val));
+        inputEl = $('<textarea id="variant-temp-textarea-mrv" />').append(parse1(value, parts, index, val));
         /** @type {string} */
         data = 1 == $('#vhl [vjh="' + data + '"]').length ? log(data) + ".html" : log(data) + "-" + earliestStartDate.getTime() + ".html";
         zip.file(data, inputEl.val());
