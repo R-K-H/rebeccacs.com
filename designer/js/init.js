@@ -4090,7 +4090,7 @@ function Variant() {
     });
     
     myDropzone.on("complete", function(file) {
-      parse();
+      finish();
     });
     $(document).on("mouseenter", ".viu .voh:not(.vib, .vjb)", function(dataAndEvents) {
       var div;
