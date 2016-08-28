@@ -1379,6 +1379,8 @@ function Variant() {
             success: function(data) {
               $('div.vdz').attr('vbv', data);
               console.log(data);
+              data = data.toString();
+              console.log(data);
               var asserterNames = data.split(",");
           }
       });
