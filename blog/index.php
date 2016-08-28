@@ -9,8 +9,11 @@
 	<div class="container">
 		<ul>
 			<?php				
-				foreach($scanned_directory as $file) { 
+				foreach($scanned_directory as $file) {
+					$texthtml = file_get_contents($file);
+					preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 					echo '<li>';
+					echo $image['src'];
 					echo '<a href="'.$file.'">'.$file.'</a>';
 					echo '</li>';
 				}
