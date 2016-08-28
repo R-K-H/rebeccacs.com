@@ -1323,10 +1323,10 @@ function Variant() {
     var elem;
     var files = evt.target.files;
     elem = $("#img-store .vdx .vmh").first();
-    if (elem.children().length > elem.next(".vdx .vmh").children().length) {
+    if (elem.children().length > elem.next("#img-store .vdx .vmh").children().length) {
       elem = elem.next("#img-store .vdx .vmh");
     }
-    if (elem.children().length > elem.next(".vdx .vmh").children().length) {
+    if (elem.children().length > elem.next("#img-store .vdx .vmh").children().length) {
       elem = elem.next("#img-store .vdx .vmh");
     }
     /** @type {number} */
