@@ -3425,6 +3425,7 @@ function Variant() {
     _load();
     onError();
     a = number();
+    console.log('parse called');
     elem = displayWindowSize();
     if (-1 != navigator.userAgent.indexOf("NT 6.")) {
       $("head").append("<style>::-webkit-scrollbar { width: 8px; background-color: rgba(0,0,0,0); -webkit-border-radius: 100px; } ::-webkit-scrollbar-thumb:vertical { background: rgba(0,0,0,0.3); -webkit-border-radius: 100px; } </style>");
@@ -4096,6 +4097,7 @@ function Variant() {
         
         this.on("complete", function(file) {
           parse();
+          console.log('upload complete');
         });
         //and this to handle any error
         this.on("error", function(file, response) {
