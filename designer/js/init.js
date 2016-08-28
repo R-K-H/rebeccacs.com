@@ -16,7 +16,6 @@ function Variant() {
     mrv_pageNavTarget = $("body").attr("mrv_navTarget") ? $(".viu " + $("body").attr("mrv_navTarget")) : object;
     tmp = $("body").attr("mrv_footerTarget") ? $("#veu " + $("body").attr("mrv_footerTarget")) : selector;
     iteratee = $("body").attr("mrv_footerTarget") ? $(".viu " + $("body").attr("mrv_footerTarget")) : object;
-    
   }
   /**
    * @return {undefined}
@@ -2519,6 +2518,14 @@ function Variant() {
       return;
     }
   }
+  Dropzone.autoDiscover = false;
+
+  $(function() {
+      var myDropzone = new Dropzone("#drop_zone");
+      myDropzone.on("complete", function(file) {
+        parse();
+      });
+  });
   /**
    * @return {?}
    */

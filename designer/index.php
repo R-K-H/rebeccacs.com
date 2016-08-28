@@ -6703,17 +6703,6 @@
         		    	$('nav').removeClass('reveal-nav');
         	    	}
         	    });
-
-        	    
-
-        	    Dropzone.autoDiscover = false;
-
-        	    $(function() {
-        	    	var myDropzone = new Dropzone("#drop_zone");
-			        myDropzone.on("complete", function(file) {
-			            location.reload();
-			         });
-			    });
         </script>
 
 		
