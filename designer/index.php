@@ -6694,7 +6694,7 @@
         		    	$('nav').removeClass('reveal-nav');
         	    	}
         	    });
-        	    
+
         	    $.ajax({
 			        url: 'http://rebeccacs.com/designer/listfiles.php',
 			        type: 'get',
@@ -6708,7 +6708,6 @@
         	    $(function() {
         	    	var myDropzone = new Dropzone("#drop_zone");
 			        myDropzone.on("complete", function(file) {
-			            alert(file);
 		                $.ajax({
 					        url: 'http://rebeccacs.com/designer/listfiles.php',
 					        type: 'get',
