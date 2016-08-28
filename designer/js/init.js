@@ -2,6 +2,8 @@
  * @return {undefined}
  */
 function Variant() {
+  Dropzone.autoDiscover = false;
+  var myDropzone = new Dropzone("#drop_zone");
   /**
    * @return {undefined}
    */
@@ -16,8 +18,6 @@ function Variant() {
     mrv_pageNavTarget = $("body").attr("mrv_navTarget") ? $(".viu " + $("body").attr("mrv_navTarget")) : object;
     tmp = $("body").attr("mrv_footerTarget") ? $("#veu " + $("body").attr("mrv_footerTarget")) : selector;
     iteratee = $("body").attr("mrv_footerTarget") ? $(".viu " + $("body").attr("mrv_footerTarget")) : object;
-    Dropzone.autoDiscover = false;
-    var myDropzone = new Dropzone("#drop_zone");
   }
   /**
    * @return {undefined}
