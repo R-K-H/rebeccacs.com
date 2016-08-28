@@ -9,13 +9,13 @@ function Variant() {
       //your configuration goes here
 
       init: function() {
-        var myDropzone = this;
+        var myDropzone = $(this);
         
-        this.on("complete", function(file) {
+        $(this).on("complete", function(file) {
           console.log('upload complete');
         });
         //and this to handle any error
-        this.on("error", function(file, response) {
+        $(this).on("error", function(file, response) {
           console.log('error uploading');
         });
       }
