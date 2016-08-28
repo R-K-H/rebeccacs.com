@@ -7,41 +7,7 @@ function Variant() {
   var myDropzone = new Dropzone("#drop_zone");
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
-    $.ajax({
-            url: 'http://rebeccacs.com/designer/listfiles.php',
-            type: 'get',
-            success: function(data) {
-              var navTabs = $("<div />").addClass("vmh");
-              var $rootElement = $("<div />").addClass("vmh");
-              var ul = $("<div />").addClass("vmh");
-              /** @type {string} */
-              var li = "";
-              console.log('listed files.');
-              data = JSON.parse(data);
-              //console.log('updated ' + data);
-              data = data.toString();
-              //$('div.vdz').attr('vbv', data);
-              //console.log('string ' + data);
-              //var asserterNames = $(".vdz").attr("vbv").split(",");
-              var asserterNames = data.split(",");
-              console.log('our names ' + asserterNames);
-              asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
-                /** @type {string} */
-                li = '<div class="vdy"><img class="vcj" delay-src="/assets/images/uploads/' + dataAndEvents + '" vis="' + dataAndEvents + '" onerror="window.mr_variant.defaultImageError(this)"/><span class="vec"></span></div>';
-                if (deepDataAndEvents % 3 === 0) {
-                  ul.append(li);
-                } else {
-                  if (deepDataAndEvents % 2 === 0) {
-                    $rootElement.append(li);
-                  } else {
-                    navTabs.append(li);
-                  }
-                }
-                console.log('appended ' + li + 'to table');
-                $("#vdp").append(navTabs).append($rootElement).append(ul);
-              });
-          }
-      });
+    finish();
     // We need something response, parts, key, value
     //var response = $("#veu").clone();
     /** @type {string} */
