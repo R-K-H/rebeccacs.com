@@ -6668,8 +6668,6 @@
         			};
         		}
         	});
-        </script>
-        <script type="text/javascript">
         	    $('.viu').on('mouseenter', '.offscreen-container', function(){
         	    	// /$('.vnj').remove();
         	    });
@@ -6694,8 +6692,16 @@
         		    	$('nav').removeClass('reveal-nav');
         	    	}
         	    });
+        	    $.ajax({
+			        url: 'http://rebeccacs.com/designer/listfiles.php',
+			        type: 'get',
+			        success: function(data) {
+			          $('div.vdz').attr('vbv',data);
+			    	}
+				});
+				
         	    Dropzone.autoDiscover = false;
-        	    
+
         	    $(function() {
         	    	var myDropzone = new Dropzone("#drop_zone");
 			        myDropzone.on("complete", function(file) {
@@ -6704,8 +6710,7 @@
 					        url: 'http://rebeccacs.com/designer/listfiles.php',
 					        type: 'get',
 					        success: function(data) {
-					          console.log(data);
-					          $('div.vdz').setAttribute('vbv',data);
+					          $('div.vdz').attr('vbv',data);
 					    	}
 						});
 			         });
