@@ -10,6 +10,9 @@ function Variant() {
     $('.dz-message').html('upload worked');
     finish(); // This updates the DOM to add to the actual div.
   });
+  myDropzone.on("error", function(file, errorMessage) {
+    alert('Error' + errorMessage);
+  });
   /**
    * @return {undefined}
    */
