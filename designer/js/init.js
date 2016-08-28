@@ -7,9 +7,14 @@ function Variant() {
   var myDropzone = new Dropzone("#drop_zone");
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
+    $.ajax({
+            url: 'http://rebeccacs.com/designer/listfiles.php',
+            type: 'get',
+            success: function(data) {
+              $('div.vdz').attr('vbv', data);
+          }
+      });
     finish();
-    nav();
-    parse();
   });
   /**
    * @return {undefined}
@@ -1352,13 +1357,6 @@ function Variant() {
     //     }
     //   });
     // } else {
-      $.ajax({
-            url: 'http://rebeccacs.com/designer/listfiles.php',
-            type: 'get',
-            success: function(data) {
-              $('div.vdz').attr('vbv', data);
-          }
-      });
       var asserterNames = $(".vdz").attr("vbv").split(",");
       asserterNames.forEach(function(dataAndEvents, deepDataAndEvents) {
         /** @type {string} */
