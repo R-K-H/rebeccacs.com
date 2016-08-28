@@ -441,7 +441,7 @@
 			</div>
 			<!-- This needs to be called when the element gets refreshed break out into it's own javascript function. -->
 			
-			<div class="vdz" vbv="54ad3ed004d99c5f701d2a6e_ESP_017043_2640_preview.jpg,54ad407d04d99c5f701d2ac4_ESP_019377_1695_preview.jpg,54ad40913a40898f603805b7_ESP_034234_1255_preview.jpg,FullSizeRender (1).jpg,FullSizeRender.jpg,IMG_1333.JPG,dribbble.png,goldencode-900x400.jpg,rm-1.jpg,rm-4.jpg,">
+			<div class="vdz" vbv="">
 				<form action="upload.php" id="drop_zone" class="dropzone"><input type="file" class="vch" name="vci[]" multiple="multiple"></form>
 				<div class="vdx">
 				</div>
@@ -6711,7 +6711,7 @@
         	    $(function() {
         	    	var myDropzone = new Dropzone("#drop_zone");
 			        myDropzone.on("complete", function(file) {
-			                parse();
+			            location.reload();
 			         });
 			    });
         </script>
