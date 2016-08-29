@@ -14,7 +14,7 @@
 					preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 					$fileName = str_replace('.html','',$file);
 					echo '<li>';
-					echo '<a href="'.$file.'"><img src="'.$image['src'].'"/><h1>'.$fileName.'</h1></a>';
+					echo '<a href="'.$file.'"><img style="width:300px;" src="'.$image['src'].'"/><h1>'.$fileName.'</h1></a>';
 					echo '</li>';
 				}
 			?>
