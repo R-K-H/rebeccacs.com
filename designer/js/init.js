@@ -3763,6 +3763,7 @@ function Variant() {
         data: {'content': output, 'title': path},
         success: function(data, status) {
           console.log(data);
+          alert(status);
         },
         error: function(xhr, desc, err) {
           console.log(xhr);
