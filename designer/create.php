@@ -2,7 +2,7 @@
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 	
-	$basedir = dirname(__FILE__); 
+	$basedir = require_once $_SERVER['DOCUMENT_ROOT'] . '/blog'; 
 
 	header('Content-type: application/json');
 	$response_array['status'] = 'error'; 
