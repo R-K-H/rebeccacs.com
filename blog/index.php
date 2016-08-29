@@ -12,9 +12,9 @@
 				foreach($scanned_directory as $file) {
 					$texthtml = file_get_contents($file);
 					preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
+					$fileName = str_replace('.html','',$file);
 					echo '<li>';
-					echo $image['src'];
-					echo '<a href="'.$file.'">'.$file.'</a>';
+					echo '<a href="'.$file.'"><img src="'.$image['src'].'"/><h1>'.$fileName.'</h1></a>';
 					echo '</li>';
 				}
 			?>
