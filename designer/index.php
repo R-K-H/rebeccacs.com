@@ -557,6 +557,7 @@
 		<div class="global-vfr vin vkf">
 			<img alt="Logo" src="img/full-logo.png">
 			<div class="vew">
+				<div class="vhs val">AIzaSyA2sPwbn0sgyNUIQo5_es0ciUtlq06LdvM</div>
 				<div class="vhs vap val">Clear Navs</div>
 				<div class="vhs vao val">Clear Footers</div>
 				<div class="vhs vaq val">Clear Pages</div>
