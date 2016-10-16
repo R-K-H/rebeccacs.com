@@ -2,16 +2,21 @@
  * @return {undefined}
  */
 function Variant() {
-  console.log('init');
+  //console.log('init');
   Dropzone.autoDiscover = false;
   var myDropzone = new Dropzone("#drop_zone");
   Dropzone.options.myDropzone = {
-    maxFilesize: 2 // MB
+    maxFilesize: 2, // MB
+    createImageThumbnails: false,
+    previewTemplate : '<div style="display:none"></div>'
   };
   myDropzone.on("complete", function(file) {
     console.log('upload complete');
     $('.dz-message').html('upload worked');
-    finish(); // This updates the DOM to add to the actual div.
+    var thisElement = $('#img-store .vmh').first();
+    thisElement.prepend('<div class="vdy"><img class="vcj" src="/assets/images/uploads/' + file.name + '" vis="' + file.name + '" /><span class="vjn"></span><span class="vec"></span></div>');
+    this.removeFile(file);
+    //finish(); // This updates the DOM to add to the actual div.
   });
   myDropzone.on("error", function(file, errorMessage) {
     alert('Error' + errorMessage);
@@ -70,7 +75,7 @@ function Variant() {
     }
     $(".vem").append('<div class="vaa data-vfs="' + name + '" vbq="' + name + "-" + val + '"><div class="vab"><span class="vir" contenteditable="true">' + $("#" + name).attr("vbr") + '</span></div><i class="vca variant-icon variant-close-circle" vbq="' + name + "-" + val + '"></i></div>');
     editableChanged();
-    console.log('chceck called');
+    // console.log('chceck called');
     parse();
     done(name + "-" + val);
     resize();
@@ -510,7 +515,7 @@ function Variant() {
    * @return {undefined}
    */
   function close(result) {
-    console.log('close called');
+    //console.log('close called');
     $(".vcl").modal({
       autoResize : true,
       overlayClose : true,
@@ -523,7 +528,7 @@ function Variant() {
        * @return {undefined}
        */
       onShow : function() {
-        console.log('close on show called');
+        //console.log('close on show called');
         $(".vdx").html($("#vdp").html());
         $(".vcp").attr("src", $("." + result).attr("src"));
         $(".vcm .veb").text($("." + result).get(0).naturalWidth + "x" + $("." + result).get(0).naturalHeight + " pixels");
@@ -533,7 +538,7 @@ function Variant() {
         var countThis = 1;
         $(".vdx .vdy").each(function(el) {
           // Dealing with the upload images. This is actually getting the # but not updating the display.
-          console.log(countThis);
+          //console.log(countThis);
           el = $(this).find("img").get(0);
           var script = $(this).find(".vec");
           script.text(el.naturalWidth + "x" + el.naturalHeight);
@@ -1079,7 +1084,7 @@ function Variant() {
    * @return {undefined}
    */
   function finished() {
-    console.log('finished called');
+    //console.log('finished called');
     var p = $(".vda").val();
     var content = $(".vdg").val();
     var label = $(".vdb").val();
@@ -1324,7 +1329,6 @@ function Variant() {
    * This is our file viewer.
    */
   function nav(evt) {
-    console.log('nav called');
     var _k;
     var file;
     var elem;
@@ -1333,11 +1337,9 @@ function Variant() {
     if (elem.children().length > elem.next(".vdx .vmh").children().length) {
       elem = elem.next(".vdx .vmh");
     }
-    if (elem.children().length > elem.next(".vdx .vmh").children().length) {
-      elem = elem.next(".vdx .vmh");
-    }
+
     /** @type {number} */
-    _k = 0;
+    _k = 0; // iteration
     for (;file = files[_k];_k++) {
       if (!$('#vdp [vis="' + file.name + '"]').length) {
         $('#vdp [vis="' + file.name + '"]').remove();
@@ -1351,7 +1353,7 @@ function Variant() {
    * @return {undefined}
    */
   function finish() {
-    console.log('finish called');
+    //console.log('finish called');
     
     // Need to fetch from a url so we can load images from the page
     // if ($.localStorage(name + ".gallery.images")) {
@@ -1374,7 +1376,7 @@ function Variant() {
               var ul = $("<div />").addClass("vmh");
               /** @type {string} */
               var li = "";
-              console.log('listed files.');
+              //console.log('listed files.');
               data = JSON.parse(data);
               //console.log('updated ' + data);
               data = data.toString();
@@ -1894,7 +1896,7 @@ function Variant() {
       $.localStorage(name + "vmp", $(".vms").attr("vmr"));
       $.localStorage(name + ".vkp", "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : " ");
     }
-    console.log('parse called');
+    //console.log('parse called');
   }
   /**
    * @return {undefined}
@@ -3469,7 +3471,7 @@ function Variant() {
     _load();
     onError();
     a = number();
-    console.log('parse called');
+    //console.log('parse called');
     elem = displayWindowSize();
     if (-1 != navigator.userAgent.indexOf("NT 6.")) {
       $("head").append("<style>::-webkit-scrollbar { width: 8px; background-color: rgba(0,0,0,0); -webkit-border-radius: 100px; } ::-webkit-scrollbar-thumb:vertical { background: rgba(0,0,0,0.3); -webkit-border-radius: 100px; } </style>");
@@ -3700,7 +3702,7 @@ function Variant() {
       resize();
       onSuccess();
       parse();
-      console.log('vfo clicked called');
+
       done();
     });
     $(".vfl").click(function() {
@@ -3711,7 +3713,7 @@ function Variant() {
       $(this).closest(".vho").find(".vly").text(pauseText);
       resize();
       onSuccess();
-      console.log('vfl called');
+
       parse();
       done();
     });
@@ -3724,14 +3726,16 @@ function Variant() {
       $(this).toggleClass("vgr vdv vhr");
     });
     $(".vhp").click(function() {
-      console.log('vhp clicked'); // MAY LOAD IMAGES
+      //console.log('vhp clicked'); // MAY LOAD IMAGES
       $(".vdz,.vcl").toggleClass("vhr");
     });
     $(".vcp").click(function() {
       $(".vhp").trigger("click");
     });
+
     // Matches to nav(etv) to get files.
     $(".vch").change(function(err) {
+      console.log(err);
       nav(err);
     });
     $(".vee").click(function() {
@@ -3759,8 +3763,7 @@ function Variant() {
       // Create our page
       var didWork = test('all');
 
-      console.log(didWork);
-      var zip = new JSZip;
+
       // THIS CREATES PAGES 
       $.ajax({
         url: '/designer/create.php',
@@ -3773,8 +3776,8 @@ function Variant() {
           //alert(status);
         },
         error: function(xhr, desc, err) {
-          console.log(xhr);
-          console.log("Details: " + desc + "\nError:" + err);
+          //console.log(xhr);
+          //console.log("Details: " + desc + "\nError:" + err);
         }
       }); // end ajax call
     });
@@ -3952,7 +3955,7 @@ function Variant() {
         $(".vem").addClass("empty-vem");
       }
       $(".viu .vnj").remove();
-      console.log('vca clicked');
+      //console.log('vca clicked');
       resize();
       onSuccess();
     });
@@ -3965,7 +3968,7 @@ function Variant() {
         });
       });
       $this.addClass($(this).attr("nav-class"));
-      console.log('vfg called');
+      //console.log('vfg called');
       parse();
       done();
     });
@@ -4211,11 +4214,11 @@ function Variant() {
       $e.append(div);
     });
     $(document).on("click", ".vni", function() {
-      console.log('vni clicked');
+      //console.log('vni clicked');
       $(this).toggleClass("vhr");
     });
     $(document).on("contextmenu", ".vni", function(event) {
-      console.log('vni 2 clicked'); // MAY LOAD IMAGES
+      //console.log('vni 2 clicked'); // MAY LOAD IMAGES
       event.stopPropagation();
       $(this).trigger("click");
     });
@@ -4362,7 +4365,7 @@ function Variant() {
         $("#veu ." + also).removeClass("vjb vib").addClass("vjm");
       }
       each();
-      console.log('vjb called');
+      //console.log('vjb called');
       Init();
       parse();
     });
@@ -4371,7 +4374,7 @@ function Variant() {
       $(".vco").val($(this).attr("src").replace("../img/", "img/"));
       $(".vcp").attr("src", $(this).attr("src"));
       $(".veb").text(el.naturalWidth + "x" + el.naturalHeight + " pixels");
-      console.log('vcj clicked');
+      //console.log('vcj clicked');
       $(".vdz,.vcl").toggleClass("vhr");
     });
     $(document).on("click", ".vgl", function() {
@@ -4480,7 +4483,7 @@ function Variant() {
         self.removeClass("keep--sm-icon").addClass("icon--sm");
       }
       filter();
-      console.log('vam called');
+      //console.log('vam called');
       parse();
     });
     $(document).on("click", ".vbz", function() {
@@ -4519,7 +4522,7 @@ function Variant() {
       if ($(this).hasClass("refresh")) {
         done(e);
       }
-      console.log('vks called');
+      //console.log('vks called');
       parse();
     });
     $(document).on("click", ".vkt", function(event) {
@@ -4558,7 +4561,7 @@ function Variant() {
           window.mr_parallax.mr_scrollAssist = optsData;
         }
       }
-      console.log('vkt called');
+      //console.log('vkt called');
       parse();
     });
     $(document).on("click", ".vkv", function() {
@@ -4575,7 +4578,7 @@ function Variant() {
           $(this).removeAttr("class");
         }
       });
-      console.log('vkv called');
+      //console.log('vkv called');
       parse();
       if ($(this).hasClass("refresh")) {
         done(errors);

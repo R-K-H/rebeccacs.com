@@ -42,14 +42,14 @@
         	.vnw{ top: 0; }
         	.tabbed-content .vnu{ margin-bottom: 24px; }
         	#drop_zone {
-			    border: 2px dashed #bbb;
+			    border: 2px dashed #fff;
 			    -moz-border-radius: 5px;
 			    -webkit-border-radius: 5px;
 			    border-radius: 5px;
 			    padding: 25px;
 			    text-align: center;
 			    font: 20pt bold 'Vollkorn';
-			    color: #bbb;
+			    color: #fff;
 			}
 			.example {
 			    padding: 10px;
@@ -57,6 +57,9 @@
 			}
 			.dz-success-mark, .dz-error-message, .dz-error-mark, .dz-progress, .dz-details {
 				display: none !important;
+			}
+			.vdx::-webkit-scrollbar { 
+			    display: none; 
 			}
         </style>
 		
@@ -445,7 +448,9 @@
 			<!-- This needs to be called when the element gets refreshed break out into it's own javascript function. -->
 			
 			<div id="img-store" class="vdz" vbv="">
-				<form action="upload.php" id="drop_zone" class="dropzone"><input type="file" class="vch" name="vci[]" multiple="multiple"></form>
+				<form action="upload.php" id="drop_zone" class="dropzone" style="margin-top: 10px;">
+					<input type="file" class="vch" name="vci[]" multiple="multiple">
+				</form>
 				<div class="vdx">
 				</div>
 			</div>
