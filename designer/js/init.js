@@ -206,7 +206,6 @@ function Variant() {
      * @return {undefined}
      */
     function test(name) {
-      console.log('test called');
       /** @type {string} */
       var v = ".viu";
       if ("undefined" != typeof name) {
@@ -1367,7 +1366,7 @@ function Variant() {
     //   });
     // } else {
       $.ajax({
-            url: 'http://rebeccacs.com/designer/listfiles.php',
+            url: 'listfiles.php',
             type: 'get',
             success: function(data) {
               var navTabs = $("<div />").addClass("vmh");
@@ -2000,11 +1999,12 @@ function Variant() {
       $(".vem").addClass("empty-vem");
     }
   }
-  /**
+  /**  THIS CREATES OUR ZIP
    * @param {string} callback
    * @return {?}
    */
   function test(callback) {
+    console.log('creating page with zip.');
     var title;
     var masterHtml;
     var layoutMap;
@@ -2040,7 +2040,7 @@ function Variant() {
       };
       /** @type {string} */
       undef = JSON.stringify(generatedColumn);
-      zip.file(log(pageName) + "-" + now.getTime() + ".page", undef);
+      zip.file(log(pageName) + "-" + now.getTime() + ".html", undef);
     }), zip.file(name + ".navs", $("#vbn").html()), zip.file(name + ".footers", $("#vbl").html()), "all" != callback && (title = log(pageName)), r20 = zip.generate({
       type : "blob",
       compression : "deflate"
@@ -3755,7 +3755,13 @@ function Variant() {
       var part = $(".vms").attr("vmr"); // Getting font undefined.
       var val = "undefined" != typeof $("#vkk").attr("class") ? $("#vkk").attr("class") : ""; // Getting page options
       output = parse1(response, path, part, val);
+
       // Create our page
+      var didWork = test('all');
+
+      console.log(didWork);
+      var zip = new JSZip;
+      // THIS CREATES PAGES 
       $.ajax({
         url: '/designer/create.php',
         type: 'post',
@@ -3763,7 +3769,8 @@ function Variant() {
         data: {'content': output, 'title': path},
         success: function(data, status) {
           console.log(data);
-          alert(status);
+          void error("Saved", "You created the file.<br /><br />");
+          //alert(status);
         },
         error: function(xhr, desc, err) {
           console.log(xhr);
