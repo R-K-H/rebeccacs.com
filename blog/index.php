@@ -86,9 +86,8 @@
 		</div>
 	</div>
 	<div class="col-md-4" style="overflow: hidden;">
-		<h1>Lust List</h1>
-		<img src="/assets/images/headshot.jpg" style="width:auto;">
-		<p>This is paragraph text for the lust list. This will have images and a link.</p>
+		<h1 style="padding:0;margin: 0;font-style: italic;">Lust List</h1>
+		<img src="/assets/images/demo-boot.jpg" class="img-responsive">
 	</div>
 	</div>
 		<ul style="list-style-type:none; display: block; padding:0px;">
