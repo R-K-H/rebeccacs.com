@@ -3,25 +3,31 @@
  */
 function Variant() {
   //console.log('init');
-  Dropzone.autoDiscover = false;
-  var myDropzone = new Dropzone("#drop_zone");
-  Dropzone.options.myDropzone = {
-    maxFilesize: 2, // MB
-    createImageThumbnails: false,
-    previewTemplate : '<div style="display:none"></div>'
-  };
-  myDropzone.on("complete", function(file) {
-    console.log('upload complete');
-    $('.dz-message').html('upload worked');
-    var thisElement = $('#img-store .vmh').first();
-    thisElement.prepend('<div class="vdy"><img class="vcj" src="/assets/images/uploads/' + file.name + '" vis="' + file.name + '" /><span class="vjn"></span><span class="vec"></span></div>');
-    this.removeFile(file);
-    //finish(); // This updates the DOM to add to the actual div.
-  });
-  myDropzone.on("error", function(file, errorMessage) {
-    alert('Error' + errorMessage);
-    this.removeFile(file); 
-  });
+  function createDropzone(){
+
+    if(typeof $("#my-dropzone").get(0).dropzone === 'object'){
+      Dropzone.forElement("#my-dropzone").destroy();
+    }
+    Dropzone.autoDiscover = false;
+    var myDropzone = new Dropzone("#my-dropzone");
+    Dropzone.options.myDropzone = {
+      maxFilesize: 2, // MB
+      createImageThumbnails: false,
+      previewTemplate : '<div style="display:none"></div>'
+    };
+    myDropzone.on("complete", function(file) {
+      console.log('upload complete');
+      $('.dz-message').html('upload worked');
+      var thisElement = $('#img-store .vmh').first();
+      thisElement.prepend('<div class="vdy"><img class="vcj" src="/assets/images/uploads/' + file.name + '" vis="' + file.name + '" /><span class="vjn"></span><span class="vec"></span></div>');
+      this.removeFile(file);
+      //finish(); // This updates the DOM to add to the actual div.
+    });
+    myDropzone.on("error", function(file, errorMessage) {
+      alert('Error' + errorMessage);
+      this.removeFile(file); 
+    });
+}
   /**
    * @return {undefined}
    */
@@ -2833,6 +2839,7 @@ function Variant() {
     var markup = $('<div class="vnw"></div>');
     if ($(node).unbind("click").bind("click", function(ev) {
       console.log('close event');
+      createDropzone();
       return close($("." + name).attr("vic")), ev.stopPropagation && ev.stopPropagation(), ev.returnValue = false, false; // Added this for close(result);
     }).attr("vof", $("." + name).attr("vic")), 100 >= item && (mh = "2px"), mayParseLabeledStatementInstead !== false) {
       if (l) {
