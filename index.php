@@ -55,6 +55,5 @@
 				</div>
 			</div>
 <?php 
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/instagram.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/foot.php';
 ?>			
