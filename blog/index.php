@@ -12,10 +12,12 @@
 				foreach($scanned_directory as $file) {
 					$texthtml = file_get_contents($file);
 					preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
-					$fileName = str_replace('.html','',$file);
-					echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'">';
-					echo '<li style="display: block; margin-bottom:20px; height:400px; padding-bottom:20px; background: url('.$image['src'].') center center;">';
-					echo '</li><h1 style="color:#FFF; margin-top:-110px; padding-left:20px; padding-bottom:20px;">'.ucwords(str_replace("-", " ", $fileName)).'</h1></a>';
+					if(!empty($image)){
+						$fileName = str_replace('.html','',$file);
+						echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'">';
+						echo '<li style="display: block; margin-bottom:20px; height:350px; padding-bottom:20px; background: url('.$image['src'].') center center;">';
+						echo '</li><h1 style="color:#FFF; margin-top:-110px; padding-left:20px; padding-bottom:20px;">'.ucwords(str_replace("-", " ", $fileName)).'</h1></a>';
+					}
 				}
 			?>
 		</ul>
