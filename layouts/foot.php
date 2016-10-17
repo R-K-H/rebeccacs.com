@@ -5,10 +5,11 @@
 		<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="/assets/js/jquery.lazyload.js"></script>
 		<script type="text/javascript" src="/assets/js/submitcontact.js"></script>
-		<script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+		<script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
 		<script type="text/javascript" src="/assets/js/instagramfeed.js"></script>
 		<script type="text/javascript" src="/assets/js/imagesizes.js"></script>
 		<script type="text/javascript" src="/assets/js/google.js"></script>
+		<script type="text/javascript" src="/assets/js/responsiveslides.min.js"></script>
 		<script type="text/javascript">
 	      $(document).ready(function(){
 			  $('.your-class').slick({
