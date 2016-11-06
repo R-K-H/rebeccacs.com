@@ -165,7 +165,7 @@
 			preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 			if(!empty($image)){
 
-				echo '<li><a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'"><img src="'.$image['src'].'" alt="" class="img-responsive"></a></li>';
+				echo '<li style="background: url(\''.$image['src'].'\') center center;"><a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'">&nbsp;</a></li>';
 			}
 		}
 		?>
