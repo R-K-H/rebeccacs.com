@@ -157,7 +157,8 @@
 			$texthtml = file_get_contents($file);
 			preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 			if(!empty($image)){
-				echo '<li><img src="'.$image['src'].'" alt="" class="img-responsive"></li>';
+
+				echo '<li><a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'"><img src="'.$image['src'].'" alt="" class="img-responsive"></a></li>';
 			}
 		}
 		?>
