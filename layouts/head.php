@@ -28,8 +28,11 @@
 		<meta name="p:domain_verify" content="ffee7fb519a29b809227451780ce6bab"/>
 
 		<link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+		<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		
 		<script type="text/javascript" src="/assets/js/mobile.js"></script>
 
 	    <style type="text/css">

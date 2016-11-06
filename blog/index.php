@@ -17,6 +17,7 @@
 	  width: 100%;
 	  padding: 0;
 	  margin: 0;
+	  height:500px; 
 	  }
 
 	.rslides li {
@@ -35,38 +36,70 @@
 	  }
 
 	.rslides img {
-	  display: block;
+	  display: block;	  
 	  height: auto;
 	  float: left;
 	  width: 100%;
 	  border: 0;
 	  }
 	  .centered-btns_nav {
-  z-index: 3;
-  position: absolute;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 50%;
-  left: 0;
-  opacity: 0.7;
-  text-indent: -9999px;
-  overflow: hidden;
-  text-decoration: none;
-  height: 61px;
-  width: 38px;
-  background: transparent url("/assets/images/themes.gif") no-repeat left top;
-  margin-top: -45px;
-  }
+	  z-index: 3;
+	  position: absolute;
+	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+	  top: 50%;
+	  left: 0;
+	  opacity: 0.7;
+	  text-indent: -9999px;
+	  overflow: hidden;
+	  text-decoration: none;
+	  height: 61px;
+	  width: 38px;
+	  background: transparent url("/assets/images/themes.gif") no-repeat left top;
+	  margin-top: -45px;
+	  }
 
-.centered-btns_nav:active {
-  opacity: 1.0;
-  }
+	.centered-btns_nav:active {
+	  opacity: 1.0;
+	  }
 
-.centered-btns_nav.next {
-  left: auto;
-  background-position: right top;
-  right: 0;
-  }
+	.centered-btns_nav.next {
+	  left: auto;
+	  background-position: right top;
+	  right: 0;
+  	}
+	#newsletter{
+		z-index: 99999;
+		height: 150px;
+		right:0px;
+		position: fixed;
+	}
+	#newsletter-body{
+		float: right;
+		width: 460px;
+		height: 150px;
+		padding-left: 20px;
+		padding-right: 5px;
+	}
+	#button{
+		height: 150px;
+		width: 30px;
+		float: left;
+		color: white;
+		background: black;
+	}
+	#button:after{
+		content: '<';
+	}
+	.reveal:after{
+		content:'X' !important;
+	}
+	.fl{
+	float:left;
+	}
+
 </style>
+<div id="newsletter"><div id="button"></div><div id="newsletter-body" style="display: none;"><p>Enter your email below to receive the monthly newsletter and periodic updates.</p><input type="text" name="email" placeholder="email address" /><button class="button">Sign Up</button></div></div>
+
 <div class="no-gutter row"></div>
 	<div class="container">
 	<div class="row" style="padding-bottom: 50px;">
@@ -78,7 +111,7 @@
 			$texthtml = file_get_contents($file);
 			preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 			if(!empty($image)){
-				echo '<li><img src="'.$image['src'].'" alt=""></li>';
+				echo '<li><img src="'.$image['src'].'" alt="" class="img-responsive"></li>';
 			}
 		}
 		?>
@@ -88,6 +121,7 @@
 	<div class="col-md-4" style="overflow: hidden;">
 		<h1 style="padding:0;margin: 0;font-style: italic;">Lust List</h1>
 		<img src="/assets/images/demo-boot.jpg" class="img-responsive">
+		<img src="/assets/images/lust-list-2.jpg" class="img-responsive">
 	</div>
 	</div>
 		<ul style="list-style-type:none; display: block; padding:0px;">
@@ -126,6 +160,31 @@
 			  after: function(){}     // Function: After callback
 			});
 	  });
+		$( "#button" ).on('click',function(e) {
+			$('#newsletter-body').toggle(500);
+			$('#button').toggleClass('reveal');
+			e.preventDefault();
+		});
+		$(function() {
+
+		    var $sidebar   = $("#newsletter"), 
+		        $window    = $(window),
+		        offset     = $sidebar.offset(),
+		        topPadding = 300;
+
+		    $window.scroll(function() {
+		        if ($window.scrollTop() > offset.top) {
+		            $sidebar.stop().animate({
+		                marginTop: topPadding
+		            });
+		        } else {
+		            $sidebar.stop().animate({
+		                marginTop: 0
+		            });
+		        }
+		    });
+		    
+		});
 	</script>
 <?php 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/foot.php';

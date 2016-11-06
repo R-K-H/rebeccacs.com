@@ -16,7 +16,7 @@
 					<nav class="main-navigation navigation">
 						<ul id="menu-main" class="clearfix menu">
 							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com">Home</a></li>
-							<!-- <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com/blog">Blog</a></li> -->
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com/blog">Blog</a></li>
 							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com/work">work</a></li>
 							<!-- <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com/about">About</a></li> -->
 						</ul>
