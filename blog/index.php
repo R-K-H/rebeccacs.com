@@ -42,6 +42,38 @@
 	  width: 100%;
 	  border: 0;
 	  }
+	  .lslides {
+	  position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	  height:500px; 
+	  }
+
+	.lslides li {
+	  -webkit-backface-visibility: hidden;
+	  position: absolute;
+	  display: none;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	  }
+
+	.lslides li:first-child {
+	  position: relative;
+	  display: block;
+	  float: left;
+	  }
+
+	.lslides img {
+	  display: block;	  
+	  height: auto;
+	  float: left;
+	  width: 100%;
+	  border: 0;
+	  }
 	  .centered-btns_nav {
 	  z-index: 3;
 	  position: absolute;
@@ -120,8 +152,10 @@
 	</div>
 	<div class="col-md-4" style="overflow: hidden;">
 		<h1 style="padding:0;margin: 0;font-style: italic;">Lust List</h1>
-		<img src="/assets/images/demo-boot.jpg" class="img-responsive">
-		<img src="/assets/images/lust-list-2.jpg" class="img-responsive">
+		<ul class="lslides centered-btns centered-btns1" id="slider2">
+			<li><img src="/assets/images/demo-boot.jpg" class="img-responsive"></li>
+			<li><img src="/assets/images/lust-list-2.jpg" class="img-responsive"></li>
+		</ul>
 	</div>
 	</div>
 		<ul style="list-style-type:none; display: block; padding:0px;">
@@ -142,6 +176,24 @@
 	<script type="text/javascript">
 		$(function() {
 	    $(".rslides").responsiveSlides({
+			  auto: true,             // Boolean: Animate automatically, true or false
+			  speed: 500,            // Integer: Speed of the transition, in milliseconds
+			  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+			  pager: false,           // Boolean: Show pager, true or false
+			  nav: true,             // Boolean: Show navigation, true or false
+			  random: false,          // Boolean: Randomize the order of the slides, true or false
+			  pause: false,           // Boolean: Pause on hover, true or false
+			  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+			  prevText: "Previous",   // String: Text for the "previous" button
+			  nextText: "Next",       // String: Text for the "next" button
+			  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+			  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+			  manualControls: "",     // Selector: Declare custom pager navigation
+			  namespace: "centered-btns",   // String: Change the default namespace used
+			  before: function(){},   // Function: Before callback
+			  after: function(){}     // Function: After callback
+			});
+	    $(".lslides").responsiveSlides({
 			  auto: true,             // Boolean: Animate automatically, true or false
 			  speed: 500,            // Integer: Speed of the transition, in milliseconds
 			  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
