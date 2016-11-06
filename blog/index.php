@@ -118,6 +118,7 @@
 		height: 150px;
 		right:0px;
 		position: fixed;
+		background: #fff;
 	}
 	#newsletter-body{
 		float: right;
@@ -132,11 +133,17 @@
 		float: left;
 		color: white;
 		background: black;
+		text-align: center;
+		vertical-align: middle;
 	}
 	#button:after{
+		text-align: center;
+		vertical-align: middle;
 		content: '<';
 	}
 	.reveal:after{
+		text-align: center;
+		vertical-align: middle;
 		content:'X' !important;
 	}
 	.fl{
