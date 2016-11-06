@@ -5905,8 +5905,9 @@
         &lt;link href="/assets/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" /&gt;
         &lt;link href="/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" /&gt;
         &lt;link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="all" /&gt;
-        &lt;link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'
-        &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"&gt;
+        &lt;link rel="stylesheet" href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'/&gt;
+        &lt;link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'&gt;
+
     &lt;/head&gt;
     &lt;body [optional-body-classes]&gt;
 				</code>
@@ -6630,30 +6631,7 @@
 		</script>
 		<div id="veu" class="vih">
 <div class="nav-container">
-<header id="header" role="banner">
-			<div class="container">
-				<div class="inner">
-					<div class="info">
-						<div id="social-div">
-						<ul class="social-links">
-							<li><a class="fa fa-twitter twitter-btn" href="https://twitter.com/rebecca__cs" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'twitter');"></a></li>
-							<li><a class="fa fa-instagram instagram-btn" href="https://instagram.com/rebecca__cs" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'instagram');"></a></li>
-							<li><a class="fa fa-pinterest pinterest-btn" href="https://www.pinterest.com/rebecca_cs/" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'pinterest');"></a></li>
-							<li><a class="fa fa-envelope email-btn" href="mailto:hello@rebeccacs.com" target="_blank" onclick="ga('send', 'event', 'external click', 'click', 'email');"></a></li>
-						</ul>
-						</div>
-					</div>
-					<nav class="main-navigation navigation">
-						<ul id="menu-main" class="clearfix menu">
-							<!-- <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com">Home</a></li> -->
-							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?php $_SERVER['HTTP_HOST']?>/blog">Blog</a></li>
-							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?php $_SERVER['HTTP_HOST']?>/work">work</a></li>
-							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?php $_SERVER['HTTP_HOST']?>/about">About</a></li>
-						</ul>
-					</nav>
-					</div>
-			</div>
-		</header>	
+
 </div>
 
 <div class="main-container">
