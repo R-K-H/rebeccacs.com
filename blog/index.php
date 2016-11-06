@@ -181,7 +181,7 @@
 					if(!empty($image)){
 						$fileName = str_replace('.html','',$file);
 						echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'">';
-						echo '<li style="display: block; margin-bottom:20px; height:350px; padding-bottom:20px; background: url('.$image['src'].') center center;">';
+						echo '<li style="display: block; margin-bottom:20px; height:350px; padding-bottom:20px; background: url("'.$image['src'].'"") center center;">';
 						echo '<div id="outer"><div id="inner"><header class="header" style="margin-top: 330px;"><span class="white-btn">'.ucwords(str_replace("-", " ", $fileName)).'</span></header></div></div></li></a>';
 					}
 				}
