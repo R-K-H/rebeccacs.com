@@ -2,9 +2,23 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/head.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/header.php';
    
-    $directory = $_SERVER['DOCUMENT_ROOT'] . '/blog';
-	$scanned_directory = array_diff(scandir($directory), array('..', '.', 'index.php','.gitignore','backup'));
+    $dir = $_SERVER['DOCUMENT_ROOT'] . '/blog';
+	//$scanned_directory = array_diff(scandir($directory), array('..', '.', 'index.php','.gitignore','backup'));
+	function scan_dir($dir) {
+	    $ignored = array('..', '.', 'index.php','.gitignore','backup');
 
+	    $files = array();    
+	    foreach (scandir($dir) as $file) {
+	        if (in_array($file, $ignored)) continue;
+	        $files[$file] = filemtime($dir . '/' . $file);
+	    }
+
+	    arsort($files);
+	    $files = array_keys($files);
+
+	    return ($files) ? $files : false;
+	}
+	$files = scan_dir($dir);
 ?>
 <style type="text/css">
 	#hideoverflow { overflow: hidden; }
@@ -139,7 +153,7 @@
 	<div class="rslides_container">
 		<ul class="rslides centered-btns centered-btns1" id="slider1">
 		<?php 
-		foreach($scanned_directory as $file) {
+		foreach($files as $file) {
 			$texthtml = file_get_contents($file);
 			preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 			if(!empty($image)){
@@ -150,7 +164,7 @@
 		</ul>
 		</div>
 	</div>
-	<div class="col-md-4" style="overflow: hidden;">
+	<div class="col-md-3 col-md-offset-1" style="overflow: hidden;">
 		<h1 style="padding:0;margin: 0;font-style: italic;">Lust List</h1>
 		<ul class="lslides centered-btns centered-btns1" id="slider2">
 			<li><img src="/assets/images/demo-boot.jpg" class="img-responsive"></li>
@@ -160,7 +174,7 @@
 	</div>
 		<ul style="list-style-type:none; display: block; padding:0px;">
 			<?php				
-				foreach($scanned_directory as $file) {
+				foreach($files as $file) {
 					$texthtml = file_get_contents($file);
 					preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 					if(!empty($image)){
