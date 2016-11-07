@@ -175,8 +175,8 @@
 	<div class="col-md-3 col-md-offset-1" style="overflow: hidden;">
 		<h1 style="padding:0;margin: 0;font-style: italic;">Lust List</h1>
 		<ul class="lslides centered-btns centered-btns1" id="slider2">
-			<li><img src="/assets/images/demo-boot.jpg" class="img-responsive"></li>
-			<li><img src="/assets/images/lust-list-2.jpg" class="img-responsive"></li>
+			<li style="width: 250px; height:250px; background: url('/assets/images/demo-boot.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
+			<li style="width: 250px; height:250px; background: url('/assets/images/lust-list-2.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
 		</ul>
 	</div>
 	</div>
