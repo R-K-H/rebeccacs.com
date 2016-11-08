@@ -88,13 +88,13 @@
 	  width: 100%;
 	  border: 0;
 	  }
-	  .centered-btns_nav {
+	 .centered-btns_nav {
 	  z-index: 3;
 	  position: absolute;
 	  -webkit-tap-highlight-color: rgba(0,0,0,0);
 	  top: 50%;
 	  left: 0;
-	  opacity: 0.7;
+	  opacity: 0.5;
 	  text-indent: -9999px;
 	  overflow: hidden;
 	  text-decoration: none;
@@ -103,15 +103,22 @@
 	  background: transparent url("/assets/images/themes.gif") no-repeat left top;
 	  margin-top: -45px;
 	  }
-
+	 .centered-btns_nav:hover {
+	  opacity: 1.0;
+	}
 	.centered-btns_nav:active {
 	  opacity: 1.0;
-	  }
+	}
 
 	.centered-btns_nav.next {
 	  left: auto;
 	  background-position: right top;
-	  right: 0;
+	  right: 10px !important;
+  	}
+  	.centered-btns_nav.prev {
+	  left: auto;
+	  background-position: left top;
+	  left: 10px !important;
   	}
 	#newsletter{
 		z-index: 99999;
@@ -220,7 +227,7 @@
 			  speed: 500,            // Integer: Speed of the transition, in milliseconds
 			  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
 			  pager: false,           // Boolean: Show pager, true or false
-			  nav: true,             // Boolean: Show navigation, true or false
+			  nav: false,             // Boolean: Show navigation, true or false
 			  random: false,          // Boolean: Randomize the order of the slides, true or false
 			  pause: false,           // Boolean: Pause on hover, true or false
 			  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
