@@ -204,7 +204,7 @@
 				$fileName = str_replace('.html','',$file);
 				echo '<li style="background: url(\''.$image['src'].'\') center center;">';
 				echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="/blog/'.$file.'">';
-				echo '<div class="m-slider-el-title"><header class="header" style="width: 160px; margin: auto;">';
+				echo '<div class="m-slider-el-title"><header class="header" style="width: auto; ">';
 				echo '<span class="white-btn">'.ucwords(str_replace("-", " ", $fileName)).'</span></header></div>';
 				echo '</a></li>';
 			}
@@ -224,7 +224,7 @@
 		</ul>
 	</div>
 	</div>
-		<header class="header" style="width: 300px; margin: auto;">
+		<header class="header" style="width: 170px; margin: auto; padding-bottom: 20px;">
 			<span class="white-btn">Recent Posts</span>
 		</header>
 		<ul style="list-style-type:none; display: block; padding:0px;">
