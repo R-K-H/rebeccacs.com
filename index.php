@@ -163,6 +163,16 @@
 	float:left;
 	}
 
+	.m-slider-el-title {
+	    background-color: #FFFFFF;
+	    padding: 2rem;
+	    font-weight: 300;
+	    /* font-size: 1.3125rem; */
+	    color: #000;
+	    position: absolute;
+	    bottom: 50px;
+	}
+
 </style>
 <div id="newsletter"><div id="button"></div><div id="newsletter-body" style="display: none;"><p>Enter your email below to receive the monthly newsletter and periodic updates.</p><input type="text" name="email" placeholder="email address" /><button class="button">Sign Up</button></div></div>
 
@@ -177,8 +187,11 @@
 			$texthtml = file_get_contents('blog/'.$file);
 			preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 			if(!empty($image)){
-
-				echo '<li style="background: url(\''.$image['src'].'\') center center;"><a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="/blog/'.$file.'">&nbsp;</a></li>';
+				$fileName = str_replace('.html','',$file);
+				echo '<li style="background: url(\''.$image['src'].'\') center center;">';
+				echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="/blog/'.$file.'">';
+				echo '<div class="m-slider-el-title">'.ucwords(str_replace("-", " ", $fileName)).'</div>';
+				echo '</a></li>';
 			}
 		}
 		?>
