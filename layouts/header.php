@@ -17,8 +17,8 @@
 						<ul id="menu-main" class="clearfix menu">
 							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://rebeccacs.com">Home</a></li>
 							<!-- <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?php $_SERVER['HTTP_HOST']?>/blog">Blog</a></li> -->
-							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?php $_SERVER['HTTP_HOST']?>/work">work</a></li>
 							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?php $_SERVER['HTTP_HOST']?>/about">About</a></li>
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="<?php $_SERVER['HTTP_HOST']?>/work">work</a></li>
 						</ul>
 					</nav>
 					</div>
