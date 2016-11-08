@@ -10,7 +10,7 @@
 	  		<div class="col-md-5">
 
 	  			<h1 style="padding-top:80px;">Bio</h1>
-	  			<p>Rebecca Cordalis-Selvig is an aesthete, tastemaker and blogger currently working as an assistant and freelance fashion stylist in Vancouver, Canada.</p>
+	  			<p>Rebecca Cordalis-Selvig is an aesthete, tastemaker and writer currently working as an assistant and freelance fashion stylist in Vancouver, Canada.</p>
 
 	  		</div>
 	  	</div>
