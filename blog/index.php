@@ -88,13 +88,13 @@
 	  width: 100%;
 	  border: 0;
 	  }
-	  .centered-btns_nav {
+	 .centered-btns_nav {
 	  z-index: 3;
 	  position: absolute;
 	  -webkit-tap-highlight-color: rgba(0,0,0,0);
 	  top: 50%;
 	  left: 0;
-	  opacity: 0.7;
+	  opacity: 0.5;
 	  text-indent: -9999px;
 	  overflow: hidden;
 	  text-decoration: none;
@@ -103,15 +103,22 @@
 	  background: transparent url("/assets/images/themes.gif") no-repeat left top;
 	  margin-top: -45px;
 	  }
-
+	 .centered-btns_nav:hover {
+	  opacity: 1.0;
+	}
 	.centered-btns_nav:active {
 	  opacity: 1.0;
-	  }
+	}
 
 	.centered-btns_nav.next {
 	  left: auto;
 	  background-position: right top;
-	  right: 0;
+	  right: 10px !important;
+  	}
+  	.centered-btns_nav.prev {
+	  left: auto;
+	  background-position: left top;
+	  left: 10px !important;
   	}
 	#newsletter{
 		z-index: 99999;
@@ -173,7 +180,10 @@
 		</div>
 	</div>
 	<div class="col-md-3 col-md-offset-1" style="overflow: hidden;">
-		<h1 style="padding:0;margin: 0;font-style: italic;">Lust List</h1>
+		
+						<header class="header" style="width: 160px; margin: auto;">
+							<span class="white-btn">Lust List</span>
+						</header>
 		<ul class="lslides centered-btns centered-btns1" id="slider2">
 			<li style="width: 250px; height:250px; background: url('/assets/images/demo-boot.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
 			<li style="width: 250px; height:250px; background: url('/assets/images/lust-list-2.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
@@ -220,7 +230,7 @@
 			  speed: 500,            // Integer: Speed of the transition, in milliseconds
 			  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
 			  pager: false,           // Boolean: Show pager, true or false
-			  nav: true,             // Boolean: Show navigation, true or false
+			  nav: false,             // Boolean: Show navigation, true or false
 			  random: false,          // Boolean: Randomize the order of the slides, true or false
 			  pause: false,           // Boolean: Pause on hover, true or false
 			  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
