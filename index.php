@@ -178,12 +178,18 @@
 	<div id="button"></div>
 	<div id="newsletter-body" style="display: none;">
 		<p>Enter your email below to receive the monthly newsletter and periodic updates.</p>
-		<form class="form-inline">
+		<form action="//rebeccacs.us14.list-manage.com/subscribe/post?u=a1a64df7c5d45da8ae16c3db9&amp;id=e36058af4e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" target="_blank" novalidate>
   			<div class="form-group">
-				<input type="text" name="email" class="form-control" placeholder="email address" />
+				<input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a1a64df7c5d45da8ae16c3db9_e36058af4e" tabindex="-1" value=""></div>
 			</div>
-			<button class="btn btn-default btn-outline" type="submit">Sign Up</button>
+			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-outline">
 		</form>
+	</div>
+</div>
+
+<!--End mc_embed_signup-->
 	</div>
 </div>
 
