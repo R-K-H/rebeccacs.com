@@ -3,11 +3,11 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/header.php';
 ?>
 	<div class="container">
-		<div class="row" style="display: table-row;">
-			<div class="col-md-7" style="background:#fff; display: table-cell;">
-				<img src="assets/images/headshot.jpg">
+		<div class="row">
+			<div class="col-md-7">
+				<img src="assets/images/headshot.jpg" class="img-responsive">
 			</div>
-	  		<div class="col-md-5" style="display: table-cell;">
+	  		<div class="col-md-5">
 
 	  			<h1 style="padding-top:80px;">Bio</h1>
 	  			<p>Rebecca Cordalis-Selvig is an aesthete, tastemaker and blogger currently working as an assistant and freelance fashion stylist in Vancouver, Canada.</p>

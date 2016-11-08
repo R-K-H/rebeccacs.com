@@ -3,11 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 		<title>Variant HTML Builder by Medium Rare</title>
 		<link rel="stylesheet" href="css/variant-icons.css">
 		<link rel="stylesheet" href="css/variant-social-icons.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
 				
 		
@@ -5897,12 +5899,15 @@
         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
         &lt;link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /&gt;
         &lt;link href="/assets/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" /&gt;
+        &lt;link rel="stylesheet" type="text/css" href="/assets/css/style.css" /&gt;
         &lt;link href="/assets/css/flexslider.css" rel="stylesheet" type="text/css" media="all" /&gt;
         &lt;link href="/assets/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" /&gt;
         &lt;link href="/assets/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" /&gt;
         &lt;link href="/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" /&gt;
         &lt;link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="all" /&gt;
+        &lt;link rel="stylesheet" href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'/&gt;
         &lt;link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'&gt;
+
     &lt;/head&gt;
     &lt;body [optional-body-classes]&gt;
 				</code>
@@ -6626,6 +6631,7 @@
 		</script>
 		<div id="veu" class="vih">
 <div class="nav-container">
+
 </div>
 
 <div class="main-container">
