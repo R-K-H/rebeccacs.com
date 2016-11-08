@@ -127,6 +127,11 @@
 		position: fixed;
 		background: #fff;
 	}
+	@media screen and (max-width: 480px) {
+	    #newsletter-body{
+			width: 300px !important;
+		}
+	}
 	#newsletter-body{
 		float: right;
 		width: 460px;
@@ -134,6 +139,7 @@
 		padding-left: 20px;
 		padding-right: 5px;
 	}
+
 	#button{
 		height: 150px;
 		width: 30px;
