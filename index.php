@@ -31,7 +31,7 @@
 	  width: 100%;
 	  padding: 0;
 	  margin: 0;
-	  height:500px; 
+	  height:400px; 
 	  }
 
 	.rslides li {
@@ -63,7 +63,7 @@
 	  width: 100%;
 	  padding: 0;
 	  margin: 0;
-	  height:500px; 
+	  height:400px; 
 	  }
 
 	.lslides li {
@@ -192,10 +192,7 @@
 
 <div class="no-gutter row"></div>
 	<div class="container">
-	<div class="row" style="padding-bottom: 50px;">
-	<header class="header" style="width: 160px; margin: auto;">
-		<span class="white-btn">Recent Posts</span>
-	</header>
+	<div class="row" style="padding-bottom: 10px;">
 	<div class="col-md-8">
 	<div class="rslides_container">
 		<ul class="rslides centered-btns centered-btns1" id="slider1">
@@ -227,6 +224,9 @@
 		</ul>
 	</div>
 	</div>
+		<header class="header" style="width: 300px; margin: auto;">
+			<span class="white-btn">Recent Posts</span>
+		</header>
 		<ul style="list-style-type:none; display: block; padding:0px;">
 			<?php				
 				foreach($files as $file) {
