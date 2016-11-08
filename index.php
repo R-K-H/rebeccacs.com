@@ -219,8 +219,8 @@
 							<span class="white-btn">Lust List</span>
 						</header>
 		<ul class="lslides centered-btns centered-btns1" id="slider2">
-			<li style="width: 250px; height:250px; background: url('/assets/images/demo-boot.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
-			<li style="width: 250px; height:250px; background: url('/assets/images/lust-list-2.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
+			<a href="http://www.neimanmarcus.com/en-ca/prod189590238/p.prod?ecid=NMECShopCart&ncx=n&uEm=" target="_BLANK"><li style="width: 250px; height:250px; background: url('/assets/images/demo-boot.jpg') center center; background-size: 250px;">&nbsp;</li></a>
+			<a href="https://www.net-a-porter.com/ca/en/product/713191?cm_mmc=ProductSearchPLA-_-CA-_-Bags-_-ShoulderBags-Google&gclid=CjwKEAiAjIbBBRCitNvJ1o257WESJADpoUt0RYWwhibW5V8nnLzgG7EcxKmCBLO1txHAcUlhZCmHsBoCK0fw_wcB" target="_BLANK"><li style="width: 250px; height:250px; background: url('/assets/images/lust-list-2.jpg') center center; background-size: 250px;">&nbsp;</li></a>
 		</ul>
 	</div>
 	</div>
