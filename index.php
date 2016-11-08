@@ -178,7 +178,7 @@
 			preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 			if(!empty($image)){
 
-				echo '<li style="background: url(\''.$image['src'].'\') center center;"><a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'">&nbsp;</a></li>';
+				echo '<li style="background: url(\''.$image['src'].'\') center center;"><a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$_SERVER['HTTP_HOST'].'/blog/'.$file.'">&nbsp;</a></li>';
 			}
 		}
 		?>
@@ -203,7 +203,7 @@
 					preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $texthtml, $image);
 					if(!empty($image)){
 						$fileName = str_replace('.html','',$file);
-						echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$file.'">';
+						echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="'.$_SERVER['HTTP_HOST'].'/blog/'.$file.'">';
 						echo '<li style="display: block; margin-bottom:20px; height:350px; padding-bottom:20px; background: url(\''.$image['src'].'\') center center;">';
 						echo '<div id="outer"><div id="inner"><header class="header" style="margin-top: 330px;"><span class="white-btn">'.ucwords(str_replace("-", " ", $fileName)).'</span></header></div></div></li></a>';
 					}
