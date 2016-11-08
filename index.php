@@ -164,11 +164,8 @@
 	}
 
 	.m-slider-el-title {
-	    background-color: #FFFFFF;
-	    padding: 2rem;
-	    font-weight: 300;
-	    /* font-size: 1.3125rem; */
-	    color: #000;
+
+	    
 	    position: absolute;
 	    bottom: 50px;
 	}
@@ -196,6 +193,9 @@
 <div class="no-gutter row"></div>
 	<div class="container">
 	<div class="row" style="padding-bottom: 50px;">
+	<header class="header" style="width: 160px; margin: auto;">
+		<span class="white-btn">Recent Posts</span>
+	</header>
 	<div class="col-md-8">
 	<div class="rslides_container">
 		<ul class="rslides centered-btns centered-btns1" id="slider1">
@@ -207,7 +207,8 @@
 				$fileName = str_replace('.html','',$file);
 				echo '<li style="background: url(\''.$image['src'].'\') center center;">';
 				echo '<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="/blog/'.$file.'">';
-				echo '<div class="m-slider-el-title">'.ucwords(str_replace("-", " ", $fileName)).'</div>';
+				echo '<div class="m-slider-el-title"><header class="header" style="width: 160px; margin: auto;">';
+				echo '<span class="white-btn">'.ucwords(str_replace("-", " ", $fileName)).'</span></header></div>';
 				echo '</a></li>';
 			}
 		}
