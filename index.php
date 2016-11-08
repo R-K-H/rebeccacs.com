@@ -174,7 +174,18 @@
 	}
 
 </style>
-<div id="newsletter"><div id="button"></div><div id="newsletter-body" style="display: none;"><p>Enter your email below to receive the monthly newsletter and periodic updates.</p><input type="text" name="email" placeholder="email address" /><button class="button">Sign Up</button></div></div>
+<div id="newsletter">
+	<div id="button"></div>
+	<div id="newsletter-body" style="display: none;">
+		<p>Enter your email below to receive the monthly newsletter and periodic updates.</p>
+		<form class="form-inline">
+  			<div class="form-group">
+				<input type="text" name="email" class="form-control" placeholder="email address" />
+			</div>
+			<button class="btn btn-default btn-outline" type="submit">Sign Up</button>
+		</form>
+	</div>
+</div>
 
 <div class="no-gutter row"></div>
 	<div class="container">
