@@ -180,7 +180,10 @@
 		</div>
 	</div>
 	<div class="col-md-3 col-md-offset-1" style="overflow: hidden;">
-		<h1 style="padding:0;margin: 0;font-style: italic;">Lust List</h1>
+		
+						<header class="header" style="width: 160px; margin: auto;">
+							<span class="white-btn">Lust List</span>
+						</header>
 		<ul class="lslides centered-btns centered-btns1" id="slider2">
 			<li style="width: 250px; height:250px; background: url('/assets/images/demo-boot.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
 			<li style="width: 250px; height:250px; background: url('/assets/images/lust-list-2.jpg') center center; background-size: 250px;"><a href="amazon.com">&nbsp;</a></li>
