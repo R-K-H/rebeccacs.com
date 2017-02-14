@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Meta Block -->
+        <meta name="generator" content="RCSELVIG">
+        <meta property="og:title" content="Rebecca Cordalis-Selvig | Fashion Editorial Stylist">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="rebeccacs.com">
+        <meta property="og:image" content="//rebeccacs.com/assets/images/rebeccacs-main-pic-xl.jpg">
+        <meta property="og:site_name" content="Rebecca Cordalis-Selvig | Fashion Editorial Stylist">
+        <meta name="description" content="Rebecca Cordalis-Selvig is an aesthete, tastemaker and writer currently working as an assistant and freelance fashion stylist in Vancouver, Canada." />
+        <meta name="keywords" content="Rebecca Cordalis-Selvig, Rebecca Fashion, Rebecca Selvig, RCSelvig, Rebecca Selvig Fashion, Editorial Styling Rebecca Selvig" />
+        <meta name="robots" content="index,nofollow" />
+        <meta name="p:domain_verify" content="ffee7fb519a29b809227451780ce6bab"/>
+
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+        <!--<![endif]-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
+        <link rel="icon" href="/assets/img/favicon.png" type="image/png">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/font.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/js/mobile.js"></script>
+        <script language="javascript" type="text/javascript" src="/js/modernizr.custom.js"></script>
+        <script language="javascript" type="text/javascript" src="/js/classie.js"></script>
+        <style type="text/css">
+            /* Overlay style */
+            .overlay {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: #fff;
+                z-index: 100;
+            }
+
+            /* Overlay closing cross */
+            .overlay .overlay-close {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                border: none;
+                outline: none;
+                z-index: 100;
+            }
+
+            /* Menu style */
+            .overlay nav {
+                text-align: center;
+                position: relative;
+                top: 50%;
+                height: 60%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            .overlay ul {
+                list-style: none;
+                padding: 0;
+                margin: 0 auto;
+                display: inline-block;
+                height: 100%;
+                position: relative;
+
+            }
+
+            .overlay ul li {
+                display: block;
+                height: 20%;
+                height: calc(100% / 5);
+                min-height: 54px;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .overlay ul li a {
+                font-size: 54px;
+                font-weight: 300;
+                display: block;
+                color: #000;
+                -webkit-transition: color 0.2s;
+                transition: color 0.2s;
+            }
+
+            .overlay ul li a:hover,
+            .overlay ul li a:focus {
+                color: #f0f0f0;
+            }
+
+            /* Effects */
+            .overlay-scale {
+                visibility: hidden;
+                opacity: 0;
+                -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+                -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+                transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+            }
+
+            .overlay-scale.open {
+                visibility: visible;
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);    
+                -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+                transition: transform 0.4s, opacity 0.4s;
+            }
+
+            @media screen and (max-height: 30.5em) {
+                .overlay nav {
+                    height: 70%;
+                    font-size: 34px;
+                }
+                .overlay ul li {
+                    min-height: 34px;
+                }
+            }
+            .content{
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                max-width: 900px;
+            }
+            footer{
+                min-height: 50px;
+            }
+        </style>
+    {% endblock %}
+</head>
+<body>
+<div class="overlay overlay-scale">
+    <a class="overlay-close fa fa-times"></a>
+    <nav>
+        <ul>
+            <li class=""><a href="{{ path_for('home') }}">home</a></li>
+            <li class=""><a href="{{ path_for('about') }}">about</a></li>
+            <li class=""><a href="{{ path_for('work') }}">work</a></li>
+        </ul>
+    </nav>
+</div>
+    <div class="content">
+        <div class="pure-g">
+            {% include("layout/navigation.html") %}
+        </div>
+        <div class="pure-g">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="pure-g">
+            <div id="footer">
+                {% block footer %}
+                    &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="/js/imagesizes.js"></script>
+    <script type="text/javascript" src="/js/google.js"></script>
+    <script type="text/javascript" src="/js/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+      
+      (function() {
+            var triggerBttn = document.getElementById( 'trigger-overlay' ),
+                overlay = document.querySelector( 'div.overlay' ),
+                closeBttn = overlay.querySelector( 'a.overlay-close' );
+                transEndEventNames = {
+                    'WebkitTransition': 'webkitTransitionEnd',
+                    'MozTransition': 'transitionend',
+                    'OTransition': 'oTransitionEnd',
+                    'msTransition': 'MSTransitionEnd',
+                    'transition': 'transitionend'
+                },
+                transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+                support = { transitions : Modernizr.csstransitions };
+
+            function toggleOverlay() {
+                if( classie.has( overlay, 'open' ) ) {
+                    classie.remove( overlay, 'open' );
+                    classie.add( overlay, 'close' );
+                    var onEndTransitionFn = function( ev ) {
+                        if( support.transitions ) {
+                            if( ev.propertyName !== 'visibility' ) return;
+                            this.removeEventListener( transEndEventName, onEndTransitionFn );
+                        }
+                        classie.remove( overlay, 'close' );
+                    };
+                    if( support.transitions ) {
+                        overlay.addEventListener( transEndEventName, onEndTransitionFn );
+                    }
+                    else {
+                        onEndTransitionFn();
+                    }
+                }
+                else if( !classie.has( overlay, 'close' ) ) {
+                    classie.add( overlay, 'open' );
+                }
+            }
+
+            triggerBttn.addEventListener( 'click', toggleOverlay );
+            closeBttn.addEventListener( 'click', toggleOverlay );
+        })();
+    </script>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
