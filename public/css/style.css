@@ -190,35 +190,36 @@ a:hover {
     letter-spacing: 2px;
     padding: 1em 2em;
 }
-#header .info, #footer .info {
-    float: right;
-    position: relative;
-    z-index: 200;
-}
-#header .main-navigation {
-    float: left;
-}
-#header .mobile-navigation-btn {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
+// #header .info, #footer .info {
+//     float: right;
+//     position: relative;
+//     z-index: 200;
+// }
+// #header .main-navigation {
+//     float: left;
+// }
+// #header .mobile-navigation-btn {
+//   position: absolute;
+//   right: 10px;
+//   top: 15px;
+// }
 #footer .info .social-links {
     padding: 36px 0;
 }
-#header .social-links {
-  float: left;
-  padding: 0 0 0.3em;
-  display: none;
-}
-#header .info .social-links {
-    padding: 46px 0;
-    display: block;
-}
+// #header .social-links {
+//   float: left;
+//   padding: 0 0 0.3em;
+//   display: none;
+// }
+// #header .info .social-links {
+//     padding: 46px 0;
+//     display: block;
+// }
 .social-links, .share-links {
 	list-style: none;
   padding: 0.3em 0;
-  margin: 0;
+  margin: auto;
+      max-width: 350px;
 }
 .social-links li, .share-links li {
     float: left;
@@ -589,11 +590,11 @@ a {
     }
 }
 
-#footer .social-links,#header .social-links {
-    float: left;
-    padding: 0 0 0.3em;
-    display: none
-}
+// #footer .social-links,#header .social-links {
+//     float: left;
+//     padding: 0 0 0.3em;
+//     display: none
+// }
 
 @media only screen and (max-width: 75em) {
     #footer .social-links,#header .social-links {
@@ -601,11 +602,11 @@ a {
     }
 }
 
-#footer .info,#header .info {
-    float: right;
-    position: relative;
-    z-index: 200
-}
+// #footer .info,#header .info {
+//     float: right;
+//     position: relative;
+//     z-index: 200
+// }
 
 @media only screen and (max-width: 43.75em) {
     #footer .info,#header .info {

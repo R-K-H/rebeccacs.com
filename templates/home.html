@@ -186,18 +186,18 @@
 		</a>
 	</ul>
 </div>
-<div class="">
+<div class="pure-u-1 pure-u-md-1">
 	<header class="header" style="width: 170px; margin: auto; padding-bottom: 20px;">
 		<span class="white-btn">Recent Posts</span>
 	</header>
 	<ul style="list-style-type:none; display: block; padding:0px;">
 	{% for blog in blogs %}
-		<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="/blog/">
-			<li style="display: block; margin-bottom:20px; height:350px; padding-bottom:20px; background: url('dummy.png') center center;">
+		<a style="color:#FFF; display: block; margin-bottom:20px; height:400px; padding-bottom:20px;" href="/blog/{{blog['link']}}">
+			<li style="display: block; margin-bottom:20px; height:350px; padding-bottom:20px; background: url('..{{blog['hero']}}') center center;">
 				<div id="outer">
 					<div id="inner">
 						<header class="header" style="margin-top: 330px;">
-							<span class="white-btn">Testing</span>
+							<span class="white-btn">{{blog['title']}}</span>
 						</header>
 					</div>
 				</div>

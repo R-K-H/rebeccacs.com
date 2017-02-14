@@ -166,7 +166,7 @@
         <div class="pure-g">
             <div id="footer">
                 {% block footer %}
-                    &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
+                    <p>&copy; Copyright {{ "now"|date("Y") }}</p>
                 {% endblock %}
             </div>
         </div>

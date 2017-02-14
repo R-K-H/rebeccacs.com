@@ -41,8 +41,10 @@ $container['logger'] = function($c) {
 
 $container['view'] = function ($container) {
     $view = new \Slim\Views\Twig('../templates', [
-        'cache' => false//'../cache'
+        'cache' => false,//'../cache'
+        'debug' => true,
     ]);
+    $view->addExtension(new Twig_Extension_Debug());
     
     // Instantiate and add Slim specific extension
     $basePath = rtrim(str_ireplace('index.php', '', $container['request']->getUri()->getBasePath()), '/');
@@ -54,18 +56,38 @@ $container['view'] = function ($container) {
 // Get Blogs
 $app->get('/', function (Request $request, Response $response) {
     $dir = $this->dir;
-    $ignored = array('..', '.', 'index.php','.gitignore','backup');
-
-    $files = array();    
+    $ignored = array('..', '.', 'index.php','.gitignore','backup'); 
     foreach (scandir($dir) as $file) {
-        if (in_array($file, $ignored)) continue;
+        if (in_array($file, $ignored)) 
+            continue;
+
+        $content = file_get_contents('../data/'.$file);
+
+        $hero = '';
+        if(preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $content, $image)){
+            $hero = $image['src'];
+        }
+
+        $title = ucwords(str_replace("-", " ",str_replace('.html','',$file)));
+        if(preg_match("/<title>(.+)<\/title>/i", $content, $matches)){
+            $title = $matches[1];
+        }
+        
+        $link = $file;
+        
+        $file_structure = [
+            'title' => $title,
+            'hero' => $hero,
+            'link' => $link,
+            'content' => $content,
+        ];
+        $formatted_files[$file] = $file_structure;
         $files[$file] = filemtime($dir . '/' . $file);
     }
 
-    arsort($files);
-    $files = array_keys($files);
+    arsort($formatted_files);
     return $this->view->render($response, 'home.html', [
-        'blogs' => $files
+        'blogs' => $formatted_files
     ]);
 })->setName('home');
 
@@ -82,6 +104,18 @@ $app->get('/about', function (Request $request, Response $response) {
         'name' => 'Kollan'
     ]);
 })->setName('about');
+
+$app->get('/blog/{title}', function (Request $request, Response $response) {
+    $data = $request->getUri();
+    $data = preg_replace("+\/blog/+", '', $data->getPath());
+    return $this->view->render($response, 'post.html', [
+        'content' => file_get_contents('../data/'.$data)
+    ]);
+});
+
+$app->post('/blog/create/{id}', function (Request $request, Response $response) {
+});
+
 
 $app->post('/about', function (Request $request, Response $response) {
     $data = $request->getParsedBody();

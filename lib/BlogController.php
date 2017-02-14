@@ -19,4 +19,8 @@ class BlogController {
         // to access items in the container... $this->container->get('');
         return $response;
    	}
+
+   	public function getBlogs() {
+   		
+   	}
 }
