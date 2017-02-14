@@ -113,6 +113,11 @@ $app->get('/blog/{title}', function (Request $request, Response $response) {
     ]);
 });
 
+$app->get('/create', function (Request $request, Response $response) {
+    return $this->view->render($response, 'design.html', [
+    ]);
+});
+
 $app->post('/blog/create/{id}', function (Request $request, Response $response) {
 });
 
